@@ -1,0 +1,39 @@
+{
+ "titulo": "O Invocado",
+ "parte": 1,
+ "rotulo_parte": "EPISÓDIO",
+ "clima": "suspense",
+ "ritmo": "rapido",
+ "protagonista": "ren",
+ "elenco": {
+  "ren": {"nome": "Ren", "voz": "ren", "corpo": "magro", "pele": "clara", "cabelo": "curto", "cabelo_cor": "preto", "olhos": "castanho", "roupa": "moletom", "roupa_cor": "preto", "baixo": "calca", "baixo_cor": "cinza", "acessorio": "fone"},
+  "mago": {"nome": "Mago da corte", "voz": "mago", "corpo": "magro", "pele": "media", "cabelo": "careca", "barba": "longa", "roupa": "tunica", "roupa_cor": "roxo"},
+  "eldoran": {"nome": "Rei Eldoran", "voz": "eldoran", "corpo": "medio", "pele": "clara", "cabelo": "curto", "cabelo_cor": "grisalho", "barba": "longa", "roupa": "manto", "roupa_cor": "vinho", "acessorio": "coroa"}
+ },
+ "cenas": [
+  {"cenario": "quarto_gamer",
+   "personagens": [{"id": "ren", "x": 0.45, "olhando": "direita"}],
+   "falas": [
+    {"quem": "narrador", "txt": "Ren tinha dezoito anos. Nenhum amigo. Nenhum plano.", "etiqueta": {"id": "ren", "txt": "Ren, 18 anos"}},
+    {"quem": "narrador", "txt": "Só um videogame e uma madrugada inteira pela frente."},
+    {"quem": "ren", "txt": "Só mais uma partida. Prometo.", "expressao": "feliz"},
+    {"quem": "narrador", "txt": "Às três da manhã, a tela ficou roxa. E não era o jogo."},
+    {"quem": "ren", "txt": "Travou? Não, não, não! Eu não salvei!", "expressao": "surpreso", "pose": "medo", "efeito": "susto"},
+    {"quem": "narrador", "txt": "O quarto girou. E a luz engoliu tudo."}
+   ]},
+  {"cenario": "palacio",
+   "personagens": [{"id": "mago", "x": 0.2, "olhando": "direita", "expressao": "bravo"}, {"id": "ren", "x": 0.5, "expressao": "surpreso"}, {"id": "eldoran", "x": 0.8, "olhando": "esquerda"}],
+   "falas": [
+    {"quem": "narrador", "txt": "Quando abriu os olhos, Ren estava no meio de um círculo de magia."},
+    {"quem": "narrador", "txt": "Cercado de magos. Num castelo que não existia no mapa."},
+    {"quem": "mago", "txt": "Esse é o escolhido? Um menino franzino de pijama?", "expressao": "bravo", "pose": "apontando", "etiqueta": {"id": "mago", "txt": "Mago da corte"}},
+    {"quem": "ren", "txt": "Pijama não. É moletom. Edição limitada.", "expressao": "bravo"},
+    {"quem": "narrador", "txt": "Os magos riram. Todos, menos um."},
+    {"quem": "eldoran", "txt": "Silêncio. O ritual nunca erra.", "pose": "bracos_abertos", "etiqueta": {"id": "eldoran", "txt": "Rei Eldoran"}},
+    {"quem": "eldoran", "txt": "Bem-vindo a Oregon, jovem. O reino precisa de você."},
+    {"quem": "narrador", "txt": "Ren não sabia lutar. Não sabia magia. Não sabia nem onde estava."},
+    {"quem": "narrador", "txt": "Mas uma coisa ele sabia: aquele mago ia ser um problema."}
+   ]}
+ ],
+ "escolha": {"pergunta": "O mago zombou do Ren. O que ele faz?", "a": "Responde à altura", "a_sub": "O mago vira inimigo", "b": "Fica calado e observa", "b_sub": "Ren descobre os segredos da corte"}
+}
