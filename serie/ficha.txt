@@ -1,0 +1,48 @@
+=== FICHA DO CANAL: Trono Abissal ===
+@perfil: @tronoabissal (Instagram, conectado ao Windsor; id da conta: 17841427440990578)
+nicho: aventura dark fantasy em série, em desenho animado, em que o público decide o caminho do herói
+base da história: documento "Trono Abissal — Lore e História" (https://claude.ai/artifact/DqHo74VRsZN6cv5rv9yhkp). Nomes, lugares, regras do mundo e finais vêm de lá. Nunca contradizer a lore.
+público: jovens de 14 a 30 anos que gostam de anime, RPG e isekai
+objetivo: seguidores e criar público para o jogo Trono Abissal
+tom: sombrio e épico, com tensão e mistério; pitadas de humor só nas falas do Ren (otaku, fora do lugar)
+modo padrão: Historinha (cenário, narrador, diálogos, personagens de corpo inteiro), com escolha A ou B no final de todo episódio
+formato da escolha: "Comenta A ou B. A mais votada decide o próximo episódio."
+frequência: 1 episódio por dia (19h). O episódio seguinte usa a opção mais votada nos comentários do anterior.
+duracao: 60 a 90 (140 a 240 palavras)
+ritmo: rápido (padrão do kit) — corte a cada ~2 s, legenda karaokê, narrador conduzindo com frases curtas, personagens só nas falas de efeito, cortes sem som, etiqueta na 1ª aparição de cada personagem, cartão A vs B com a consequência de cada opção (a_sub / b_sub). Do episódio 2 em diante, abrir com o recap "VOCÊS ESCOLHERAM ..."
+formato: ambos (vertical para Reels; horizontal guardado para juntar em vídeo longo no YouTube)
+idiomas: pt
+cta: Comenta A ou B: você decide se o Ren vira herói ou Knox.
+
+vozes (ouvir antes e trocar se quiser):
+- narrador: Nassif - Documentary, History & Thriller | id: acdKA5HckGxoxxvy40dA
+- ren: Thiago | id: gzQG1wjdcAjdmmsny6Y8
+- eldoran (rei): Manoel Lopes | id: zoe2cQFqDDW4DteHDEWI
+- magos e chefes: Neto | id: H6CTgG0uZDmiNsMwijeo
+modelo de voz: eleven_v4 (aceita direção de tom entre colchetes, ex.: [narrando com suspense, ritmo ágil])
+como gerar as vozes: o narrador em texto corrido, um arquivo por cena (junte depois num voz_narrador); cada personagem num arquivo com todas as falas dele, uma por parágrafo; 1 take só. O episódio 1 gastou ~970 créditos.
+
+personagens:
+- ren: {"nome": "Ren", "corpo": "magro", "pele": "clara", "cabelo": "curto", "cabelo_cor": "preto", "olhos": "castanho", "roupa": "moletom", "roupa_cor": "preto", "baixo": "calca", "baixo_cor": "cinza", "acessorio": "fone"}
+  (em Oregon, depois de comprar equipamento: roupa conforme a escolha do público; com arma abissal: olhos vermelhos e aura roxa)
+- eldoran: {"nome": "Eldoran", "corpo": "medio", "pele": "clara", "cabelo": "curto", "cabelo_cor": "grisalho", "barba": "longa", "roupa": "manto", "roupa_cor": "vinho", "acessorio": "coroa"}
+- mago da corte: {"nome": "Mago", "corpo": "magro", "pele": "media", "cabelo": "careca", "barba": "longa", "roupa": "tunica", "roupa_cor": "roxo"}
+
+regras da série:
+- O público controla as escolhas do Ren. A soma das escolhas leva a um dos três finais da lore (heroico, queda por vontade própria, queda inevitável).
+- Registrar no fim de cada roteiro: escolha vencedora, ética do Ren (sobe/desce), uso de arma abissal (sim/não) e vila onde está.
+- As duas opções de cada escolha precisam ser tentadoras. Nada de opção obviamente certa.
+- Violência sem sangue explícito; terror por clima, sombra e som.
+- Empate ou poucos comentários: o narrador decide pela opção mais coerente com a lore e avisa no começo do episódio.
+- Publicação: automática todo dia de manhã (Igor autorizou em 21/11/2026), pela tarefa agendada. Ver CLAUDE.md.
+
+temporada 1 — "O Invocado" (rascunho; as escolhas do público podem mudar a ordem):
+1. Ren jogando no quarto, luz, invocado no palácio de Valdenmoor. Os magos zombam dele. Escolha: A) responde à zombaria / B) fica calado e observa.
+2. O teste de habilidades: péssimo em tudo, um feitiço pequeno que ninguém entende. Escolha: com o ouro do rei, A) espada e escudo de Valdenmoor / B) túnica que aumenta a mana.
+3. A primeira vila para treinar. Escolha: A) Kagegakure, os ninjas / B) Frostheim, os vikings.
+4. O mestre da vila pede um favor sombrio (eliminar um desertor). Escolha: A) recusa (ética sobe, a vila desconfia) / B) aceita.
+5. A primeira descida pelo túnel da vila: ratos e coelhos corrompidos no andar 1. Escolha: A) avança / B) volta para treinar mais.
+6. Um ancião conta a lenda da forja escondida no castelo. Escolha: A) vai atrás da forja / B) esquece a lenda.
+7. Andar 5: Vorgath, o lobo negro colossal. Escolha: A) enfrenta / B) foge e volta mais forte.
+8. Final da temporada: a arma abissal sussurra "se quer mais poder, deve absorver mais das trevas". Escolha: A) empunha / B) deixa a arma.
+=== FIM DA FICHA ===

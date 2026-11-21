@@ -1,0 +1,35 @@
+{
+ "serie": "Trono Abissal",
+ "perfil": "@tronoabissal",
+ "instagram_account_id": "17841427440990578",
+ "lore_artifact": "https://claude.ai/artifact/DqHo74VRsZN6cv5rv9yhkp",
+ "estado_do_ren": {
+  "etica": 0,
+  "usou_arma_abissal": false,
+  "local": "Palácio de Valdenmoor",
+  "inimigos": [],
+  "aliados": [],
+  "itens": []
+ },
+ "episodios": [
+  {
+   "n": 1,
+   "titulo": "O Invocado",
+   "publicado_em": "2026-11-21",
+   "media_id": "18348563719281452",
+   "video": "episodios/ep01.mp4",
+   "historia": "episodios/ep01_historia.json",
+   "escolha": {
+    "pergunta": "O mago zombou do Ren. O que ele faz?",
+    "a": "Responde à altura",
+    "a_sub": "O mago vira inimigo",
+    "b": "Fica calado e observa",
+    "b_sub": "Ren descobre os segredos da corte"
+   },
+   "votos": null,
+   "vencedora": null,
+   "metricas": null,
+   "creditos_elevenlabs": 968
+  }
+ ]
+}
