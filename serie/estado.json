@@ -58,6 +58,33 @@
    },
    "creditos_elevenlabs": 968,
    "story_id": "18159285514517251"
+  },
+  {
+   "n": 2,
+   "titulo": "O Teste",
+   "publicado_em": "2026-11-22",
+   "media_id": "17968544538238718",
+   "video": "episodios/ep02.mp4",
+   "story_video": "episodios/ep02_story.mp4",
+   "historia": "episodios/ep02_historia.json",
+   "duracao_video_s": 62.2,
+   "duracao_com_anuncio_s": 69.0,
+   "escolha": {
+    "pergunta": "Com o ouro do rei, o que o Ren compra?",
+    "a": "Espada e escudo de Valdenmoor",
+    "a_sub": "Força e defesa, mas pesa",
+    "b": "Túnica de mana",
+    "b_sub": "Mais magia, nenhuma proteção"
+   },
+   "votos": null,
+   "vencedora": null,
+   "metricas": null,
+   "creditos_elevenlabs": 1049,
+   "story_id": "18320978512304307",
+   "mudancas_testadas": [
+    "gancho com conflito/segredo na 1ª frase",
+    "episódio mais enxuto (144 palavras)"
+   ]
   }
  ],
  "promo": [
