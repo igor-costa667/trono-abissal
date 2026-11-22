@@ -1,0 +1,229 @@
+{
+ "titulo": "O Teste",
+ "parte": 2,
+ "rotulo_parte": "Episódio",
+ "clima": "suspense",
+ "ritmo": "rapido",
+ "protagonista": "ren",
+ "recap": {
+  "letra": "B",
+  "texto": "Destino decidiu: ficar calado"
+ },
+ "elenco": {
+  "ren": {
+   "nome": "Ren",
+   "voz": "ren",
+   "corpo": "magro",
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "preto",
+   "olhos": "castanho",
+   "roupa": "moletom",
+   "roupa_cor": "preto",
+   "baixo": "calca",
+   "baixo_cor": "cinza",
+   "acessorio": "fone"
+  },
+  "mago": {
+   "nome": "Mago da corte",
+   "voz": "mago",
+   "corpo": "magro",
+   "pele": "media",
+   "cabelo": "careca",
+   "barba": "longa",
+   "roupa": "tunica",
+   "roupa_cor": "roxo"
+  },
+  "eldoran": {
+   "nome": "Rei Eldoran",
+   "voz": "eldoran",
+   "corpo": "medio",
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "grisalho",
+   "barba": "longa",
+   "roupa": "manto",
+   "roupa_cor": "vinho",
+   "acessorio": "coroa"
+  }
+ },
+ "cenas": [
+  {
+   "cenario": "palacio",
+   "luz": "noite",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.3,
+     "olhando": "direita",
+     "expressao": "bravo"
+    },
+    {
+     "id": "mago",
+     "x": 0.72,
+     "olhando": "esquerda"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Ren engoliu a raiva. E ficou calado."
+    },
+    {
+     "quem": "narrador",
+     "txt": "Foi assim que ouviu o que não devia."
+    },
+    {
+     "quem": "narrador",
+     "txt": "No canto do salão, o mago cochichava."
+    },
+    {
+     "quem": "mago",
+     "txt": "O ritual pega qualquer um. O rei é que não quer ver.",
+     "expressao": "bravo",
+     "pose": "pensando"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Qualquer um. Então por que ele?",
+     "efeito": "susto"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Ren guardou aquilo. O primeiro segredo da corte."
+    }
+   ]
+  },
+  {
+   "cenario": "palacio",
+   "luz": "dia",
+   "personagens": [
+    {
+     "id": "mago",
+     "x": 0.14,
+     "olhando": "direita"
+    },
+    {
+     "id": "ren",
+     "x": 0.42
+    },
+    {
+     "id": "eldoran",
+     "x": 0.86,
+     "olhando": "esquerda"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Na manhã seguinte, o teste de habilidades.",
+     "acao": {
+      "id": "ren",
+      "tipo": "investida",
+      "em": 0.2,
+      "dur": 0.45,
+      "dist": 0.12
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Força: zero. Pontaria: zero. O fôlego acabou na escada.",
+     "acao": [
+      {
+       "id": "ren",
+       "tipo": "erra",
+       "palavra": "Força",
+       "arma": "espada"
+      },
+      {
+       "id": "ren",
+       "tipo": "ofegante",
+       "palavra": "fôlego",
+       "dur": 2.2
+      }
+     ]
+    },
+    {
+     "quem": "narrador",
+     "txt": "Os magos nem disfarçaram o riso.",
+     "pose": "apontando"
+    },
+    {
+     "quem": "ren",
+     "txt": "No meu jogo eu era nível noventa e nove!",
+     "expressao": "triste",
+     "pose": "bracos_abertos",
+     "acao": {
+      "tipo": "pulo",
+      "em": 0.15
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Então pediram magia. Ren fechou os olhos.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "dourado",
+      "palavra": "fechou",
+      "dur": 1.6
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "E acendeu uma faísca. Pequena. Fraca.",
+     "acao": {
+      "id": "ren",
+      "tipo": "faisca",
+      "palavra": "faísca",
+      "dur": 2.4
+     }
+    },
+    {
+     "quem": "mago",
+     "txt": "Uma vela faz mais que isso.",
+     "expressao": "feliz",
+     "pose": "apontando"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Ninguém percebeu. A faísca usou a mana exata. Nem uma gota a mais.",
+     "etiqueta": {
+      "id": "ren",
+      "txt": "Controle de mana: perfeito"
+     },
+     "acao": {
+      "id": "ren",
+      "tipo": "faisca",
+      "palavra": "exata",
+      "dur": 2.2
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "O rei jogou uma bolsa de ouro aos pés dele."
+    },
+    {
+     "quem": "eldoran",
+     "txt": "As trevas sobem do Abismo. Prepare-se, invocado.",
+     "pose": "apontando",
+     "acao": {
+      "tipo": "impacto",
+      "palavra": "Abismo"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "O ouro dá para uma coisa só. E ela pode decidir quem o Ren vai ser."
+    }
+   ]
+  }
+ ],
+ "escolha": {
+  "pergunta": "Com o ouro do rei, o que o Ren compra?",
+  "a": "Espada e escudo de Valdenmoor",
+  "a_sub": "Força e defesa, mas pesa",
+  "b": "Túnica de mana",
+  "b_sub": "Mais magia, nenhuma proteção"
+ }
+}
