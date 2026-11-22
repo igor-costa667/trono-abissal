@@ -25,6 +25,10 @@ como gerar as vozes: o narrador em texto corrido, um arquivo por cena (junte dep
 personagens:
 - ren: {"nome": "Ren", "corpo": "magro", "pele": "clara", "cabelo": "curto", "cabelo_cor": "preto", "olhos": "castanho", "roupa": "moletom", "roupa_cor": "preto", "baixo": "calca", "baixo_cor": "cinza", "acessorio": "fone"}
   (em Oregon, depois de comprar equipamento: roupa conforme a escolha do público; com arma abissal: olhos vermelhos e aura roxa)
+  visual oficial (Igor, 22/11/2026), folhas de personagem em serie/referencias/:
+  - ren_fase1_viajante.png: quando chega à cidade. Cabelo preto bagunçado, túnica verde-oliva gasta com cinto, calça marrom, botas de couro, mochila grande com rolo de cobertor, mapa na mão. Magro, 1,65 m, traço anime.
+  - ren_fase2_adagas.png: quando assume as adagas abissais. Cabelo preto com mechas brancas, sobretudo preto longo por cima da túnica, luvas sem dedo, joelheiras, botas altas, duas adagas brilhando.
+  - (a folha diz "Kaelen, 16 anos" e adagas "de plasma" azuis; vale a lore: Ren, 18 anos. Cor do brilho das adagas e dos olhos na fase 2: pendente de confirmação do Igor, porque a lore diz olhos vermelhos e aura roxa)
 - eldoran: {"nome": "Eldoran", "corpo": "medio", "pele": "clara", "cabelo": "curto", "cabelo_cor": "grisalho", "barba": "longa", "roupa": "manto", "roupa_cor": "vinho", "acessorio": "coroa"}
 - mago da corte: {"nome": "Mago", "corpo": "magro", "pele": "media", "cabelo": "careca", "barba": "longa", "roupa": "tunica", "roupa_cor": "roxo"}
 
