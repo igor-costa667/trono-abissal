@@ -29,7 +29,17 @@
    "votos": null,
    "vencedora": null,
    "metricas": null,
-   "creditos_elevenlabs": 968
+   "creditos_elevenlabs": 968,
+   "story_id": "18159285514517251"
+  }
+ ],
+ "promo": [
+  {
+   "tipo": "video_vendas_curso",
+   "publicado_em": "2026-11-22",
+   "media_id": "18223322164352419",
+   "video": "promo/video_vendas.mp4",
+   "story_id": "17876155269602153"
   }
  ]
 }
