@@ -1,0 +1,23 @@
+<html><body style="margin:0;background:#000"><script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { OutlineEffect } from 'three/addons/effects/OutlineEffect.js';
+import { criarPersonagem, criarEspada, DEG } from './personagem.js';
+const r = new THREE.WebGLRenderer({ antialias: true }); r.setSize(1080, 1920); r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap;
+document.body.appendChild(r.domElement);
+const fx = new OutlineEffect(r, { defaultThickness: 0.004, defaultColor: [0.08, 0.06, 0.1] });
+const s = new THREE.Scene(); s.background = new THREE.Color(0x9ab8d6);
+const sol = new THREE.DirectionalLight(0xfff1dd, 2.4); sol.position.set(3, 6, 4); sol.castShadow = true; sol.shadow.mapSize.set(2048, 2048);
+sol.shadow.camera.left = sol.shadow.camera.bottom = -3; sol.shadow.camera.right = sol.shadow.camera.top = 3; s.add(sol);
+s.add(new THREE.HemisphereLight(0xcfe3ff, 0x6a5a40, 1.3));
+const chao = new THREE.Mesh(new THREE.PlaneGeometry(20, 20), new THREE.MeshToonMaterial({ color: 0x7c9a52 })); chao.rotation.x = -Math.PI / 2; chao.receiveShadow = true; s.add(chao);
+const cam = new THREE.PerspectiveCamera(22, 1080 / 1920, .1, 100);
+const pers = [];
+for (let i = 0; i < 3; i++) { const p = criarPersonagem(); p.raiz.position.x = (i - 1) * 0.8; p.raiz.rotation.y = [0, -Math.PI / 2, Math.PI][i]; s.add(p.raiz); pers.push(p); }
+const esp = criarEspada(); pers[0].B.handR.add(esp); esp.position.set(0, -0.05, 0.0);
+window.quadro = (t) => {
+  if (t < 1) { cam.fov = 30; cam.position.set(0, 1.1, 8); cam.lookAt(0, 0.9, 0); }
+  else { cam.fov = 30; cam.position.set(-0.8, 1.55, 1.6); cam.lookAt(-0.8, 1.4, 0); }
+  cam.updateProjectionMatrix(); fx.render(s, cam); };
+window.pronto = true;
+</script></body></html>
