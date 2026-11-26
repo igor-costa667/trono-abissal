@@ -1,0 +1,17 @@
+<html><body style="margin:0"><script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+const W=1080,H=1920; const r=new THREE.WebGLRenderer({antialias:true}); r.setSize(W,H); r.setScissorTest(true); document.body.appendChild(r.domElement);
+const cena=new THREE.Scene(); cena.background=new THREE.Color(0xdddddd);
+cena.add(new THREE.HemisphereLight(0xffffff,0x555555,1.4)); const s=new THREE.DirectionalLight(0xffffff,2); s.position.set(1,2,3); cena.add(s);
+const g=await new GLTFLoader().loadAsync('modelos/ren_pintado.glb'); const o=g.scene;
+o.traverse(m=>{ if(m.isMesh){ m.geometry.computeVertexNormals(); m.material=new THREE.MeshToonMaterial({map:m.material.map}); }});
+cena.add(o); const b=new THREE.Box3().setFromObject(o); const c=b.getCenter(new THREE.Vector3()), sz=b.getSize(new THREE.Vector3());
+console.log('box', JSON.stringify(sz));
+const cam=new THREE.PerspectiveCamera(30,W/2/(H/2),0.01,100);
+const vistas=[[0,0,1],[1,0,0],[0,0,-1],[0.6,0.25,0.8]];
+window.quadro=()=>{ vistas.forEach((v,i)=>{ const d=sz.y*2.1; cam.position.set(c.x+v[0]*d,c.y+v[1]*d,c.z+v[2]*d); cam.lookAt(c);
+ const x=(i%2)*W/2, y=Math.floor(i/2)*H/2; r.setViewport(x,H-y-H/2,W/2,H/2); r.setScissor(x,H-y-H/2,W/2,H/2); r.render(cena,cam); }); };
+window.pronto=true;
+</script></body></html>

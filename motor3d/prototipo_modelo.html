@@ -1,0 +1,227 @@
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #000; overflow: hidden; width: 1080px; height: 1920px; font-family: 'Montserrat', 'Arial Black', sans-serif; }
+  canvas { position: absolute; left: 0; top: 0; }
+  .hud { position: absolute; opacity: 0; }
+  #vida { left: 40px; top: 120px; display: flex; align-items: center; gap: 18px; }
+  #vida .av { width: 92px; height: 92px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, #6f7542, #2e3220); border: 5px solid #e8d7a8; color: #fff; font-size: 46px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 0 #0008; }
+  #vida .nm { color: #fff; font-size: 34px; text-shadow: 0 3px 0 #000, 0 0 8px #000; letter-spacing: 1px; }
+  .barra { width: 300px; height: 22px; background: #1a1418cc; border: 3px solid #e8d7a8; border-radius: 12px; margin-top: 6px; overflow: hidden; position: relative; }
+  .barra i { position: absolute; left: 0; top: 0; bottom: 0; }
+  #dano { color: #ff4a3a; font-size: 96px; -webkit-text-stroke: 7px #2a0808; paint-order: stroke fill; font-weight: 900; }
+</style></head><body>
+<div id="vida" class="hud"><div class="av">R</div><div><div class="nm">REN</div>
+  <div class="barra"><i id="vperda" style="background:#ffe9a0"></i><i id="vbarra" style="background:linear-gradient(#7be06a,#2e9a2a)"></i></div></div></div>
+<div id="dano" class="hud">-12</div>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+// Protótipo 3: o Ren modelado (Hunyuan 3D, pintado com as referências) com as animações do Mixamo.
+// Baseado no protótipo 2: o Ren com animações reais do Mixamo (motion capture), redirecionadas para o esqueleto dele.
+// Cena: chega andando, golpeia o boneco de palha, o boneco volta e derruba ele, ele levanta irritado e fica em guarda.
+import * as THREE from 'three';
+import { OutlineEffect } from 'three/addons/effects/OutlineEffect.js';
+import { criarPersonagem, criarEspada, toon, DEG, mulberry } from './personagem.js';
+import { EXPR, rosto, mistExpr, criarMolas, suave } from './anim.js';
+import { campoDeTreino, luzes, bonecoDePalha } from './cenario.js';
+import { carregarClipe, aplicarPose, sequencia } from './mixamo.js';
+import { criarRenModelo, naMao } from './personagem_modelo.js';
+
+const W = 1080, H = 1920;
+const r = new THREE.WebGLRenderer({ antialias: true });
+r.setSize(W, H); r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap;
+r.outputColorSpace = THREE.SRGBColorSpace;
+document.body.prepend(r.domElement);
+const fxC = document.createElement('canvas'); fxC.width = W; fxC.height = H; document.body.appendChild(fxC);
+const fx2 = fxC.getContext('2d');
+const contorno = new OutlineEffect(r, { defaultThickness: 0.0035, defaultColor: [0.1, 0.07, 0.1] });
+const cena = new THREE.Scene();
+campoDeTreino(cena);
+luzes(cena);
+const cam = new THREE.PerspectiveCamera(38, W / H, 0.05, 200);
+
+// ---------------- Ren
+const ren = await criarRenModelo();
+cena.add(ren.raiz);
+const espada = criarEspada();
+naMao(ren, espada, 'R');
+const molas = () => {};   // o modelo novo ainda não tem cabelo com mola
+const BASE = { x: -3.3, z: 0.1, ry: 90 * DEG };   // olha para +X
+
+// ---------------- animações
+const A = async (n) => carregarClipe('animacoes/' + encodeURIComponent(n) + '.fbx');
+const [andar, golpe, tropeca, levanta, bravo, guarda] = await Promise.all(
+  ['Walking', 'Stable Sword Outward Slash', 'Stumble Backwards', 'Getting Up', 'Angry Gesture', 'Sword And Shield Idle'].map(A));
+const T_CORTE_CLIPE = 0.93;            // no clipe do golpe: lâmina atravessa a frente do corpo
+const ATE_GOLPE = 1.42;
+const SEQ = sequencia(ren, [
+  { clipe: andar, de: 0, ate: 2.45, noLugar: true, loop: true },
+  { clipe: golpe, de: 0.3, ate: ATE_GOLPE, mistura: 0.35 },
+  { clipe: tropeca, de: 0.3, ate: 3.0, mistura: 0.12 },
+  { clipe: levanta, de: 3.05, ate: 6.2, mistura: 0.45, vel: 1.1 },
+  { clipe: bravo, de: 0.1, ate: 2.1, mistura: 0.4 },
+  { clipe: guarda, de: 0, ate: 1.8, mistura: 0.45 },
+]);
+const S = SEQ.segs;
+const T_HIT = S[1].t0 + (T_CORTE_CLIPE - S[1].de);     // lâmina acerta o boneco
+const T_TROCO = S[2].t0 + 0.2;                          // o boneco volta e acerta o Ren
+const HITSTOP = 0.08;
+const DUR = SEQ.dur + HITSTOP + 0.4;
+const tau = (t) => t < T_HIT ? t : t < T_HIT + HITSTOP ? T_HIT : t - HITSTOP;
+
+// ---------------- boneco de palha: posto onde a lâmina passa
+function poseEm(a) { return SEQ.em(Math.min(a, SEQ.dur - 1e-3)).pose; }
+function mundoDoRen(v) { return v.clone().applyAxisAngle(new THREE.Vector3(0, 1, 0), BASE.ry).add(new THREE.Vector3(BASE.x, 0, BASE.z)); }
+const pHit = mundoDoRen(poseEm(T_HIT).hips);
+const boneco = bonecoDePalha(); boneco.rotation.y = -90 * DEG;
+boneco.position.set(pHit.x + 0.95, 0, pHit.z); cena.add(boneco);
+function bonecoEm(a) {
+  const u = a - T_HIT;
+  // vai para trás com a pancada e volta com tudo (acerta o Ren em T_TROCO), depois balança até parar
+  let ang = 0;
+  if (u > 0) ang = -0.62 * Math.exp(-0.9 * u) * Math.sin(Math.PI * u / (T_TROCO - T_HIT) * 1.5 - 0) ;
+  boneco.userData.piv.rotation.x = Math.max(-0.7, Math.min(0.5, ang));
+}
+
+// ---------------- expressões
+function exprEm(a) {
+  if (a < S[1].t0 - 0.2) return EXPR.normal;
+  if (a < T_HIT) return mistExpr(EXPR.normal, EXPR.decidido, suave((a - S[1].t0 + 0.2) / 0.3));
+  if (a < T_TROCO) return EXPR.decidido;
+  if (a < S[2].t0 + 1.4) return mistExpr(EXPR.surpreso, EXPR.dor, suave((a - T_TROCO - 0.6) / 0.3));
+  if (a < S[3].t0 + 0.6) return mistExpr(EXPR.dor, EXPR.tonto, suave((a - S[2].t0 - 1.4) / 0.4));
+  if (a < S[4].t0) return mistExpr(EXPR.tonto, EXPR.normal, suave((a - S[3].t0 - 0.6) / 0.5));
+  return mistExpr(EXPR.normal, EXPR.decidido, suave((a - S[4].t0) / 0.3));
+}
+
+// ---------------- partículas: palha no golpe, poeira na queda
+const palhaM = toon(0xe2c46e);
+const palhas = [];
+{ const rr = mulberry(9); for (let i = 0; i < 30; i++) {
+  const o = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, 0.09 + rr() * 0.07, 4), palhaM); o.visible = false; cena.add(o);
+  palhas.push({ o, v: new THREE.Vector3(0.6 + rr() * 2.2, 1.0 + rr() * 2.4, (rr() - 0.5) * 2.2), w: new THREE.Vector3(rr() * 20, rr() * 20, rr() * 20), y0: 1.0 + rr() * 0.35 });
+} }
+const poeiraM = new THREE.MeshToonMaterial({ color: 0xcbb592, transparent: true, opacity: 0.8 });
+const poeiras = [];
+{ const rr = mulberry(13); for (let i = 0; i < 14; i++) {
+  const o = new THREE.Mesh(new THREE.SphereGeometry(0.08, 10, 8), poeiraM.clone()); o.visible = false; cena.add(o);
+  const an = rr() * Math.PI * 2; poeiras.push({ o, d: new THREE.Vector3(Math.cos(an), 0.25 + rr() * 0.4, Math.sin(an)), s: 0.7 + rr() * 0.8 });
+} }
+const T_CHAO = S[2].t0 + (1.25 - S[2].de);   // no clipe do tropeço, o quadril bate no chão por volta de 1,25 s
+let centroQueda = null;
+function particulas(a) {
+  const u = a - T_HIT;
+  for (const p of palhas) {
+    p.o.visible = u > 0 && u < 1.5;
+    if (!p.o.visible) continue;
+    p.o.position.set(boneco.position.x - 0.15 + p.v.x * u, Math.max(0.02, p.y0 + p.v.y * u - 4.9 * u * u), boneco.position.z + p.v.z * u);
+    p.o.rotation.set(p.w.x * u, p.w.y * u, p.w.z * u);
+  }
+  const w = a - T_CHAO;
+  if (w > 0 && !centroQueda) { centroQueda = new THREE.Vector3(); ren.B.hips.getWorldPosition(centroQueda); }
+  for (const p of poeiras) {
+    p.o.visible = w > 0 && w < 1.2;
+    if (!p.o.visible) continue;
+    const k = w / 1.2;
+    p.o.position.set(centroQueda.x + p.d.x * (0.15 + 0.6 * Math.sqrt(k)), 0.05 + p.d.y * 0.4 * k, centroQueda.z + p.d.z * (0.15 + 0.6 * Math.sqrt(k)));
+    p.o.scale.setScalar(p.s * (0.6 + 2.2 * Math.sqrt(k)));
+    p.o.material.opacity = 0.75 * (1 - k);
+  }
+}
+
+// ---------------- câmera: planos com corte seco, seguindo o quadril com suavidade
+const V = (x, y, z) => new THREE.Vector3(x, y, z);
+const alvoSuave = { v: null, t: -1 };
+function quadril(a) { return mundoDoRen(poseEm(a).hips); }
+function seguir(a) {   // média do quadril num intervalo curto: a câmera não treme com o passo
+  const v = V(0, 0, 0); for (let i = -3; i <= 3; i++) v.add(quadril(Math.max(0, a + i * 0.06))); return v.divideScalar(7);
+}
+const PLANOS = [
+  // 1. chegada: lateral, câmera baixa acompanhando
+  { t0: 0, t1: S[1].t0 + 0.1, f: (t, h) => ({ p: V(h.x + 0.5, 0.75, 3.9), o: V(h.x + 0.35, 0.95, 0), fov: 40 }) },
+  // 2. golpe: de frente para o Ren, por trás do boneco
+  { t0: S[1].t0 + 0.1, t1: T_HIT + 0.45, f: (t, h) => { const k = suave((t - S[1].t0) / 1.0); return { p: V(boneco.position.x + 2.2 - 0.3 * k, 1.25, 2.0 - 0.3 * k), o: V(h.x + 0.4, 1.05, 0), fov: 38 }; } },
+  // 3. troco e queda: plano aberto lateral
+  { t0: T_HIT + 0.45, t1: S[3].t0 + 0.6, f: (t, h) => ({ p: V(h.x + 0.05, 1.05, 4.7), o: V(h.x + 0.05, 0.75, 0), fov: 42 }) },
+  // 4. levanta e fica bravo: 3/4 de frente, aproximando
+  { t0: S[3].t0 + 0.6, t1: 99, f: (t, h) => { const k = suave((t - S[3].t0 - 0.6) / 4.5); return { p: V(h.x + 2.5 - 0.45 * k, 1.2, h.z + 3.1 - 0.55 * k), o: V(h.x + 0.05, 0.62 + 0.38 * suave((t - S[3].t0 - 0.6) / 2.2), h.z), fov: 37 }; } },
+];
+function camera(t) {
+  const a = tau(t);
+  const pl = PLANOS.find(p => a >= p.t0 && a < p.t1) || PLANOS[PLANOS.length - 1];
+  const c = pl.f(a, seguir(a));
+  cam.position.copy(c.p); cam.fov = c.fov; cam.updateProjectionMatrix(); cam.lookAt(c.o);
+  for (const [ti, amp] of [[T_HIT, 0.04], [T_TROCO, 0.05], [T_CHAO, 0.03]]) {
+    if (t > ti && t < ti + 0.45) { const u = t - ti; const am = amp * Math.exp(-7 * u); cam.position.x += am * Math.sin(u * 95); cam.position.y += am * Math.cos(u * 83); }
+  }
+}
+
+// ---------------- efeitos 2D: estrela de impacto e linhas de velocidade
+function proj(v) { const p = v.clone().project(cam); return [(p.x + 1) / 2 * W, (1 - p.y) / 2 * H]; }
+function estrela(x, y, rr, n, cor, giro) {
+  fx2.beginPath();
+  for (let i = 0; i < n * 2; i++) { const R = i % 2 ? rr * 0.38 : rr; const an = giro + i * Math.PI / n; fx2.lineTo(x + R * Math.cos(an), y + R * Math.sin(an)); }
+  fx2.closePath(); fx2.fillStyle = cor; fx2.fill();
+}
+function impacto(t, ti, ponto, escala = 1) {
+  const u = t - ti;
+  if (!(u > 0 && u < 0.32)) return;
+  const [x, y] = proj(ponto); const k = u / 0.32;
+  const rr = mulberry(77 + Math.floor(t * 30));
+  fx2.fillStyle = `rgba(255,255,255,${0.7 * (1 - k)})`;
+  for (let i = 0; i < 50; i++) {
+    const an = rr() * Math.PI * 2, R0 = 340 * escala + rr() * 240, w = 0.012 + rr() * 0.02;
+    fx2.beginPath(); fx2.moveTo(x + Math.cos(an) * R0, y + Math.sin(an) * R0);
+    fx2.lineTo(x + Math.cos(an - w) * 1800, y + Math.sin(an - w) * 1800); fx2.lineTo(x + Math.cos(an + w) * 1800, y + Math.sin(an + w) * 1800); fx2.fill();
+  }
+  estrela(x, y, (110 + 340 * k) * escala, 9, `rgba(255,224,110,${1 - k})`, 0.3);
+  estrela(x, y, (65 + 180 * k) * escala, 9, `rgba(255,255,255,${1 - k})`, 0.6);
+}
+function efeitos(t) {
+  fx2.clearRect(0, 0, W, H);
+  impacto(t, T_HIT, V(boneco.position.x - 0.1, 1.2, boneco.position.z));
+  const cab = new THREE.Vector3(); ren.B.head.getWorldPosition(cab);
+  impacto(t, T_TROCO + HITSTOP, cab.add(V(0.1, 0.12, 0)), 0.8);
+}
+
+// ---------------- HUD: só aparece quando a história pede (levou golpe: vida aparece, perde, some)
+const $ = (id) => document.getElementById(id);
+const env = (t, t0, t1, f = 0.2) => Math.min(suave((t - t0) / f), 1 - suave((t - t1 + f) / f));
+function hud(t) {
+  const t0 = T_TROCO + HITSTOP;
+  $('vida').style.opacity = env(t, t0 - 0.05, t0 + 2.2, 0.2);
+  const k = suave((t - t0 - 0.15) / 0.25), kp = suave((t - t0 - 0.9) / 0.5);
+  $('vbarra').style.width = (100 - 12 * k) + '%'; $('vperda').style.width = (100 - 12 * kp) + '%';
+  const u = t - t0;
+  $('dano').style.opacity = u > 0 && u < 1.0 ? 1 - suave((u - 0.7) / 0.3) : 0;
+  if (u > 0 && u < 1.0) {
+    const cab = new THREE.Vector3(); ren.B.head.getWorldPosition(cab);
+    const [x, y] = proj(cab.add(V(0, 0.45, 0)));
+    $('dano').style.left = (x - 70) + 'px'; $('dano').style.top = (y - 60 - 150 * u) + 'px';
+    $('dano').style.transform = `scale(${1 + 0.6 * Math.exp(-10 * u)})`;
+  }
+}
+
+// ---------------- quadro
+let ultimo = -1;
+window.quadro = (t) => {
+  const a = tau(t);
+  aplicarPose(ren, poseEm(a), BASE);
+  let pis = 0;
+  for (const tb of [1.3, S[3].t0 + 0.4, S[4].t0 + 1.4]) if (a > tb && a < tb + 0.14) pis = Math.sin(Math.PI * (a - tb) / 0.14);
+  bonecoEm(a);
+  ren.raiz.updateMatrixWorld(true);
+  if (t < ultimo) molas(-1);
+  molas(t); ultimo = t;
+  particulas(a);
+  camera(t);
+  contorno.render(cena, cam);
+  efeitos(t);
+  hud(t);
+};
+window.DUR = DUR; window.__ren = ren;
+window.MARCAS = { T_HIT, T_TROCO, T_CHAO, segs: S.map(s => [s.clipe.nome.split('/').pop(), s.t0.toFixed(2), s.t1.toFixed(2)]), andar: S[0].andar };
+console.log('MARCAS', JSON.stringify(window.MARCAS), 'DUR', DUR.toFixed(2));
+document.fonts.ready.then(() => { window.pronto = true; });
+setTimeout(() => { window.pronto = true; }, 4000);
+</script></body></html>
