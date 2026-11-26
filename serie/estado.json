@@ -4,20 +4,21 @@
   "instagram_account_id": "17841427440990578",
   "lore_artifact": "https://claude.ai/artifact/DqHo74VRsZN6cv5rv9yhkp",
   "estado_do_ren": {
-    "etica": 0,
+    "etica": 1,
     "usou_arma_abissal": false,
-    "local": "Kagegakure (vila ninja)",
-    "inimigos": [],
-    "aliados": [
-      "Kuroha, mestre de Kagegakure (aceitou treinar Ren)"
+    "local": "Floresta perto de Kagegakure (expulso da vila no ep. 5)",
+    "inimigos": [
+      "Kuroha e Kagegakure: Ren recusou a missão de matar o desertor; reputação local caiu e Kuroha o expulsou (ep. 5)"
     ],
+    "aliados": [],
     "itens": [
       "Túnica de mana (mais mana máxima, feitiço mais barato, nenhuma defesa)"
     ],
     "segredos": [
       "O mago da corte diz que o ritual pega qualquer um e que o rei não quer ver (ep. 2)",
       "Com a túnica, a faísca do Ren vira bola de fogo gastando quase nada de mana (ep. 3)",
-      "Kuroha é caçado por um desertor há dez anos e pede que Ren o elimine em troca de ensinar tudo (ep. 4)"
+      "Kuroha é caçado por um desertor há dez anos e pede que Ren o elimine em troca de ensinar tudo (ep. 4)",
+      "O desertor que caça Kuroha há dez anos diz que Kuroha também desertou e manda Ren perguntar como a esposa dele morreu (ep. 5)"
     ],
     "historico_etica": [
       {
@@ -36,6 +37,12 @@
         "ep": 3,
         "escolha": "A",
         "etica": "mantém (0)",
+        "arma_abissal": false
+      },
+      {
+        "ep": 4,
+        "escolha": "A",
+        "etica": "sobe (+1): recusou o assassinato pedido por um líder (lore)",
         "arma_abissal": false
       }
     ]
@@ -63,10 +70,10 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-26T17:14-03:00",
+        "coletado_em": "2026-11-26T19:35-03:00",
         "views": 336,
         "alcance": 290,
-        "tempo_medio_s": 5.03,
+        "tempo_medio_s": 5.033,
         "skip_rate": 0.808,
         "compartilhamentos": 0,
         "salvamentos": 1,
@@ -102,10 +109,10 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-26T17:14-03:00",
+        "coletado_em": "2026-11-26T19:35-03:00",
         "views": 272,
         "alcance": 245,
-        "tempo_medio_s": 28.95,
+        "tempo_medio_s": 28.954,
         "skip_rate": 0.476,
         "compartilhamentos": 0,
         "salvamentos": 0,
@@ -147,11 +154,11 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-26T17:14-03:00",
+        "coletado_em": "2026-11-26T19:35-03:00",
         "horas_no_ar": 6.7,
         "views": 199,
         "alcance": 169,
-        "tempo_medio_s": 11.37,
+        "tempo_medio_s": 11.366,
         "skip_rate": 0.439,
         "compartilhamentos": 0,
         "salvamentos": 0,
@@ -189,19 +196,24 @@
         "b": "Aceita e elimina o desertor",
         "b_sub": "Treino liberado, ética cai"
       },
-      "votos": null,
-      "vencedora": null,
+      "votos": {
+        "A": 0,
+        "B": 0,
+        "total_pessoas": 0,
+        "obs": "nenhum comentário no ep. 4 (media_comments_count 0): o destino (lore) escolheu A, recusar; a lore diz que recusar um assassinato pedido por um líder derruba a reputação local mas sobe a ética, e só o Ren limpo chega ao final heroico"
+      },
+      "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-26T17:14-03:00",
-        "views": 156,
-        "alcance": 140,
-        "tempo_medio_s": 10.18,
-        "skip_rate": 0.514,
+        "coletado_em": "2026-11-26T19:35-03:00",
+        "views": 163,
+        "alcance": 145,
+        "tempo_medio_s": 10.121,
+        "skip_rate": 0.5,
         "compartilhamentos": 0,
         "salvamentos": 0,
         "curtidas": 2,
         "comentarios": 0,
-        "horas_no_ar": 5.3,
+        "horas_no_ar": 7.7,
         "duracao_video_s": 69.5
       },
       "creditos_elevenlabs": 972,
@@ -222,7 +234,7 @@
       "video": "promo/video_vendas.mp4",
       "story_id": "17876155269602153",
       "metricas": {
-        "coletado_em": "2026-11-26",
+        "coletado_em": "2026-11-26T19:35-03:00",
         "views": 196,
         "alcance": 176,
         "tempo_medio_s": 4.48,
@@ -405,18 +417,24 @@
       }
     ],
     "resumo_diario": [],
-    "ajustes_para_o_proximo": [
+    "ajustes_para_o_proximo": [],
+    "ajustes_aplicados": [
       {
         "criado_em": "2026-11-26T15:10-03:00",
         "motivo": "Mesmo gancho #3 'Ninguém te conta' (nota 81,4) nos eps 3 e 4: pulo nos 3 s subiu de 43,9% (ep3) para 51,5% (ep4); a fórmula repetida parece cansar quem já viu.",
-        "ajuste": "Trocar a fórmula do gancho: #18 Abre na ação (golpe ou impacto já na 1ª frase) ou #21 Começa no meio da frase, nota ≥ 60. Não usar #3 de novo no ep. 5."
+        "ajuste": "Trocar a fórmula do gancho: #18 Abre na ação (golpe ou impacto já na 1ª frase) ou #21 Começa no meio da frase, nota ≥ 60. Não usar #3 de novo no ep. 5.",
+        "aplicado_em": "2026-11-26T19:40-03:00",
+        "episodio": 5,
+        "como": "gancho #18 Abre na ação: 'Olha só: Ren disse não e virou inimigo.' (nota 85,8)"
       },
       {
         "criado_em": "2026-11-26T15:10-03:00",
         "motivo": "Tempo médio ~10 s nos eps 3 e 4 (13-14% do vídeo) e 0 comentário no ep4: quase ninguém chega ao cartão A ou B no fim. Encurtar de 69,9 para 62,7 s não mudou o tempo médio (10,2 → 10,0 s).",
-        "ajuste": "Anunciar o dilema cedo: até o 8º segundo o narrador diz numa frase curta que no fim o público decide (ex.: 'No fim, você decide o que o Ren faz.'). Manter a leitura das opções A e B no fim como manda a regra."
+        "ajuste": "Anunciar o dilema cedo: até o 8º segundo o narrador diz numa frase curta que no fim o público decide (ex.: 'No fim, você decide o que o Ren faz.'). Manter a leitura das opções A e B no fim como manda a regra.",
+        "aplicado_em": "2026-11-26T19:40-03:00",
+        "episodio": 5,
+        "como": "3ª fala do narrador, ~9 s: 'No fim, você decide o que o Ren faz.' (o título ocupa 1,6 s antes da 1ª fala)"
       }
-    ],
-    "ajustes_aplicados": []
+    ]
   }
 }

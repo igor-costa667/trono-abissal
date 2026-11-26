@@ -28,3 +28,12 @@ O que está funcionando e o que não está, episódio a episódio. A tarefa diá
 ## Monitor 26/11 17h: voto perdido pelo cache
 - O comentário do ep. 3 ("frostheim", voto B) foi feito às 09:42, antes da produção do ep. 4, mas o Windsor só mostrou o texto às 17h (plano sem atualização sob demanda). O ep. 4 saiu com A pelo "destino", contra a regra "se houver voto, o público decide".
 - Hipótese: com o cache, a contagem de votos da rotina pode chegar horas atrasada. Sugestão ao Igor (regra não mudada): quando `media_comments_count` for maior que o número de comentários com texto na tabela, tratar como voto pendente e citar no recap; ou assinar o plano Standard do Windsor (atualização de hora em hora).
+
+## 26/11 (rodada das 20h, ep. 5)
+- Números: ep. 4 com 7,7 h no ar: 163 views, alcance 145, tempo médio 10,1 s (15% de 69,5 s), pulo nos 3 s 50% (ep. 3: 43,9%), 0 comentários, 0 compart., 0 salvos, 2 curtidas. Ep. 3: 199 views, 11,4 s, 43,9% (sem mudança, cache do Windsor). Seguidores: 16 (sem mudança no dia). Faltam 99.984 em 15 dias: 6.665,6 por dia; ritmo real: 0 por dia.
+- Anúncio do curso: não é ele que derruba a retenção. Ep. 1 (sem anúncio) segurou 5,0 s; eps. 2 a 4 (com anúncio) seguraram 10 a 29 s. Quase ninguém chega aos últimos 7 s, então o anúncio quase não é visto.
+- Votação do ep. 4: nenhum comentário. O destino seguiu a lore (A, recusar: ética +1, reputação em Kagegakure cai).
+- Hipótese: o gancho #3 repetido cansou (pulo 43,9% → 50%) e quem sai cedo nunca descobre que vai votar.
+- Mudanças do ep. 5 (os 2 ajustes do monitor): (1) gancho #18 Abre na ação, "Olha só: Ren disse não e virou inimigo." (nota 85,8); (2) "No fim, você decide o que o Ren faz." aos ~9 s. Medir: pulo nos 3 s abaixo de 50% e pelo menos 1 comentário.
+- Técnica: o montar_historia juntou duas falas do narrador na cena 2 de novo (pausa de 0,4 s curta demais para o corte por silêncio). Corrigido antes do render: Whisper com marcação de palavras no voz_narrador.wav, corte no ponto mais silencioso entre a última palavra de uma fala e a primeira da seguinte, e 0,6 s de silêncio colado ali. Vale fazer sempre.
+- Roteiro: o motor 3D não tem bichos (ratos, coelhos, Vorgath). A descida ao andar 1 da ficha foi adiada; o ep. 5 seguiu a consequência da recusa (expulsão e o desertor, que a lore já prevê: Kuroha é perseguido por ex-companheiros).

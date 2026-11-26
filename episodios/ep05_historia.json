@@ -1,0 +1,297 @@
+{
+ "titulo": "O Preço do Não",
+ "parte": 5,
+ "rotulo_parte": "Episódio",
+ "clima": "suspense",
+ "ritmo": "rapido",
+ "protagonista": "ren",
+ "recap": {
+  "letra": "A",
+  "texto": "Destino: recusou a morte"
+ },
+ "elenco": {
+  "ren": {
+   "nome": "Ren",
+   "voz": "ren",
+   "corpo": "magro",
+   "altura": 1.65,
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "preto",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "oliva",
+   "baixo": "calca",
+   "baixo_cor": "marrom"
+  },
+  "kuroha": {
+   "nome": "Kuroha",
+   "voz": "kuroha",
+   "corpo": "medio",
+   "altura": 1.75,
+   "pele": "media",
+   "cabelo": "curto",
+   "cabelo_cor": "preto",
+   "barba": "curta",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "preto",
+   "baixo": "calca",
+   "baixo_cor": "preto"
+  },
+  "aldeao": {
+   "nome": "Aldeão",
+   "voz": "aldeao",
+   "corpo": "medio",
+   "altura": 1.7,
+   "pele": "media",
+   "cabelo": "curto",
+   "cabelo_cor": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "marrom",
+   "baixo": "calca",
+   "baixo_cor": "cinza"
+  },
+  "desertor": {
+   "nome": "Desertor",
+   "voz": "desertor",
+   "corpo": "magro",
+   "altura": 1.82,
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "grisalho",
+   "barba": "curta",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "cinza",
+   "baixo": "calca",
+   "baixo_cor": "preto"
+  }
+ },
+ "cenas": [
+  {
+   "cenario": "aldeia",
+   "luz": "noite",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.15,
+     "olhando": "direita"
+    },
+    {
+     "id": "aldeao",
+     "x": 0.5,
+     "olhando": "esquerda",
+     "segura": "tocha"
+    },
+    {
+     "id": "kuroha",
+     "x": 0.85,
+     "olhando": "esquerda",
+     "segura": "espada"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Olha só: Ren disse não e virou inimigo.",
+     "acao": {
+      "id": "kuroha",
+      "tipo": "feitico",
+      "cor": "branco",
+      "alvo": "ren",
+      "reacao": "queda",
+      "em": 0.1
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Zero votos. O destino escolheu A: Ren recusou matar.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "dourado",
+      "palavra": "recusou"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "No fim, você decide o que o Ren faz.",
+     "acao": {
+      "id": "ren",
+      "tipo": "impacto",
+      "palavra": "decide"
+     }
+    },
+    {
+     "quem": "kuroha",
+     "txt": "Quem não mata por mim não treina aqui.",
+     "pose": "apontando"
+    },
+    {
+     "quem": "ren",
+     "txt": "Mas eu nem sei jogar uma kunai!",
+     "expressao": "medo",
+     "pose": "bracos_abertos"
+    },
+    {
+     "quem": "narrador",
+     "txt": "A segunda kunai rasgou a túnica dele.",
+     "acao": {
+      "id": "kuroha",
+      "tipo": "feitico",
+      "cor": "branco",
+      "alvo": "ren",
+      "reacao": "atingido",
+      "palavra": "kunai"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Ren correu. Três quilômetros sem olhar para trás.",
+     "acao": {
+      "id": "ren",
+      "tipo": "investida",
+      "dist": 0.2,
+      "palavra": "correu"
+     }
+    }
+   ]
+  },
+  {
+   "cenario": "floresta",
+   "luz": "noite",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.2,
+     "olhando": "direita"
+    },
+    {
+     "id": "desertor",
+     "x": 0.8,
+     "olhando": "esquerda",
+     "segura": "espada"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Meia-noite. Uma sombra pulou das árvores.",
+     "acao": {
+      "id": "desertor",
+      "tipo": "pulo",
+      "palavra": "pulou"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "A lâmina veio direto no Ren.",
+     "acao": {
+      "id": "desertor",
+      "tipo": "golpe",
+      "arma": "espada",
+      "alvo": "ren",
+      "reacao": "queda",
+      "palavra": "lâmina"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Ren rolou e respondeu com fogo.",
+     "acao": {
+      "id": "ren",
+      "tipo": "feitico",
+      "cor": "vermelho",
+      "alvo": "desertor",
+      "palavra": "fogo"
+     }
+    },
+    {
+     "quem": "desertor",
+     "txt": "Você é o garoto que recusou me matar?",
+     "pose": "apontando",
+     "etiqueta": {
+      "id": "desertor",
+      "txt": "O desertor: caça Kuroha"
+     }
+    },
+    {
+     "quem": "ren",
+     "txt": "Sou eu. Foi mal pelo fogo.",
+     "expressao": "feliz",
+     "pose": "bracos_abertos"
+    },
+    {
+     "quem": "desertor",
+     "txt": "Dez anos caçando Kuroha. Pergunta como a esposa dele morreu.",
+     "pose": "bravo"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Ouvir o desertor revela o segredo de Kuroha.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "roxo",
+      "palavra": "segredo"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Mas Kagegakure fecha as portas para sempre.",
+     "acao": {
+      "id": "ren",
+      "tipo": "ofegante",
+      "palavra": "fecha"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Entregar o desertor faz a vila perdoar o Ren.",
+     "acao": {
+      "id": "ren",
+      "tipo": "pulo",
+      "palavra": "perdoar"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Mas o segredo morre com ele.",
+     "acao": {
+      "id": "desertor",
+      "tipo": "impacto",
+      "palavra": "morre"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "O que o Ren faz?",
+     "le_escolha": "pergunta"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Opção A: ouve o desertor.",
+     "le_escolha": "a"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Opção B: entrega o desertor ao Kuroha.",
+     "le_escolha": "b"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Comenta A ou B, segue o perfil e manda pra quem curte RPG.",
+     "le_escolha": "comenta"
+    }
+   ]
+  }
+ ],
+ "escolha": {
+  "pergunta": "O desertor tem um segredo. E agora?",
+  "a": "Ouve o desertor",
+  "a_sub": "Segredo revelado, vila fechada",
+  "b": "Entrega ao Kuroha",
+  "b_sub": "Vila perdoa, segredo morre"
+ }
+}
