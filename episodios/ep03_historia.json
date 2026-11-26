@@ -1,0 +1,290 @@
+{
+ "titulo": "O Preço da Túnica",
+ "parte": 3,
+ "rotulo_parte": "Episódio",
+ "clima": "epico",
+ "ritmo": "rapido",
+ "protagonista": "ren",
+ "recap": {
+  "letra": "B",
+  "texto": "Destino: túnica de mana"
+ },
+ "elenco": {
+  "ren": {
+   "nome": "Ren",
+   "voz": "ren",
+   "corpo": "magro",
+   "altura": 1.65,
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "preto",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "oliva",
+   "baixo": "calca",
+   "baixo_cor": "marrom"
+  },
+  "mago": {
+   "nome": "Mago da corte",
+   "voz": "mago",
+   "corpo": "magro",
+   "pele": "media",
+   "cabelo": "careca",
+   "barba": "longa",
+   "roupa": "tunica",
+   "roupa_cor": "roxo"
+  },
+  "eldoran": {
+   "nome": "Rei Eldoran",
+   "voz": "eldoran",
+   "corpo": "medio",
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "grisalho",
+   "barba": "longa",
+   "roupa": "manto",
+   "roupa_cor": "vinho",
+   "acessorio": "coroa"
+  }
+ },
+ "cenas": [
+  {
+   "cenario": "campo",
+   "luz": "dia",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.2,
+     "olhando": "direita"
+    },
+    {
+     "id": "mago",
+     "x": 0.8,
+     "olhando": "esquerda"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Ninguém te conta o preço que Ren pagou.",
+     "acao": {
+      "id": "ren",
+      "tipo": "investida",
+      "em": 0.1,
+      "dist": 0.15
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Sem votos, o destino escolheu por ele.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "azul",
+      "palavra": "destino"
+     },
+     "etiqueta": {
+      "id": "ren",
+      "txt": "Túnica de mana: +mana, 0 defesa"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Na arena de Valdenmoor, o mago o desafiou.",
+     "acao": {
+      "id": "mago",
+      "tipo": "impacto",
+      "palavra": "mago"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Vinte soldados olhando."
+    },
+    {
+     "quem": "mago",
+     "txt": "Mostra essa faísca de novo, invocado.",
+     "expressao": "feliz",
+     "pose": "apontando"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Ren ergueu a mão. A túnica brilhou.",
+     "acao": [
+      {
+       "id": "ren",
+       "tipo": "faisca",
+       "cor": "azul",
+       "palavra": "ergueu"
+      },
+      {
+       "id": "ren",
+       "tipo": "aura",
+       "cor": "azul",
+       "palavra": "brilhou"
+      }
+     ]
+    },
+    {
+     "quem": "narrador",
+     "txt": "E a faísca virou uma bola de fogo!",
+     "acao": {
+      "id": "ren",
+      "tipo": "feitico",
+      "cor": "vermelho",
+      "alvo": "mago",
+      "palavra": "virou"
+     },
+     "efeito": "susto"
+    },
+    {
+     "quem": "narrador",
+     "txt": "O mago foi jogado para trás. Ninguém riu.",
+     "acao": {
+      "id": "mago",
+      "tipo": "queda",
+      "palavra": "jogado"
+     }
+    },
+    {
+     "quem": "ren",
+     "txt": "Gastei quase nada de mana!",
+     "expressao": "feliz",
+     "pose": "bracos_abertos"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Só que pano não segura golpe."
+    },
+    {
+     "quem": "narrador",
+     "txt": "O mago revidou com um raio.",
+     "acao": {
+      "id": "mago",
+      "tipo": "feitico",
+      "cor": "roxo",
+      "alvo": "ren",
+      "reacao": "queda",
+      "palavra": "revidou"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Ren voou três metros e caiu de costas.",
+     "acao": {
+      "id": "ren",
+      "tipo": "impacto",
+      "palavra": "caiu"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Mais magia, zero proteção. Você pagaria esse preço?",
+     "acao": {
+      "id": "ren",
+      "tipo": "ofegante",
+      "palavra": "magia"
+     }
+    }
+   ]
+  },
+  {
+   "cenario": "palacio",
+   "luz": "noite",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.2,
+     "olhando": "direita"
+    },
+    {
+     "id": "eldoran",
+     "x": 0.8,
+     "olhando": "esquerda"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Naquela noite, o rei Eldoran chamou Ren ao trono.",
+     "acao": {
+      "id": "ren",
+      "tipo": "investida",
+      "palavra": "chamou",
+      "dist": 0.15
+     }
+    },
+    {
+     "quem": "eldoran",
+     "txt": "Duas vilas aceitam treinar você. Só uma.",
+     "pose": "apontando"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Em Kagegakure, os ninjas dominam a magia das sombras.",
+     "acao": {
+      "id": "ren",
+      "tipo": "faisca",
+      "cor": "roxo",
+      "palavra": "ninjas"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Mas o mestre deles é caçado.",
+     "acao": {
+      "id": "eldoran",
+      "tipo": "impacto",
+      "palavra": "caçado"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Em Frostheim, runas vikings deixam o corpo forte.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "gelo",
+      "palavra": "runas"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "E o treino é brutal.",
+     "acao": {
+      "id": "ren",
+      "tipo": "pulo",
+      "palavra": "treino"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Para onde o Ren vai?",
+     "le_escolha": "pergunta"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Opção A: Kagegakure, a vila dos ninjas.",
+     "le_escolha": "a"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Opção B: Frostheim, a vila dos vikings.",
+     "le_escolha": "b"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Comenta A ou B, segue o perfil e manda pra quem curte RPG.",
+     "le_escolha": "comenta"
+    }
+   ]
+  }
+ ],
+ "escolha": {
+  "pergunta": "Onde o Ren vai treinar?",
+  "a": "Kagegakure, os ninjas",
+  "a_sub": "Sombras, mas mestre caçado",
+  "b": "Frostheim, os vikings",
+  "b_sub": "Corpo forte, treino brutal"
+ }
+}

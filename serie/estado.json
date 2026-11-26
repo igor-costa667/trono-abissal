@@ -6,16 +6,25 @@
   "estado_do_ren": {
     "etica": 0,
     "usou_arma_abissal": false,
-    "local": "Palácio de Valdenmoor",
+    "local": "Valdenmoor (arena de treino e palácio)",
     "inimigos": [],
     "aliados": [],
-    "itens": [],
+    "itens": [
+      "Túnica de mana (mais mana máxima, feitiço mais barato, nenhuma defesa)"
+    ],
     "segredos": [
-      "O mago da corte diz que o ritual pega qualquer um e que o rei não quer ver (ep. 2)"
+      "O mago da corte diz que o ritual pega qualquer um e que o rei não quer ver (ep. 2)",
+      "Com a túnica, a faísca do Ren vira bola de fogo gastando quase nada de mana (ep. 3)"
     ],
     "historico_etica": [
       {
         "ep": 1,
+        "escolha": "B",
+        "etica": "mantém (0)",
+        "arma_abissal": false
+      },
+      {
+        "ep": 2,
         "escolha": "B",
         "etica": "mantém (0)",
         "arma_abissal": false
@@ -45,14 +54,14 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-22",
-        "views": 327,
-        "alcance": 281,
-        "tempo_medio_s": 4.88,
-        "skip_rate": 0.81,
+        "coletado_em": "2026-11-26",
+        "views": 336,
+        "alcance": 290,
+        "tempo_medio_s": 5.04,
+        "skip_rate": 0.808,
         "compartilhamentos": 0,
         "salvamentos": 1,
-        "curtidas": 4,
+        "curtidas": 5,
         "comentarios": 1,
         "duracao_video_s": 59.5
       },
@@ -76,9 +85,25 @@
         "b": "Túnica de mana",
         "b_sub": "Mais magia, nenhuma proteção"
       },
-      "votos": null,
-      "vencedora": null,
-      "metricas": null,
+      "votos": {
+        "A": 0,
+        "B": 0,
+        "total_pessoas": 0,
+        "obs": "nenhum voto: o destino (lore) escolheu B, a túnica de mana combina com o controle preciso de mana que o ritual enxergou"
+      },
+      "vencedora": "B",
+      "metricas": {
+        "coletado_em": "2026-11-26",
+        "views": 271,
+        "alcance": 244,
+        "tempo_medio_s": 29.1,
+        "skip_rate": 0.478,
+        "compartilhamentos": 0,
+        "salvamentos": 0,
+        "curtidas": 5,
+        "comentarios": 0,
+        "duracao_video_s": 69.0
+      },
       "creditos_elevenlabs": 1049,
       "story_id": "18320978512304307",
       "mudancas_testadas": [
@@ -95,14 +120,14 @@
       "video": "promo/video_vendas.mp4",
       "story_id": "17876155269602153",
       "metricas": {
-        "coletado_em": "2026-11-22",
-        "views": 159,
-        "alcance": 142,
-        "tempo_medio_s": 4.67,
-        "skip_rate": 0.709,
+        "coletado_em": "2026-11-26",
+        "views": 196,
+        "alcance": 176,
+        "tempo_medio_s": 4.48,
+        "skip_rate": 0.699,
         "compartilhamentos": 0,
         "salvamentos": 0,
-        "curtidas": 1,
+        "curtidas": 2,
         "comentarios": 0
       }
     }
@@ -112,6 +137,11 @@
     "seguidores": 100000,
     "prazo": "2026-12-11",
     "definida_em": "2026-11-26",
-    "historico_seguidores": []
+    "historico_seguidores": [
+      {
+        "data": "2026-11-26",
+        "seguidores": 16
+      }
+    ]
   }
 }
