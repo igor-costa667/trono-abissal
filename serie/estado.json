@@ -63,7 +63,7 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-26",
+        "coletado_em": "2026-11-26T15:10-03:00",
         "views": 336,
         "alcance": 290,
         "tempo_medio_s": 5.04,
@@ -102,7 +102,7 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-26",
+        "coletado_em": "2026-11-26T15:10-03:00",
         "views": 271,
         "alcance": 244,
         "tempo_medio_s": 29.1,
@@ -147,15 +147,15 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-26",
-        "horas_no_ar": 3.4,
-        "views": 184,
-        "alcance": 165,
-        "tempo_medio_s": 10.18,
-        "skip_rate": 0.434,
+        "coletado_em": "2026-11-26T15:10-03:00",
+        "horas_no_ar": 6.7,
+        "views": 199,
+        "alcance": 169,
+        "tempo_medio_s": 11.25,
+        "skip_rate": 0.439,
         "compartilhamentos": 0,
         "salvamentos": 0,
-        "curtidas": 3,
+        "curtidas": 4,
         "comentarios": 1,
         "duracao_video_s": 76.6
       },
@@ -190,7 +190,19 @@
       },
       "votos": null,
       "vencedora": null,
-      "metricas": null,
+      "metricas": {
+        "coletado_em": "2026-11-26T15:10-03:00",
+        "views": 151,
+        "alcance": 136,
+        "tempo_medio_s": 9.99,
+        "skip_rate": 0.515,
+        "compartilhamentos": 0,
+        "salvamentos": 0,
+        "curtidas": 2,
+        "comentarios": 0,
+        "horas_no_ar": 3.25,
+        "duracao_video_s": 69.5
+      },
       "creditos_elevenlabs": 972,
       "story_id": "17916908889560503",
       "gancho": "Ninguém te conta o preço do mestre Kuroha.",
@@ -248,9 +260,68 @@
   },
   "monitor": {
     "intervalo": "a cada 2 h, 7h13 a 23h13 (sem 11h, 19h e madrugada)",
-    "leituras": [],
+    "leituras": [
+      {
+        "data_hora": "2026-11-26T15:10-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.04,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 271,
+            "alcance": 244,
+            "tempo_medio": 29.1,
+            "pulo_3s": 0.478,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 199,
+            "alcance": 169,
+            "tempo_medio": 11.25,
+            "pulo_3s": 0.439,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 151,
+            "alcance": 136,
+            "tempo_medio": 9.99,
+            "pulo_3s": 0.515,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 2
+          }
+        },
+        "notas": "ep4 com 3,25 h: 151 views (ep3 com 3,4 h: 184, ~82%); pulo 3 s 51,5% (ep3 43,9%); 0 comentários no ep4, nenhum voto novo. Conector Windsor 'instagram' geral devolveu cache sem os eps 3 e 4; os dados vieram do Windsor para Social Media com date_from 25/11."
+      }
+    ],
     "resumo_diario": [],
-    "ajustes_para_o_proximo": [],
+    "ajustes_para_o_proximo": [
+      {
+        "criado_em": "2026-11-26T15:10-03:00",
+        "motivo": "Mesmo gancho #3 'Ninguém te conta' (nota 81,4) nos eps 3 e 4: pulo nos 3 s subiu de 43,9% (ep3) para 51,5% (ep4); a fórmula repetida parece cansar quem já viu.",
+        "ajuste": "Trocar a fórmula do gancho: #18 Abre na ação (golpe ou impacto já na 1ª frase) ou #21 Começa no meio da frase, nota ≥ 60. Não usar #3 de novo no ep. 5."
+      },
+      {
+        "criado_em": "2026-11-26T15:10-03:00",
+        "motivo": "Tempo médio ~10 s nos eps 3 e 4 (13-14% do vídeo) e 0 comentário no ep4: quase ninguém chega ao cartão A ou B no fim. Encurtar de 69,9 para 62,7 s não mudou o tempo médio (10,2 → 10,0 s).",
+        "ajuste": "Anunciar o dilema cedo: até o 8º segundo o narrador diz numa frase curta que no fim o público decide (ex.: 'No fim, você decide o que o Ren faz.'). Manter a leitura das opções A e B no fim como manda a regra."
+      }
+    ],
     "ajustes_aplicados": []
   }
 }
