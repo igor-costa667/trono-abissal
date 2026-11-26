@@ -29,3 +29,13 @@ Pedido do Igor: movimento fluido em 3D, como a série "Ether 2050" do @gabriel.c
 - `personagem_modelo.js`: carrega o modelo pintado com o esqueleto (mesmo formato do Ren de peças, então serve no `mixamo.js`). `naMao()` prende a espada.
 - `prototipo_modelo.html`: a cena do boneco de palha com o Ren modelado. Vídeo: `testes/prototipo_3d_modelo.mp4`. `ver_modelo.html` mostra o modelo pintado de 4 lados.
 - Ainda falta: rosto com expressão (hoje o rosto é a pintura parada, sem piscar nem mudar a boca) e cabelo com mola.
+
+## Episódios em 3D: Ren de cápsulas + Mixamo (26/11/2026)
+Decisão do Igor: os episódios passam para o 3D usando o Ren de peças/cápsulas (`personagem.js`) com as animações do Mixamo. O Ren modelado (Hunyuan) fica de lado até ele achar outro jeito de modelar.
+- `produzir3d.py`: entra o mesmo `historia.json` e as mesmas vozes do kit. O kit faz a linha do tempo (`montar_historia.py`) e a trilha; este script monta o plano e renderiza a cena 3D. `--quadros 2,15,fim` só confere imagens. `--audio video.mp4 --cortar 7` faz um teste com o áudio de um episódio já publicado (o Whisper acha o tempo das falas), sem gastar voz.
+- `episodio.html`: a cena. Personagens nos lugares da cena (`x`, `olhando`), clipes do Mixamo por fala (fala → Talking; `pose` → Pointing, Thinking, Arguing...; `acao` → golpe, erra, feitiço, faísca, investida, pulo, atingido, queda, ofegante, aura, impacto, com reação do alvo), boca no ritmo da voz, piscar, expressões, câmera com corte a cada ~2 s (geral, médio, close, ombro, dupla, ação) que desvia de quem está na frente, e por cima: título do episódio, "VOCÊS ESCOLHERAM", legenda karaokê, etiqueta de personagem novo e o cartão A ou B.
+- `elenco3d.js`: qualquer personagem da ficha em cápsulas (pele, cabelo, careca, barba curta/longa, coroa, fone, manto/túnica, cor da roupa, corpo, altura) e objetos na mão (espada, machado, cajado, tocha, escudo).
+- `cenarios3d.js`: palácio (sala do trono, dia/noite), campo de treino, quarto gamer, floresta, aldeia, masmorra, templo. Nomes do kit que não existem caem no mais parecido.
+- Render: ~0,6 s por quadro em cada processo; `--partes 2` usa 2 núcleos (1 min de vídeo ≈ 9 a 10 min).
+- Teste: `testes/teste_3d_ep02.mp4` (o ep. 2 refeito em 3D com o áudio publicado).
+- A rotina só usa o 3D quando `serie/estado.json` tiver `"motor": "3d"` (passo 6-3D do CLAUDE.md).

@@ -134,6 +134,7 @@ export function criarPersonagem(opts = {}) {
   const cabelo = new THREE.Group();
   cabelo.position.set(0, 0.16, 0.01);
   B.head.add(cabelo);
+  B.cabelo = cabelo;
   malha(new THREE.SphereGeometry(0.178, 28, 20, 0, Math.PI * 2, 0, Math.PI * 0.5), M.cabelo, cabelo, [0, 0.02, -0.02], [-22, 0, 0], [1, 1.02, 1.02]);
   B.mechas = [];
   const rnd = mulberry(7);

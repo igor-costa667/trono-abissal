@@ -1,0 +1,543 @@
+<html><head><meta charset="utf-8">
+<style>
+  @font-face { font-family: 'Mont'; src: url('fontes/Mont-800.ttf'); font-weight: 800 900; }
+  @font-face { font-family: 'Mont'; src: url('fontes/Mont-700.ttf'); font-weight: 400 700; }
+  body { margin: 0; background: #000; overflow: hidden; width: 1080px; height: 1920px; font-family: 'Mont', 'Arial Black', sans-serif; }
+  canvas { position: absolute; left: 0; top: 0; }
+  .camada { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; pointer-events: none; }
+  #leg { position: absolute; left: 60px; right: 60px; top: 1270px; text-align: center; font-weight: 900; font-size: 86px; line-height: 1.12;
+    color: #fff; -webkit-text-stroke: 14px #0b0a12; paint-order: stroke fill; text-transform: uppercase; letter-spacing: 1px; }
+  #leg span { display: inline-block; margin: 0 10px; transition: none; }
+  #leg span.on { color: #ffd23c; transform: scale(1.12); }
+  #topo { position: absolute; left: 0; right: 0; top: 250px; text-align: center; opacity: 0; }
+  #topo .ep { display: inline-block; background: #ffd23c; color: #1a1020; font-weight: 900; font-size: 34px; padding: 8px 22px; border-radius: 10px; letter-spacing: 2px; }
+  #topo .tit { display: block; margin-top: 14px; color: #fff; font-weight: 900; font-size: 74px; -webkit-text-stroke: 12px #0b0a12; paint-order: stroke fill; text-transform: uppercase; }
+  #recap { position: absolute; left: 70px; right: 70px; top: 470px; text-align: center; opacity: 0; }
+  #recap .v { display: inline-block; background: #e9365a; color: #fff; font-weight: 900; font-size: 40px; padding: 10px 26px; border-radius: 12px; letter-spacing: 1px; box-shadow: 0 6px 0 #0007; }
+  #recap .t { display: block; margin-top: 16px; color: #fff; font-weight: 900; font-size: 58px; -webkit-text-stroke: 10px #0b0a12; paint-order: stroke fill; text-transform: uppercase; }
+  .etq { position: absolute; opacity: 0; max-width: 820px; white-space: normal; text-align: center; background: #0b0a12e0; color: #fff; border: 4px solid #ffd23c; border-radius: 14px; padding: 8px 20px; font-weight: 800; font-size: 38px; transform: translateX(-50%); }
+  #escolha { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; opacity: 0; background: radial-gradient(ellipse at 50% 45%, #1b1030e0, #07050cf4); }
+  #escolha .p { position: absolute; left: 70px; right: 70px; top: 330px; text-align: center; color: #fff; font-weight: 900; font-size: 70px; line-height: 1.15; -webkit-text-stroke: 10px #0b0a12; paint-order: stroke fill; }
+  .op { position: absolute; left: 80px; right: 80px; height: 400px; border-radius: 34px; display: flex; align-items: center; gap: 34px; padding: 0 44px; box-sizing: border-box; box-shadow: 0 14px 0 #0008; }
+  .op .l { flex: none; width: 170px; height: 170px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 120px; }
+  .op .x { color: #fff; } .op .x b { display: block; font-size: 60px; line-height: 1.08; font-weight: 900; } .op .x i { display: block; font-style: normal; font-size: 38px; margin-top: 14px; opacity: .92; font-weight: 700; }
+  #opA { top: 720px; background: linear-gradient(135deg, #2f6bff, #1b3fb3); } #opA .l { color: #1b3fb3; }
+  #opB { top: 1170px; background: linear-gradient(135deg, #ff3d5a, #b3172f); } #opB .l { color: #b3172f; }
+  #escolha .c { position: absolute; left: 0; right: 0; top: 1640px; text-align: center; color: #ffd23c; font-weight: 900; font-size: 64px; -webkit-text-stroke: 10px #0b0a12; paint-order: stroke fill; }
+  #flash { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; background: #fff; opacity: 0; }
+</style></head><body>
+<div class="camada" id="ov">
+  <div id="topo"><span class="ep" id="epn"></span><span class="tit" id="ept"></span></div>
+  <div id="recap"><span class="v" id="rcv"></span><span class="t" id="rct"></span></div>
+  <div id="leg"></div>
+  <div id="escolha"><div class="p" id="esp"></div>
+    <div class="op" id="opA"><div class="l">A</div><div class="x"><b id="ea"></b><i id="eas"></i></div></div>
+    <div class="op" id="opB"><div class="l">B</div><div class="x"><b id="eb"></b><i id="ebs"></i></div></div>
+    <div class="c">COMENTA A OU B</div></div>
+  <div id="flash"></div>
+</div>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+// Episódio do Trono Abissal em 3D: Ren e elenco de cápsulas, animações do Mixamo, câmera com cortes rápidos,
+// legenda karaokê, recap e cartão A ou B. Lê o plano montado pelo produzir3d.py (?plano=trabalho/<nome>/plano.json).
+import * as THREE from 'three';
+import { OutlineEffect } from 'three/addons/effects/OutlineEffect.js';
+import { DEG, mulberry } from './personagem.js';
+import { EXPR, rosto, mistExpr, criarMolas, suave } from './anim.js';
+import { carregarClipe, prepararRen, poseDoClipe, misturarPoses, aplicarPose } from './mixamo.js';
+import { criarDoElenco, criarObjeto } from './elenco3d.js';
+import { criarCenario, animarCenario } from './cenarios3d.js';
+
+const W = 1080, H = 1920;
+const q = new URLSearchParams(location.search);
+const PL = await (await fetch(q.get('plano'))).json();
+const HS = PL.historia, TL = PL.timeline, FALAS = PL.falas, D = TL.duration;
+const T_ESC = HS.escolha ? D - (TL.tempo_escolha || 6) : D + 1;
+const ESPACO = 3.2;                                   // largura do palco (m) para x de 0 a 1
+const X = (x) => (x - 0.5) * ESPACO;
+
+// ---------------- renderizador
+const r = new THREE.WebGLRenderer({ antialias: true });
+r.setSize(W, H); r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap; r.outputColorSpace = THREE.SRGBColorSpace;
+document.body.prepend(r.domElement);
+const fxC = document.createElement('canvas'); fxC.width = W; fxC.height = H; fxC.style.zIndex = 1; document.body.insertBefore(fxC, document.getElementById('ov'));
+const fx2 = fxC.getContext('2d');
+const contorno = new OutlineEffect(r, { defaultThickness: 0.0035, defaultColor: [0.08, 0.06, 0.1] });
+const cena = new THREE.Scene();
+const cam = new THREE.PerspectiveCamera(36, W / H, 0.05, 200);
+
+// ---------------- cenários (um por cena do roteiro)
+const SETS = HS.cenas.map((c, i) => { const g = criarCenario(c.cenario, c.luz); g.visible = false; cena.add(g); return g; });
+const cenaEm = (t) => { let i = 0; TL.cenas.forEach((c, k) => { if (t >= c.start) i = k; }); return Math.min(i, HS.cenas.length - 1); };
+
+// ---------------- elenco
+const usados = new Set(); HS.cenas.forEach(c => (c.personagens || []).forEach(p => usados.add(p.id)));
+const PER = {};
+for (const id of usados) {
+  const f = (HS.elenco || {})[id] || {};
+  const per = criarDoElenco(id, f);
+  cena.add(per.raiz); prepararRen(per);
+  per.molas = criarMolas(per);
+  per.mats = []; per.raiz.traverse(o => { if (o.isMesh && o.material && o.material.emissive) per.mats.push(o.material); });
+  PER[id] = per;
+}
+
+// ---------------- animações (só as usadas)
+const NOMES = {
+  idle: 'Breathing Idle', fala: 'Talking', discute: 'Arguing', aponta: 'Pointing', ombros: 'Shrugging', pensa: 'Thinking',
+  medo: 'Terrified', raiva: 'Angry Gesture', sim: 'Head Nod Yes', nao: 'Shaking Head No', ajoelha: 'Kneeling', senta: 'Sitting Idle',
+  vitoria: 'Victory', surpreso: 'Surprised', olha: 'Looking Around', triste: 'Sad Idle', guarda: 'Sword And Shield Idle',
+  golpe: 'Stable Sword Outward Slash', golpe2: 'Great Sword Slash', golpe3: 'Sword And Shield Slash', magia: 'Standing 1H Magic Attack 01',
+  magia2: 'Two Hand Spell Casting', atingido: 'Hit Reaction', tropeca: 'Stumble Backwards', levanta: 'Getting Up', morte: 'Falling Back Death',
+  corre: 'Running', anda: 'Walking',
+};
+const CLIP = {};
+await Promise.all(Object.entries(NOMES).map(async ([k, n]) => { try { CLIP[k] = await carregarClipe('animacoes/' + encodeURIComponent(n) + '.fbx'); } catch (e) { console.log('sem clipe', n); } }));
+
+// pose do kit -> clipe
+const POSE = { apontando: 'aponta', apontar: 'aponta', bracos_abertos: 'ombros', pensando: 'pensa', medo: 'medo', bravo: 'discute', discutindo: 'discute',
+  raiva: 'raiva', sim: 'sim', nao: 'nao', ajoelhado: 'ajoelha', sentado: 'senta', vitoria: 'vitoria', comemorando: 'vitoria', surpreso: 'surpreso',
+  olhando: 'olha', triste: 'triste', guarda: 'guarda', cruzado: 'pensa', maos_na_cintura: 'raiva' };
+// expressão do kit -> rosto
+EXPR.feliz = { sob: -0.12, sobY: 0.006, boca: [1.6, 0.9], olho: 0.82 };
+EXPR.bravo = { sob: 0.55, sobY: -0.013, boca: [1.25, 0.5], olho: 0.88 };
+EXPR.triste = { sob: -0.42, sobY: 0.012, boca: [0.8, 0.45], olho: 0.78 };
+EXPR.medo = { sob: -0.3, sobY: 0.02, boca: [1.0, 2.2], olho: 1.15 };
+EXPR.pensativo = { sob: 0.15, sobY: 0.004, boca: [0.7, 0.6], olho: 0.9 };
+const exprDe = (n) => EXPR[n] || EXPR[{ susto: 'surpreso', assustado: 'medo', neutro: 'normal', serio: 'decidido', determinado: 'decidido' }[n]] || EXPR.normal;
+
+// ---------------- plano de cada personagem: eventos (clipe por tempo) + movimento no chão + efeitos
+const EV = {}; for (const id of usados) EV[id] = [];
+const FX = [];                                  // efeitos visuais com tempo
+const MOV = {}; for (const id of usados) MOV[id] = [];   // deslocamentos no chão (investida, empurrão)
+const MIRA = {}; for (const id of usados) MIRA[id] = []; // virar para o alvo
+function ev(id, t0, dur, clipe, o = {}) { if (EV[id] && CLIP[clipe]) EV[id].push({ t0, t1: t0 + dur, clipe, pri: 1, ...o }); }
+const prot = HS.protagonista || 'ren';
+const quemFaz = (a, f) => a.id || (f.quem !== 'narrador' && PER[f.quem] ? f.quem : prot);
+
+FALAS.forEach((f, fi) => {
+  const b = f.bloco;
+  // fala de personagem: fala (ou a pose pedida) durante o bloco
+  if (f.quem !== 'narrador' && PER[f.quem]) {
+    const pz = f.pose && POSE[f.pose];
+    ev(f.quem, b.start - 0.1, b.end - b.start + 0.25, pz || 'fala', { pri: 2, loop: !pz });
+  }
+  if (f.efeito === 'susto' && PER[prot] && f.quem === 'narrador') { ev(prot, b.start, 1.6, 'surpreso', { pri: 3 }); FX.push({ tipo: 'flash', t: b.start, dur: 0.18 }); }
+  for (const a of f.acoes || []) {
+    const id = quemFaz(a, f); if (!PER[id]) continue;
+    const t = a.t, alvo = a.alvo && PER[a.alvo] ? a.alvo : null;
+    if (alvo) MIRA[id].push({ t0: t - 0.35, t1: t + 1.6, alvo });
+    switch (a.tipo) {
+      case 'golpe': {
+        const c = (a.arma === 'machado' || a.arma === 'tocha') ? 'golpe2' : 'golpe';
+        ev(id, t - 0.35, 1.35, c, { pri: 5, de: 0.3, arma: a.arma || 'espada' });
+        const ti = t + 0.55;
+        FX.push({ tipo: 'rastro', t: t + 0.25, dur: 0.35, id });
+        if (alvo) { FX.push({ tipo: 'impacto', t: ti, id: alvo }); reacao(alvo, ti, a.reacao, id); }
+        break; }
+      case 'erra':
+        ev(id, t - 0.35, 1.0, 'golpe2', { pri: 5, de: 0.4, arma: a.arma || 'espada' });
+        ev(id, t + 0.65, 2.1, 'tropeca', { pri: 5, de: 0.3, cadeia: true });
+        FX.push({ tipo: 'poeira', t: t + 1.6, id });
+        break;
+      case 'feitico': {
+        ev(id, t - 0.2, 1.7, CLIP.magia ? 'magia' : 'magia2', { pri: 5 });
+        FX.push({ tipo: 'carga', t: t, dur: 0.55, id, cor: a.cor || 'roxo' });
+        FX.push({ tipo: 'projetil', t: t + 0.55, dur: 0.5, id, alvo, cor: a.cor || 'roxo' });
+        if (alvo) { FX.push({ tipo: 'explosao', t: t + 1.05, id: alvo, cor: a.cor || 'roxo' }); reacao(alvo, t + 1.05, a.reacao, id); }
+        else FX.push({ tipo: 'explosao', t: t + 1.05, id, frente: 2.2, cor: a.cor || 'roxo' });
+        break; }
+      case 'faisca':
+        ev(id, t - 0.2, 1.4, 'magia', { pri: 5, vel: 0.8 });
+        FX.push({ tipo: 'faisca', t: t + 0.35, dur: 1.2, id, cor: a.cor || 'azul' });
+        break;
+      case 'investida': {
+        const dist = (a.dist ?? 0.18) * ESPACO * 1.6, dur = Math.max(0.55, dist / 4.2);
+        ev(id, t - 0.1, dur + 0.25, 'corre', { pri: 5, loop: true });
+        MOV[id].push({ t0: t, t1: t + dur, dist, alvo });
+        FX.push({ tipo: 'velocidade', t, dur, id });
+        break; }
+      case 'pulo':
+        ev(id, t - 0.1, 1.2, 'idle', { pri: 5 });
+        FX.push({ tipo: 'pulo', t, dur: 0.85, id }); FX.push({ tipo: 'poeira', t, id }); FX.push({ tipo: 'poeira', t: t + 0.85, id });
+        break;
+      case 'atingido': reacao(id, t, 'atingido'); break;
+      case 'queda': reacao(id, t, 'queda'); break;
+      case 'ofegante': ev(id, t, a.dur || 2.2, 'triste', { pri: 4 }); FX.push({ tipo: 'suor', t, dur: a.dur || 2.2, id }); break;
+      case 'aura': FX.push({ tipo: 'aura', t, dur: a.dur || 3, id, cor: a.cor || 'roxo' }); break;
+      case 'impacto': FX.push({ tipo: 'linhas', t, dur: 0.6, id }); FX.push({ tipo: 'flash', t, dur: 0.12 }); break;
+    }
+  }
+});
+function reacao(id, t, tipo = 'atingido', de = null) {
+  if (tipo === 'queda') {
+    ev(id, t, 2.3, 'tropeca', { pri: 6, de: 0.25 });
+    ev(id, t + 2.3, 2.6, 'levanta', { pri: 6, de: 3.05, vel: 1.15, cadeia: true });
+    FX.push({ tipo: 'poeira', t: t + 1.0, id });
+  } else ev(id, t, 1.1, 'atingido', { pri: 6 });
+  FX.push({ tipo: 'branco', t, dur: 0.16, id });
+  if (de) MOV[id].push({ t0: t, t1: t + 0.35, dist: -0.35, de });
+}
+
+// ---------------- sequência por personagem: eventos de maior prioridade por cima, idle preenchendo os buracos
+const SEQ = {};
+for (const id of usados) {
+  const evs = EV[id].sort((a, b) => a.t0 - b.t0);
+  // resolve sobreposição: quem tem prioridade maior corta o outro
+  const lim = [];
+  for (const e of evs) {
+    let e2 = { ...e };
+    for (const o of lim) {
+      if (e2.t0 < o.t1 && e2.t1 > o.t0) {
+        if (e2.pri >= o.pri) o.t1 = Math.min(o.t1, e2.t0);
+        else e2.t0 = Math.max(e2.t0, o.t1);
+      }
+    }
+    if (e2.t1 - e2.t0 > 0.15) lim.push(e2);
+  }
+  const ok = lim.filter(e => e.t1 - e.t0 > 0.15).sort((a, b) => a.t0 - b.t0);
+  const segs = []; let t = 0;
+  const idle = (t0, t1) => { if (t1 - t0 > 0.05) segs.push({ t0, t1, clipe: 'idle', de: 0, vel: 1, loop: true, mix: 0.35 }); };
+  for (const e of ok) { idle(t, e.t0); segs.push({ t0: e.t0, t1: e.t1, clipe: e.clipe, de: e.de || 0, vel: e.vel || 1, loop: !!e.loop, cadeia: !!e.cadeia, mix: e.mix ?? 0.25, arma: e.arma }); t = e.t1; }
+  idle(t, D + 1);
+  // terminando deitado (queda), o próximo idle já está coberto pelo "levanta"
+  const per = PER[id]; const k = per.alturaQuadril / 99.8;
+  for (let i = 0; i < segs.length; i++) {
+    const s = segs[i], C = CLIP[s.clipe];
+    s.ini = C.amostra(s.de).hips;
+    if (s.cadeia && i > 0) {
+      const a = segs[i - 1]; const fimA = CLIP[a.clipe].amostra(Math.min(CLIP[a.clipe].dur, a.de + (a.t1 - a.t0) * a.vel)).hips;
+      s.desl = [a.desl[0] + (fimA.x - s.ini.x) * k, a.desl[1] + (fimA.z - s.ini.z) * k];
+    } else s.desl = [-s.ini.x * k, -s.ini.z * k];
+  }
+  SEQ[id] = segs;
+}
+function poseSeg(per, s, t) {
+  const C = CLIP[s.clipe];
+  let tc = s.de + Math.max(0, t - s.t0) * s.vel;
+  if (s.loop) tc = s.de + ((tc - s.de) % Math.max(0.1, C.dur - s.de)); else tc = Math.min(tc, C.dur - 1e-3);
+  return poseDoClipe(per, C.amostra(tc), s.desl);
+}
+function poseEm(id, t) {
+  const per = PER[id], segs = SEQ[id];
+  let i = segs.findIndex(s => t < s.t1); if (i < 0) i = segs.length - 1;
+  const s = segs[i]; let p = poseSeg(per, s, t);
+  if (i > 0 && t < s.t0 + s.mix && !s.cadeia) { const u = suave((t - s.t0) / s.mix); p = misturarPoses(poseSeg(per, segs[i - 1], t), p, u); }
+  return { p, s };
+}
+
+// ---------------- posição no chão: lugar da cena + investidas + empurrões; rosto virado para quem olha ou para o alvo
+function lugarNaCena(id, ci) { return (HS.cenas[ci].personagens || []).find(p => p.id === id); }
+const ESTADO = {};   // posição acumulada por cena
+function baseEm(id, t, ci) {
+  const L = lugarNaCena(id, ci); if (!L) return null;
+  let x = X(L.x ?? 0.5), z = L.z ?? 0;
+  let ry = L.olhando === 'direita' ? 62 * DEG : L.olhando === 'esquerda' ? -62 * DEG : 0;
+  const c0 = TL.cenas[ci].start;
+  for (const m of MOV[id]) {
+    if (m.t0 < c0 || t < m.t0) continue;
+    const u = suave(Math.min(1, (t - m.t0) / (m.t1 - m.t0)));
+    let dx, dz;
+    if (m.de && PER[m.de]) { const o = posBase(m.de, m.t0, ci); dx = x - o.x; dz = z - o.z; const n = Math.hypot(dx, dz) || 1; dx /= -n; dz /= -n; }
+    else if (m.alvo && PER[m.alvo]) { const o = posBase(m.alvo, m.t0, ci); dx = o.x - x; dz = o.z - z; const n = Math.hypot(dx, dz) || 1; const d = Math.min(m.dist, n - 0.75); dx = dx / n * d / m.dist; dz = dz / n * d / m.dist; }
+    else { dx = Math.sin(ry); dz = Math.cos(ry); }
+    x += dx * m.dist * u; z += dz * m.dist * u;
+  }
+  for (const a of MIRA[id]) {
+    if (t < a.t0 - 0.3 || t > a.t1 + 0.4 || a.t0 < c0) continue;
+    const o = posBase(a.alvo, a.t0, ci); if (!o) continue;
+    const alvoRy = Math.atan2(o.x - x, o.z - z);
+    const k = Math.min(suave((t - a.t0 + 0.3) / 0.3), 1 - suave((t - a.t1) / 0.4));
+    ry = ry + (alvoRy - ry) * k;
+  }
+  return { x, z, ry };
+}
+function posBase(id, t, ci) { const L = lugarNaCena(id, ci); if (!L) return null; return { x: X(L.x ?? 0.5), z: L.z ?? 0 }; }
+
+// ---------------- objetos na mão (cena "segura" ou arma do golpe)
+const OBJ = {};
+for (const id of usados) { OBJ[id] = {}; }
+function objetoNaMao(id, tipo) {
+  if (!tipo) { for (const o of Object.values(OBJ[id])) o.visible = false; return; }
+  if (!OBJ[id][tipo]) { const o = criarObjeto(tipo); PER[id].B.handR.add(o); o.position.set(0, -0.045, 0); OBJ[id][tipo] = o; }
+  for (const [k, o] of Object.entries(OBJ[id])) o.visible = k === tipo;
+}
+
+// ---------------- câmera: um plano por trecho de ~2 s (ritmo rápido), sem cortar no meio de uma ação
+const V = (x, y, z) => new THREE.Vector3(x, y, z);
+function cabeca(id) { const v = V(0, 0, 0); PER[id].B.head.getWorldPosition(v); return v; }
+function quadril(id) { const v = V(0, 0, 0); PER[id].B.hips.getWorldPosition(v); return v; }
+const PLANOS = [];
+{
+  const rr = mulberry(5);
+  let ult = '';
+  FALAS.forEach((f, fi) => {
+    const b = f.bloco, ci = f.cena;
+    const nb = fi + 1 < FALAS.length ? FALAS[fi + 1].bloco.start : T_ESC;
+    const fim = Math.min(nb, T_ESC);
+    const ids = (HS.cenas[ci].personagens || []).map(p => p.id).filter(id => PER[id]);
+    const acs = (f.acoes || []).map(a => ({ ...a, id: quemFaz(a, f) })).filter(a => PER[a.id]);
+    let t = fi === 0 ? 0 : b.start - 0.05;
+    const marcas = [];
+    for (const a of acs) marcas.push({ t: a.t - 0.45, tipo: 'acao', a });
+    const falante = f.quem !== 'narrador' && PER[f.quem] ? f.quem : null;
+    const opcoes = falante ? ['close', 'ombro', 'medio'] : ids.length > 1 ? ['geral', 'medio', 'close', 'dupla'] : ['medio', 'close', 'baixo'];
+    let k = Math.floor(rr() * opcoes.length);
+    while (t < fim - 0.05) {
+      const ac = marcas.find(m => m.t <= t + 0.2 && m.t + 2.2 > t);
+      let pl;
+      if (ac) { pl = { tipo: 'acao', id: ac.a.id, alvo: ac.a.alvo, a: ac.a.tipo, dur: ac.a.tipo === 'investida' ? 1.6 : 2.0 }; }
+      else {
+        let tipo = opcoes[k++ % opcoes.length]; if (tipo === ult && opcoes.length > 1) tipo = opcoes[k++ % opcoes.length];
+        const foco = falante || (ids.includes(prot) ? prot : ids[0]);
+        const outro = ids.find(i => i !== foco);
+        pl = { tipo, id: foco, outro, dur: 2.1 + rr() * 0.5 };
+      }
+      const prox = marcas.find(m => m.t > t + 0.4);
+      let t1 = Math.min(fim, t + pl.dur, prox ? Math.max(prox.t, t + 0.6) : 1e9);
+      if (fim - t1 < 0.7) t1 = fim;
+      PLANOS.push({ ...pl, t0: t, t1, ci, lado: rr() > 0.5 ? 1 : -1, seed: rr() });
+      ult = pl.tipo; t = t1;
+    }
+  });
+  PLANOS.push({ tipo: 'escolha', t0: T_ESC, t1: D + 1, ci: HS.cenas.length - 1, id: prot, lado: 1, seed: 0.5 });
+}
+function enquadrar(pl, t) {
+  const u = (t - pl.t0) / Math.max(0.1, pl.t1 - pl.t0), push = 1 - 0.08 * suave(u);
+  const L = pl.lado;
+  const h = cabeca(pl.id), q = quadril(pl.id);
+  const fr = PER[pl.id].raiz.rotation.y;                     // para onde o personagem olha
+  let fx = Math.sin(fr), fz = Math.cos(fr) + 1.3; { const n = Math.hypot(fx, fz) || 1; fx /= n; fz /= n; }   // entre o rosto e o lado da plateia
+  const ids = (HS.cenas[pl.ci].personagens || []).map(p => p.id).filter(id => PER[id] && PER[id].raiz.visible);
+  if (pl.tipo === 'geral' || pl.tipo === 'escolha') {
+    const c = V(0, 0, 0); ids.forEach(i => c.add(quadril(i))); c.divideScalar(Math.max(1, ids.length));
+    const larg = Math.max(1.6, ...ids.map(i => Math.abs(quadril(i).x - c.x) * 2 + 1.0));
+    const d = (larg / 2) / Math.tan(10.8 * DEG) * 0.95 * push;
+    return { p: V(c.x + L * 0.6, 1.55 + d * 0.05, c.z + d), o: V(c.x, 1.05, c.z), fov: 38 };
+  }
+  if (pl.tipo === 'close') { const d = 2.1 * push; return { p: V(h.x + fx * d + L * 0.3, h.y + 0.08, h.z + fz * d), o: V(h.x, h.y - 0.12, h.z), fov: 32 }; }
+  if (pl.tipo === 'medio') { const d = 3.4 * push; return { p: V(h.x + fx * d * 0.7 + L * 1.0, 1.4, h.z + fz * d * 0.7 + 1.3), o: V(q.x, 1.05, q.z), fov: 36 }; }
+  if (pl.tipo === 'baixo') { const d = 1.9 * push; return { p: V(q.x + fx * d + L * 0.6, 0.45, q.z + fz * d + 0.4), o: V(h.x, h.y + 0.05, h.z), fov: 38 }; }
+  if (pl.tipo === 'ombro' && pl.outro) {
+    const o = cabeca(pl.outro); const dir = h.clone().sub(o).setY(0).normalize();
+    const p = o.clone().addScaledVector(dir, -0.55).add(V(-dir.z * 0.4 * L, 0.18, dir.x * 0.4 * L));
+    return { p, o: V(h.x, h.y - 0.05, h.z), fov: 32 };
+  }
+  if ((pl.tipo === 'dupla' || pl.tipo === 'ombro') && pl.outro) {
+    const o = quadril(pl.outro); const c = q.clone().add(o).multiplyScalar(0.5); const larg = q.distanceTo(o) + 1.2;
+    const d = (larg / 2) / Math.tan(10.5 * DEG) * 0.75 * push;
+    return { p: V(c.x + L * 0.8, 1.4, c.z + d), o: V(c.x, 1.1, c.z), fov: 36 };
+  }
+  if (pl.tipo === 'acao') {
+    let c = q.clone(), larg = 1.4;
+    if (pl.alvo && PER[pl.alvo]) { const o = quadril(pl.alvo); c = q.clone().add(o).multiplyScalar(0.5); larg = q.distanceTo(o) + 1.4; }
+    if (pl.a === 'investida') larg += 1.2;
+    const d = Math.max(4.2, (larg / 2) / Math.tan(10.5 * DEG) * 0.72);
+    const alto = pl.a === 'pulo' ? 0.35 : 0;
+    return { p: V(c.x + L * 1.2, 1.15 + alto, c.z + d), o: V(c.x, 0.95 + alto, c.z), fov: 40 };
+  }
+  return { p: V(h.x + fx * 2.2, 1.35, h.z + fz * 2.2 + 0.5), o: V(q.x, 1.15, q.z), fov: 34 };
+}
+let tremer = 0;
+function bloqueia(c, foco) {
+  const a = c.p, b = c.o, ab = b.clone().sub(a), L2 = ab.lengthSq();
+  for (const [id, per] of Object.entries(PER)) {
+    if (id === foco || !per.raiz.visible) continue;
+    for (const pt of [cabeca(id), quadril(id)]) {
+      const u = Math.max(0, Math.min(1, pt.clone().sub(a).dot(ab) / L2));
+      if (u < 0.92 && a.clone().addScaledVector(ab, u).distanceTo(pt) < 0.42) return true;
+    }
+  }
+  return false;
+}
+function camera(t) {
+  const pl = PLANOS.find(p => t >= p.t0 && t < p.t1) || PLANOS[PLANOS.length - 1];
+  let c = enquadrar(pl, t);
+  if (pl.tipo !== 'geral' && pl.tipo !== 'escolha' && bloqueia(c, pl.id)) {
+    const tent = [{ ...pl, lado: -pl.lado }, { ...pl, tipo: 'close' }, { ...pl, tipo: 'close', lado: -pl.lado }, { ...pl, tipo: 'baixo', lado: -pl.lado }];
+    const ok = tent.map(x => enquadrar(x, t)).find(x => !bloqueia(x, pl.id));
+    c = ok || enquadrar({ ...pl, tipo: 'geral' }, t);
+  }
+  // não deixa a câmera atravessar as paredes do cenário fechado
+  c.p.z = Math.min(c.p.z, 9); c.p.x = Math.max(-6.5, Math.min(6.5, c.p.x)); c.p.y = Math.max(0.3, c.p.y);
+  cam.position.copy(c.p); cam.fov = c.fov; cam.updateProjectionMatrix(); cam.lookAt(c.o);
+  if (tremer > 0) { cam.position.x += tremer * Math.sin(t * 95); cam.position.y += tremer * Math.cos(t * 83); }
+  return pl;
+}
+
+// ---------------- efeitos
+const COR = { roxo: 0xa64dff, azul: 0x4da6ff, dourado: 0xffd23c, vermelho: 0xff3d3d, verde: 0x4dff88, branco: 0xffffff, gelo: 0xa8f0ff };
+const cssCor = (n) => '#' + new THREE.Color(COR[n] || COR.roxo).getHexString();
+function proj(v) { const p = v.clone().project(cam); return [(p.x + 1) / 2 * W, (1 - p.y) / 2 * H, p.z]; }
+function estrela(x, y, rr, n, cor, giro) { fx2.beginPath(); for (let i = 0; i < n * 2; i++) { const R = i % 2 ? rr * 0.38 : rr; const an = giro + i * Math.PI / n; fx2.lineTo(x + R * Math.cos(an), y + R * Math.sin(an)); } fx2.closePath(); fx2.fillStyle = cor; fx2.fill(); }
+function linhasAnime(x, y, k, seed, R0 = 340) {
+  const rr = mulberry(seed); fx2.fillStyle = `rgba(255,255,255,${0.75 * (1 - k)})`;
+  for (let i = 0; i < 46; i++) { const an = rr() * Math.PI * 2, R = R0 + rr() * 260, w = 0.012 + rr() * 0.02; fx2.beginPath(); fx2.moveTo(x + Math.cos(an) * R, y + Math.sin(an) * R); fx2.lineTo(x + Math.cos(an - w) * 1900, y + Math.sin(an - w) * 1900); fx2.lineTo(x + Math.cos(an + w) * 1900, y + Math.sin(an + w) * 1900); fx2.fill(); }
+}
+// objetos 3D dos efeitos
+const bola = new THREE.Mesh(new THREE.SphereGeometry(0.11, 16, 12), new THREE.MeshBasicMaterial({ color: 0xffffff })); bola.visible = false; cena.add(bola);
+const bolaLuz = new THREE.PointLight(0xa64dff, 0, 4); bola.add(bolaLuz);
+const halo = new THREE.Mesh(new THREE.SphereGeometry(0.2, 16, 12), new THREE.MeshBasicMaterial({ color: 0xa64dff, transparent: true, opacity: 0.45, blending: THREE.AdditiveBlending, depthWrite: false }));
+bola.add(halo);
+const auras = {};
+function auraDe(id) {
+  if (auras[id]) return auras[id];
+  const g = new THREE.Mesh(new THREE.SphereGeometry(0.62, 24, 18), new THREE.MeshBasicMaterial({ color: 0xa64dff, transparent: true, opacity: 0, blending: THREE.AdditiveBlending, depthWrite: false }));
+  g.scale.set(0.85, 1.55, 0.85); cena.add(g); auras[id] = g; return g;
+}
+[bola, halo].forEach(o => { o.material.userData.outlineParameters = { visible: false }; });
+const mao = (id) => { const v = V(0, 0, 0); PER[id].B.handR.getWorldPosition(v); return v; };
+function efeitos(t) {
+  fx2.clearRect(0, 0, W, H);
+  tremer = 0; bola.visible = false; bolaLuz.intensity = 0;
+  for (const a of Object.values(auras)) a.material.opacity = 0;
+  let flash = 0;
+  for (const e of FX) {
+    const u = t - e.t; const dur = e.dur ?? 0.4;
+    if (u < 0 || u > dur + 0.5) continue;
+    const per = e.id && PER[e.id]; if (e.id && (!per || !per.raiz.visible)) continue;
+    if (e.tipo === 'flash' && u < dur) flash = Math.max(flash, 0.8 * (1 - u / dur));
+    if (e.tipo === 'impacto' && u < 0.34) {
+      const [x, y] = proj(cabeca(e.id).add(V(0, -0.25, 0))); const k = u / 0.34;
+      linhasAnime(x, y, k, 77 + Math.floor(t * 30)); estrela(x, y, 110 + 340 * k, 9, `rgba(255,224,110,${1 - k})`, 0.3); estrela(x, y, 65 + 180 * k, 9, `rgba(255,255,255,${1 - k})`, 0.6);
+      tremer = Math.max(tremer, 0.05 * Math.exp(-7 * u));
+    }
+    if (e.tipo === 'rastro' && u < dur) {
+      const [x, y] = proj(mao(e.id)); const k = u / dur;
+      fx2.strokeStyle = `rgba(255,255,255,${0.85 * (1 - k)})`; fx2.lineWidth = 30 * (1 - k) + 4; fx2.lineCap = 'round';
+      fx2.beginPath(); fx2.arc(x, y + 60, 170, -2.4 + k * 1.2, -0.6 + k * 1.6); fx2.stroke();
+    }
+    if (e.tipo === 'carga' && u < dur) { const p = mao(e.id); bola.visible = true; bola.position.copy(p); bola.scale.setScalar(0.4 + u / dur); halo.material.color.set(COR[e.cor] || COR.roxo); bolaLuz.color.set(COR[e.cor] || COR.roxo); bolaLuz.intensity = 3 * u / dur; }
+    if (e.tipo === 'projetil' && u < dur) {
+      const p0 = mao(e.id); let p1;
+      if (e.alvo && PER[e.alvo]) p1 = quadril(e.alvo).add(V(0, 0.25, 0)); else { const ry = per.raiz.rotation.y; p1 = p0.clone().add(V(Math.sin(ry) * 2.2, 0, Math.cos(ry) * 2.2)); }
+      const k = u / dur; bola.visible = true; bola.position.copy(p0.lerp(p1, k)); bola.position.y += Math.sin(k * Math.PI) * 0.2; bola.scale.setScalar(1.2);
+      halo.material.color.set(COR[e.cor] || COR.roxo); bolaLuz.color.set(COR[e.cor] || COR.roxo); bolaLuz.intensity = 4;
+      const [x, y] = proj(bola.position); fx2.fillStyle = cssCor(e.cor) + '55'; fx2.beginPath(); fx2.arc(x, y, 70, 0, 7); fx2.fill();
+    }
+    if (e.tipo === 'explosao' && u < 0.5) {
+      let p = quadril(e.id).add(V(0, 0.3, 0)); if (e.frente) { const ry = per.raiz.rotation.y; p = mao(e.id).add(V(Math.sin(ry) * e.frente, 0, Math.cos(ry) * e.frente)); }
+      const [x, y] = proj(p); const k = u / 0.5;
+      fx2.fillStyle = cssCor(e.cor) + Math.round(200 * (1 - k)).toString(16).padStart(2, '0'); fx2.beginPath(); fx2.arc(x, y, 80 + 380 * k, 0, 7); fx2.fill();
+      estrela(x, y, 90 + 260 * k, 10, `rgba(255,255,255,${1 - k})`, 0.2); tremer = Math.max(tremer, 0.06 * Math.exp(-6 * u)); flash = Math.max(flash, 0.35 * (1 - k));
+    }
+    if (e.tipo === 'faisca' && u < dur) {
+      const [x, y] = proj(mao(e.id)); const k = u / dur; const pis = 0.6 + 0.4 * Math.sin(u * 40);
+      fx2.strokeStyle = cssCor(e.cor); fx2.lineWidth = 6; fx2.globalAlpha = 1 - k; fx2.beginPath(); fx2.arc(x, y, 40 + 160 * k, 0, 7); fx2.stroke();
+      fx2.globalAlpha = 1; estrela(x, y, 46 * pis, 4, '#ffffff', u * 6); estrela(x, y, 26 * pis, 4, cssCor(e.cor), u * 6 + 0.4);
+    }
+    if (e.tipo === 'aura' && u < dur) {
+      const a = auraDe(e.id); a.position.copy(quadril(e.id)).add(V(0, 0.15, 0)); a.material.color.set(COR[e.cor] || COR.roxo);
+      a.material.opacity = (0.32 + 0.12 * Math.sin(u * 9)) * Math.min(suave(u / 0.3), 1 - suave((u - dur + 0.4) / 0.4));
+      const rr = mulberry(3); const c = cssCor(e.cor);
+      for (let i = 0; i < 26; i++) { const ph = (u * 0.8 + rr()) % 1; const p = quadril(e.id).add(V((rr() - 0.5) * 0.9, -0.8 + ph * 2.2, (rr() - 0.5) * 0.5)); const [x, y] = proj(p); fx2.fillStyle = c; fx2.globalAlpha = (1 - ph) * 0.9; fx2.fillRect(x - 5, y - 14, 10, 28); }
+      fx2.globalAlpha = 1;
+    }
+    if (e.tipo === 'velocidade' && u < dur) { const [x, y] = proj(quadril(e.id)); linhasAnime(x, y, 0.3, 11 + Math.floor(t * 30), 420); }
+    if (e.tipo === 'linhas' && u < dur) { const [x, y] = proj(cabeca(e.id)); linhasAnime(x, y, u / dur, 21 + Math.floor(t * 30)); tremer = Math.max(tremer, 0.04 * (1 - u / dur)); }
+    if (e.tipo === 'poeira' && u < 0.9) {
+      const p = quadril(e.id); p.y = 0.05; const k = u / 0.9; const rr = mulberry(9);
+      for (let i = 0; i < 10; i++) { const an = rr() * Math.PI * 2; const q2 = p.clone().add(V(Math.cos(an) * (0.2 + 0.7 * Math.sqrt(k)), 0.1 + rr() * 0.3 * k, Math.sin(an) * (0.2 + 0.5 * Math.sqrt(k)))); const [x, y, z] = proj(q2); fx2.fillStyle = `rgba(214,196,160,${0.7 * (1 - k)})`; fx2.beginPath(); fx2.arc(x, y, (30 + 90 * k) * (1.2 - z * 0.2), 0, 7); fx2.fill(); }
+    }
+    if (e.tipo === 'suor' && u < dur) { const [x, y] = proj(cabeca(e.id)); const rr = mulberry(4); for (let i = 0; i < 3; i++) { const ph = (u * 1.3 + i / 3) % 1; fx2.fillStyle = `rgba(150,210,255,${1 - ph})`; fx2.beginPath(); fx2.ellipse(x + (i - 1) * 70 + rr() * 10, y - 120 + ph * 120, 12, 20, 0, 0, 7); fx2.fill(); } }
+    if (e.tipo === 'branco' && u < dur) { const k = 1 - u / dur; for (const m of per.mats) m.emissive.setRGB(k, k, k); }
+  }
+  for (const per of Object.values(PER)) if (!FX.some(e => e.tipo === 'branco' && e.id === per.id && t - e.t >= 0 && t - e.t < e.dur)) for (const m of per.mats) m.emissive.setRGB(0, 0, 0);
+  return flash;
+}
+function puloAltura(id, t) { let y = 0; for (const e of FX) if (e.tipo === 'pulo' && e.id === id && t >= e.t && t < e.t + e.dur) { const k = (t - e.t) / e.dur; y = Math.sin(k * Math.PI) * 0.75; } return y; }
+
+// ---------------- textos sobre a imagem
+const $ = (id) => document.getElementById(id);
+const env = (t, t0, t1, f = 0.2) => Math.min(suave((t - t0) / f), 1 - suave((t - t1 + f) / f));
+$('epn').textContent = `${(HS.rotulo_parte || 'Episódio').toUpperCase()} ${HS.parte || ''}`.trim();
+$('ept').textContent = HS.titulo || '';
+if (HS.recap) { $('rcv').textContent = `VOCÊS ESCOLHERAM ${HS.recap.letra}`; $('rct').textContent = HS.recap.texto || ''; }
+if (HS.escolha) { const E = HS.escolha; $('esp').textContent = E.pergunta; $('ea').textContent = E.a; $('eas').textContent = E.a_sub || ''; $('eb').textContent = E.b; $('ebs').textContent = E.b_sub || ''; }
+const ETQ = [];
+FALAS.forEach(f => { if (f.etiqueta) { const d = document.createElement('div'); d.className = 'etq'; d.textContent = f.etiqueta.txt; $('ov').appendChild(d); ETQ.push({ d, id: f.etiqueta.id, t: f.bloco.start }); } });
+// legenda: grupos de até 3 palavras / 16 letras
+const GRUPOS = [];
+for (const f of FALAS) {
+  let g = [];
+  for (const w of f.bloco.words) {
+    const n = g.map(x => x[0]).join(' ').length + w[0].length;
+    if (g.length && (g.length >= 3 || n > 16)) { GRUPOS.push(g); g = []; }
+    g.push(w);
+  }
+  if (g.length) GRUPOS.push(g);
+}
+let grupoAtual = null;
+function textos(t) {
+  const inicio = 0, fimTopo = Math.max(2.6, (FALAS[0]?.bloco.start || 1.6) + 1.2);
+  $('topo').style.opacity = env(t, inicio, fimTopo, 0.2);
+  $('recap').style.opacity = HS.recap ? env(t, 0.1, fimTopo + 0.8, 0.2) : 0;
+  // legenda
+  const g = GRUPOS.find(g => t >= g[0][1] - 0.05 && t < g[g.length - 1][2] + 0.25 && t < T_ESC);
+  if (g !== grupoAtual) { $('leg').innerHTML = g ? g.map(w => `<span>${w[0].replace(/</g, '')}</span>`).join(' ') : ''; grupoAtual = g; }
+  if (g) [...$('leg').children].forEach((s, i) => s.classList.toggle('on', t >= g[i][1] - 0.03 && t < g[i][2] + 0.05));
+  // etiquetas
+  for (const e of ETQ) {
+    const a = env(t, e.t, e.t + 2.4, 0.2); e.d.style.opacity = a;
+    if (a > 0 && PER[e.id] && PER[e.id].raiz.visible) { const [x, y] = proj(cabeca(e.id).add(V(0, 0.42, 0))); const w2 = e.d.offsetWidth / 2 + 40; e.d.style.left = Math.max(w2, Math.min(W - w2, x)) + 'px'; e.d.style.top = Math.max(300, Math.min(1180, y - 40)) + 'px'; }
+    else e.d.style.opacity = 0;
+  }
+  // cartão A ou B
+  const ke = suave((t - T_ESC) / 0.35); $('escolha').style.opacity = ke;
+  $('opA').style.transform = `translateX(${(1 - suave((t - T_ESC - 0.2) / 0.35)) * -1100}px)`;
+  $('opB').style.transform = `translateX(${(1 - suave((t - T_ESC - 0.45) / 0.35)) * 1100}px)`;
+}
+
+// ---------------- boca (fala) e piscar
+const ENV = TL.env || [];
+function falandoAgora(id, t) { return FALAS.some(f => f.quem === id && t >= f.bloco.start && t <= f.bloco.end); }
+function exprAgora(id, t, ci) {
+  const f = FALAS.find(f => f.quem === id && t >= f.bloco.start - 0.2 && t <= f.bloco.end + 0.6);
+  if (f && f.expressao) return exprDe(f.expressao);
+  if (FX.some(e => e.id === id && (e.tipo === 'impacto' || e.tipo === 'branco') && t - e.t > 0 && t - e.t < 1.2)) return EXPR.dor;
+  if (FX.some(e => e.id === id && (e.tipo === 'carga' || e.tipo === 'projetil' || e.tipo === 'rastro') && t - e.t > -0.4 && t - e.t < 1.0)) return EXPR.decidido;
+  const L = lugarNaCena(id, ci); return exprDe(L && L.expressao);
+}
+
+// ---------------- quadro
+let ultimo = -1, cenaAtual = -1;
+window.quadro = (t) => {
+  const ci = cenaEm(t);
+  if (ci !== cenaAtual) {
+    SETS.forEach((g, i) => g.visible = i === ci);
+    const fg = SETS[ci].userData.fog; cena.fog = fg ? new THREE.Fog(fg[0], fg[1], fg[2]) : null;
+    cena.background = SETS[ci].userData.fundo !== undefined ? new THREE.Color(SETS[ci].userData.fundo) : null;
+    cenaAtual = ci;
+  }
+  animarCenario(SETS[ci], t);
+  for (const id of usados) {
+    const per = PER[id]; const b = baseEm(id, t, ci);
+    per.raiz.visible = !!b; if (!b) continue;
+    const { p, s } = poseEm(id, t);
+    aplicarPose(per, p, b);
+    per.raiz.position.y = puloAltura(id, t);
+    const L = lugarNaCena(id, ci);
+    objetoNaMao(id, s.arma || (L && L.segura) || null);
+    if (L && L.aura) FX.some(e => e.tipo === 'aura' && e.id === id && e.fixa) || FX.push({ tipo: 'aura', t: TL.cenas[ci].start, dur: TL.cenas[ci].end - TL.cenas[ci].start, id, cor: L.aura, fixa: true });
+    let e = exprAgora(id, t, ci);
+    const pis = ((t + id.length * 0.7) % 3.3) < 0.13 ? Math.sin(Math.PI * ((t + id.length * 0.7) % 3.3) / 0.13) : 0;
+    rosto(per, e, pis, 0, t);
+    if (falandoAgora(id, t)) { const v = ENV[Math.min(ENV.length - 1, Math.round(t * 30))] || 0; per.B.boca.scale.y = e.boca[1] * (0.5 + 2.6 * v); }
+    per.raiz.updateMatrixWorld(true);
+    if (t < ultimo) per.molas(-1);
+    per.molas(t);
+  }
+  ultimo = t;
+  camera(t);
+  contorno.render(cena, cam);
+  const fl = efeitos(t);
+  // corte de cena: piscada escura curta
+  let esc = 0; for (const c of TL.cenas.slice(1)) { const u = t - c.start; if (u > -0.12 && u < 0.12) esc = 1 - Math.abs(u) / 0.12; }
+  $('flash').style.background = esc > fl ? '#000' : '#fff'; $('flash').style.opacity = Math.max(esc * 0.9, fl);
+  textos(t);
+};
+window.DUR = D;
+console.log('episodio pronto', D.toFixed(2), 'planos', PLANOS.length, 'personagens', [...usados].join(','));
+document.fonts.ready.then(() => { window.pronto = true; });
+setTimeout(() => { window.pronto = true; }, 5000);
+</script></body></html>

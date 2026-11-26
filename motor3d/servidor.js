@@ -3,7 +3,7 @@
 //   node servidor.js pagina.html still t arquivo.png
 const { chromium } = require('playwright'); const http = require('http'); const fs = require('fs'); const path = require('path');
 const raiz = __dirname;
-const tipos = { '.js': 'application/javascript', '.html': 'text/html', '.png': 'image/png', '.json': 'application/json', '.glb': 'model/gltf-binary', '.jpg': 'image/jpeg' };
+const tipos = { '.js': 'application/javascript', '.html': 'text/html', '.png': 'image/png', '.json': 'application/json', '.glb': 'model/gltf-binary', '.jpg': 'image/jpeg', '.ttf': 'font/ttf', '.fbx': 'application/octet-stream' };
 function servir() {
   return new Promise(ok => {
     const srv = http.createServer((q, res) => {
@@ -15,7 +15,10 @@ function servir() {
 (async () => {
   const [pagina, modo, a, b, fpsArg] = process.argv.slice(2);
   const srv = await servir();
-  const br = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
+  // CHROMIUM=<caminho> usa um Chromium já instalado (quando a versão do playwright não bate com a dos navegadores)
+  let exe = process.env.CHROMIUM;
+  if (!exe) { try { const b = process.env.PLAYWRIGHT_BROWSERS_PATH || '/opt/pw-browsers'; const d = fs.readdirSync(b).filter(n => /^chromium_headless_shell-\d+$/.test(n)).sort().pop(); if (d) { const c = path.join(b, d, 'chrome-headless-shell-linux64', 'chrome-headless-shell'); if (fs.existsSync(c)) exe = c; } } catch (e) {} }
+  const br = await chromium.launch({ executablePath: exe, args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
   const p = await br.newPage({ viewport: { width: 1080, height: 1920 } });
   p.on('console', m => { if (!m.text().includes('GPU stall')) console.error('[pag]', m.text()); });
   p.on('pageerror', e => console.error('[erro]', e.message));
