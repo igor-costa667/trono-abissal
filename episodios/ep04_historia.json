@@ -1,0 +1,257 @@
+{
+ "titulo": "O Preço do Mestre",
+ "parte": 4,
+ "rotulo_parte": "Episódio",
+ "clima": "suspense",
+ "ritmo": "rapido",
+ "protagonista": "ren",
+ "recap": {
+  "letra": "A",
+  "texto": "Destino: Kagegakure"
+ },
+ "elenco": {
+  "ren": {
+   "nome": "Ren",
+   "voz": "ren",
+   "corpo": "magro",
+   "altura": 1.65,
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "preto",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "oliva",
+   "baixo": "calca",
+   "baixo_cor": "marrom"
+  },
+  "kuroha": {
+   "nome": "Kuroha",
+   "voz": "kuroha",
+   "corpo": "medio",
+   "altura": 1.75,
+   "pele": "media",
+   "cabelo": "curto",
+   "cabelo_cor": "preto",
+   "barba": "curta",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "preto",
+   "baixo": "calca",
+   "baixo_cor": "preto"
+  }
+ },
+ "cenas": [
+  {
+   "cenario": "aldeia",
+   "luz": "dia",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.2,
+     "olhando": "direita"
+    },
+    {
+     "id": "kuroha",
+     "x": 0.8,
+     "olhando": "esquerda",
+     "segura": "espada"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Ninguém te conta o preço do mestre Kuroha.",
+     "acao": {
+      "id": "ren",
+      "tipo": "investida",
+      "em": 0.1,
+      "dist": 0.15
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Sem votos, o destino escolheu Kagegakure. Três dias de viagem.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "roxo",
+      "palavra": "destino"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "A vila dos ninjas tem dez mil sombras.",
+     "acao": {
+      "id": "ren",
+      "tipo": "pulo",
+      "palavra": "sombras"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Uma kunai voou das sombras. Ren se jogou no chão.",
+     "acao": {
+      "id": "kuroha",
+      "tipo": "feitico",
+      "cor": "branco",
+      "alvo": "ren",
+      "reacao": "queda",
+      "palavra": "voou"
+     }
+    },
+    {
+     "quem": "kuroha",
+     "txt": "Lento demais, invocado.",
+     "pose": "apontando",
+     "etiqueta": {
+      "id": "kuroha",
+      "txt": "Kuroha: mestre de Kagegakure"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Ren ergueu a mão. Uma faísca. Depois, fogo.",
+     "acao": [
+      {
+       "id": "ren",
+       "tipo": "faisca",
+       "cor": "azul",
+       "palavra": "faísca"
+      },
+      {
+       "id": "ren",
+       "tipo": "feitico",
+       "cor": "vermelho",
+       "alvo": "kuroha",
+       "palavra": "fogo"
+      }
+     ]
+    },
+    {
+     "quem": "narrador",
+     "txt": "O mestre nem piscou. Cortou a chama em dois.",
+     "acao": {
+      "id": "kuroha",
+      "tipo": "golpe",
+      "arma": "espada",
+      "palavra": "Cortou"
+     },
+     "efeito": "susto"
+    },
+    {
+     "quem": "kuroha",
+     "txt": "Mana precisa. Rara. Eu te treino.",
+     "pose": "pensando"
+    },
+    {
+     "quem": "ren",
+     "txt": "Sério? Igual nos animes?!",
+     "expressao": "feliz",
+     "pose": "bracos_abertos"
+    }
+   ]
+  },
+  {
+   "cenario": "aldeia",
+   "luz": "noite",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.2,
+     "olhando": "direita"
+    },
+    {
+     "id": "kuroha",
+     "x": 0.8,
+     "olhando": "esquerda",
+     "segura": "espada"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Mas, à noite, veio o preço.",
+     "acao": {
+      "id": "kuroha",
+      "tipo": "impacto",
+      "palavra": "preço"
+     }
+    },
+    {
+     "quem": "kuroha",
+     "txt": "Um desertor me caça. Há dez anos.",
+     "pose": "bravo"
+    },
+    {
+     "quem": "kuroha",
+     "txt": "Acabe com ele, e eu te ensino tudo.",
+     "pose": "apontando"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Recusar faz a ética do Ren subir.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "dourado",
+      "palavra": "ética"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Mas a vila inteira vai desconfiar dele.",
+     "acao": {
+      "id": "kuroha",
+      "tipo": "impacto",
+      "palavra": "desconfiar"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Aceitar abre todas as portas do treino.",
+     "acao": {
+      "id": "ren",
+      "tipo": "pulo",
+      "palavra": "portas"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Mas a primeira morte pesa para sempre.",
+     "acao": {
+      "id": "ren",
+      "tipo": "ofegante",
+      "palavra": "pesa"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "O que o Ren faz?",
+     "le_escolha": "pergunta"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Opção A: recusa a missão.",
+     "le_escolha": "a"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Opção B: aceita e elimina o desertor.",
+     "le_escolha": "b"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Comenta A ou B, segue o perfil e manda pra quem curte RPG.",
+     "le_escolha": "comenta"
+    }
+   ]
+  }
+ ],
+ "escolha": {
+  "pergunta": "Kuroha pede uma morte. E agora?",
+  "a": "Recusa a missão",
+  "a_sub": "Ética sobe, vila desconfia",
+  "b": "Aceita e elimina o desertor",
+  "b_sub": "Treino liberado, ética cai"
+ }
+}

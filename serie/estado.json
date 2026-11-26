@@ -6,15 +6,18 @@
   "estado_do_ren": {
     "etica": 0,
     "usou_arma_abissal": false,
-    "local": "Valdenmoor (arena de treino e palácio)",
+    "local": "Kagegakure (vila ninja)",
     "inimigos": [],
-    "aliados": [],
+    "aliados": [
+      "Kuroha, mestre de Kagegakure (aceitou treinar Ren)"
+    ],
     "itens": [
       "Túnica de mana (mais mana máxima, feitiço mais barato, nenhuma defesa)"
     ],
     "segredos": [
       "O mago da corte diz que o ritual pega qualquer um e que o rei não quer ver (ep. 2)",
-      "Com a túnica, a faísca do Ren vira bola de fogo gastando quase nada de mana (ep. 3)"
+      "Com a túnica, a faísca do Ren vira bola de fogo gastando quase nada de mana (ep. 3)",
+      "Kuroha é caçado por um desertor há dez anos e pede que Ren o elimine em troca de ensinar tudo (ep. 4)"
     ],
     "historico_etica": [
       {
@@ -26,6 +29,12 @@
       {
         "ep": 2,
         "escolha": "B",
+        "etica": "mantém (0)",
+        "arma_abissal": false
+      },
+      {
+        "ep": 3,
+        "escolha": "A",
         "etica": "mantém (0)",
         "arma_abissal": false
       }
@@ -130,9 +139,17 @@
         "b": "Frostheim, os vikings",
         "b_sub": "Corpo forte, treino brutal"
       },
-      "votos": null,
-      "vencedora": null,
-      "metricas": null,
+      "votos": {
+        "A": 0,
+        "B": 0,
+        "total_pessoas": 0,
+        "obs": "nenhum voto em ~3 h no ar (dados do Windsor em cache): o destino (lore) escolheu A, Kagegakure. Ren é otaku de cultura japonesa, o ninjutsu é mana pura (combina com o controle preciso de mana) e o mestre Kuroha é caçado por desertores, o que leva ao favor sombrio do ep. 4 da ficha"
+      },
+      "vencedora": "A",
+      "metricas": {
+        "coletado_em": "2026-11-26",
+        "obs": "ainda não aparece no Windsor (cache sem o post de hoje); medir na próxima rodada"
+      },
       "creditos_elevenlabs": 1067,
       "story_id": "17997263322055541",
       "gancho": "Ninguém te conta o preço que Ren pagou.",
