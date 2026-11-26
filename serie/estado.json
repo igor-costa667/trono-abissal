@@ -1,110 +1,111 @@
 {
- "serie": "Trono Abissal",
- "perfil": "@tronoabissal",
- "instagram_account_id": "17841427440990578",
- "lore_artifact": "https://claude.ai/artifact/DqHo74VRsZN6cv5rv9yhkp",
- "estado_do_ren": {
-  "etica": 0,
-  "usou_arma_abissal": false,
-  "local": "Palácio de Valdenmoor",
-  "inimigos": [],
-  "aliados": [],
-  "itens": [],
-  "segredos": [
-   "O mago da corte diz que o ritual pega qualquer um e que o rei não quer ver (ep. 2)"
-  ],
-  "historico_etica": [
-   {
-    "ep": 1,
-    "escolha": "B",
-    "etica": "mantém (0)",
-    "arma_abissal": false
-   }
-  ]
- },
- "episodios": [
-  {
-   "n": 1,
-   "titulo": "O Invocado",
-   "publicado_em": "2026-11-21",
-   "media_id": "18348563719281452",
-   "video": "episodios/ep01.mp4",
-   "historia": "episodios/ep01_historia.json",
-   "escolha": {
-    "pergunta": "O mago zombou do Ren. O que ele faz?",
-    "a": "Responde à altura",
-    "a_sub": "O mago vira inimigo",
-    "b": "Fica calado e observa",
-    "b_sub": "Ren descobre os segredos da corte"
-   },
-   "votos": {
-    "A": 0,
-    "B": 1,
-    "total_pessoas": 1,
-    "obs": "menos de 3 votos: o destino escolheu B (mais coerente com a lore)"
-   },
-   "vencedora": "B",
-   "metricas": {
-    "coletado_em": "2026-11-22",
-    "views": 327,
-    "alcance": 281,
-    "tempo_medio_s": 4.88,
-    "skip_rate": 0.81,
-    "compartilhamentos": 0,
-    "salvamentos": 1,
-    "curtidas": 4,
-    "comentarios": 1,
-    "duracao_video_s": 59.5
-   },
-   "creditos_elevenlabs": 968,
-   "story_id": "18159285514517251"
+  "serie": "Trono Abissal",
+  "perfil": "@tronoabissal",
+  "instagram_account_id": "17841427440990578",
+  "lore_artifact": "https://claude.ai/artifact/DqHo74VRsZN6cv5rv9yhkp",
+  "estado_do_ren": {
+    "etica": 0,
+    "usou_arma_abissal": false,
+    "local": "Palácio de Valdenmoor",
+    "inimigos": [],
+    "aliados": [],
+    "itens": [],
+    "segredos": [
+      "O mago da corte diz que o ritual pega qualquer um e que o rei não quer ver (ep. 2)"
+    ],
+    "historico_etica": [
+      {
+        "ep": 1,
+        "escolha": "B",
+        "etica": "mantém (0)",
+        "arma_abissal": false
+      }
+    ]
   },
-  {
-   "n": 2,
-   "titulo": "O Teste",
-   "publicado_em": "2026-11-22",
-   "media_id": "17968544538238718",
-   "video": "episodios/ep02.mp4",
-   "story_video": "episodios/ep02_story.mp4",
-   "historia": "episodios/ep02_historia.json",
-   "duracao_video_s": 62.2,
-   "duracao_com_anuncio_s": 69.0,
-   "escolha": {
-    "pergunta": "Com o ouro do rei, o que o Ren compra?",
-    "a": "Espada e escudo de Valdenmoor",
-    "a_sub": "Força e defesa, mas pesa",
-    "b": "Túnica de mana",
-    "b_sub": "Mais magia, nenhuma proteção"
-   },
-   "votos": null,
-   "vencedora": null,
-   "metricas": null,
-   "creditos_elevenlabs": 1049,
-   "story_id": "18320978512304307",
-   "mudancas_testadas": [
-    "gancho com conflito/segredo na 1ª frase",
-    "episódio mais enxuto (144 palavras)"
-   ]
-  }
- ],
- "promo": [
-  {
-   "tipo": "video_vendas_curso",
-   "publicado_em": "2026-11-22",
-   "media_id": "18223322164352419",
-   "video": "promo/video_vendas.mp4",
-   "story_id": "17876155269602153",
-   "metricas": {
-    "coletado_em": "2026-11-22",
-    "views": 159,
-    "alcance": 142,
-    "tempo_medio_s": 4.67,
-    "skip_rate": 0.709,
-    "compartilhamentos": 0,
-    "salvamentos": 0,
-    "curtidas": 1,
-    "comentarios": 0
-   }
-  }
- ]
+  "episodios": [
+    {
+      "n": 1,
+      "titulo": "O Invocado",
+      "publicado_em": "2026-11-21",
+      "media_id": "18348563719281452",
+      "video": "episodios/ep01.mp4",
+      "historia": "episodios/ep01_historia.json",
+      "escolha": {
+        "pergunta": "O mago zombou do Ren. O que ele faz?",
+        "a": "Responde à altura",
+        "a_sub": "O mago vira inimigo",
+        "b": "Fica calado e observa",
+        "b_sub": "Ren descobre os segredos da corte"
+      },
+      "votos": {
+        "A": 0,
+        "B": 1,
+        "total_pessoas": 1,
+        "obs": "menos de 3 votos: o destino escolheu B (mais coerente com a lore)"
+      },
+      "vencedora": "B",
+      "metricas": {
+        "coletado_em": "2026-11-22",
+        "views": 327,
+        "alcance": 281,
+        "tempo_medio_s": 4.88,
+        "skip_rate": 0.81,
+        "compartilhamentos": 0,
+        "salvamentos": 1,
+        "curtidas": 4,
+        "comentarios": 1,
+        "duracao_video_s": 59.5
+      },
+      "creditos_elevenlabs": 968,
+      "story_id": "18159285514517251"
+    },
+    {
+      "n": 2,
+      "titulo": "O Teste",
+      "publicado_em": "2026-11-22",
+      "media_id": "17968544538238718",
+      "video": "episodios/ep02.mp4",
+      "story_video": "episodios/ep02_story.mp4",
+      "historia": "episodios/ep02_historia.json",
+      "duracao_video_s": 62.2,
+      "duracao_com_anuncio_s": 69.0,
+      "escolha": {
+        "pergunta": "Com o ouro do rei, o que o Ren compra?",
+        "a": "Espada e escudo de Valdenmoor",
+        "a_sub": "Força e defesa, mas pesa",
+        "b": "Túnica de mana",
+        "b_sub": "Mais magia, nenhuma proteção"
+      },
+      "votos": null,
+      "vencedora": null,
+      "metricas": null,
+      "creditos_elevenlabs": 1049,
+      "story_id": "18320978512304307",
+      "mudancas_testadas": [
+        "gancho com conflito/segredo na 1ª frase",
+        "episódio mais enxuto (144 palavras)"
+      ]
+    }
+  ],
+  "promo": [
+    {
+      "tipo": "video_vendas_curso",
+      "publicado_em": "2026-11-22",
+      "media_id": "18223322164352419",
+      "video": "promo/video_vendas.mp4",
+      "story_id": "17876155269602153",
+      "metricas": {
+        "coletado_em": "2026-11-22",
+        "views": 159,
+        "alcance": 142,
+        "tempo_medio_s": 4.67,
+        "skip_rate": 0.709,
+        "compartilhamentos": 0,
+        "salvamentos": 0,
+        "curtidas": 1,
+        "comentarios": 0
+      }
+    }
+  ],
+  "motor": "3d"
 }
