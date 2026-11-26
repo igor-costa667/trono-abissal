@@ -1,0 +1,38 @@
+<html><head><meta charset="utf-8"><style>body{margin:0;background:#222;width:1080px;height:1920px;overflow:hidden;font:bold 15px Arial;color:#fff}#n{position:absolute;left:0;top:0;width:1080px;height:1920px}#n div{position:absolute;width:270px;text-align:center;text-shadow:0 1px 2px #000}</style></head><body><div id="n"></div>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+// Folha de conferência: o Ren em cada animação do Mixamo (uso: teste_mixamo.html?f=0.5 -> fração do clipe)
+import * as THREE from 'three';
+import { criarPersonagem, criarEspada, DEG } from './personagem.js';
+import { carregarClipe, prepararRen, poseDoClipe, aplicarPose } from './mixamo.js';
+const NOMES = ['Walking','Running','Breathing Idle','Sad Idle','Looking Around','Sword And Shield Idle','Sword And Shield Slash','Great Sword Slash','Stable Sword Outward Slash','Hit Reaction','Stumble Backwards','Falling Back Death','Getting Up','Sitting Idle','Standing 1H Magic Attack 01','Two Hand Spell Casting','Talking','Arguing','Pointing','Shrugging','Thinking','Surprised','Angry Gesture','Head Nod Yes','Shaking Head No','Kneeling','Terrified','Victory'];
+const W=1080,H=1920, CW=270, CH=274;
+const r = new THREE.WebGLRenderer({antialias:true}); r.setSize(W,H); r.setScissorTest(true); r.outputColorSpace=THREE.SRGBColorSpace; document.body.prepend(r.domElement);
+const cena = new THREE.Scene(); cena.background = new THREE.Color(0x8fb4d8);
+cena.add(new THREE.HemisphereLight(0xffffff,0x665544,1.6)); const sol=new THREE.DirectionalLight(0xffffff,1.6); sol.position.set(2,4,3); cena.add(sol);
+const chao=new THREE.Mesh(new THREE.PlaneGeometry(40,40),new THREE.MeshLambertMaterial({color:0xb79b6c})); chao.rotation.x=-Math.PI/2; cena.add(chao);
+const ren = criarPersonagem({paleta:'ren_f1'}); cena.add(ren.raiz); prepararRen(ren);
+const esp = criarEspada(); ren.B.handR.add(esp); esp.position.set(0,-0.04,0);
+const cam = new THREE.PerspectiveCamera(30, CW/CH, 0.05, 100);
+const Q = new URLSearchParams(location.search);
+const f = parseFloat(Q.get('f') || '0.5');
+const UM = Q.get('clip');   // uma animação só: 28 quadros ao longo do clipe
+const clipes = []; const FR = [];
+if (UM) { const c = await carregarClipe('animacoes/'+encodeURIComponent(UM)+'.fbx'); for (let i=0;i<28;i++){ clipes.push(c); FR.push(i/27); NOMES[i]=UM.split(' ')[0]+' t='; } }
+else { for (const n of NOMES) { clipes.push(await carregarClipe('animacoes/'+encodeURIComponent(n)+'.fbx')); FR.push(f); } }
+const nd = document.getElementById('n');
+window.quadro = () => {
+  clipes.forEach((c,i)=>{
+    const s = c.amostra(c.dur*FR[i]);
+    const p = poseDoClipe(ren, s);
+    aplicarPose(ren, p, {x:0,z:0,ry:0});
+    ren.raiz.updateMatrixWorld(true);
+    const h = new THREE.Vector3(); ren.B.hips.getWorldPosition(h);
+    cam.position.set(h.x+2.6, 1.3, h.z+3.4); cam.lookAt(h.x, Math.max(0.55,h.y*0.9), h.z);
+    const cx=(i%4)*CW, cy=Math.floor(i/4)*CH;
+    r.setViewport(cx, H-cy-CH, CW, CH); r.setScissor(cx, H-cy-CH, CW, CH); r.render(cena, cam);
+  });
+  nd.innerHTML = NOMES.map((n,i)=>`<div style="left:${(i%4)*CW}px;top:${Math.floor(i/4)*CH+4}px">${n} ${UM ? (clipes[i].dur*FR[i]).toFixed(2) : clipes[i].dur.toFixed(1)}s</div>`).join('');
+};
+window.pronto = true;
+</script></body></html>

@@ -13,3 +13,10 @@ Pedido do Igor: movimento fluido em 3D, como a série "Ether 2050" do @gabriel.c
 - Tem que parecer **série animada**, não jogo. HUD limpo.
 - Elementos de jogo só pontuais e rápidos, quando a história pede: levou golpe → barra de vida aparece, mostra a perda e some; subiu de nível → aviso curto; resultado de um teste → painel rápido. Nada fixo na tela (sem barra de vida/mana o tempo todo).
 - Movimento: o Igor aprovou a fluidez do protótipo. Próximo passo: animações reais do Mixamo (pasta animacoes/).
+
+## Animações reais do Mixamo (25/11/2026)
+- `mixamo.js`: carrega os .fbx de `animacoes/` (Y Bot, T-pose, cm) e redireciona cada osso para o esqueleto do Ren pela diferença em relação ao T-pose. `sequencia()` encadeia clipes com transição suave (mistura), quadril contínuo entre um clipe e outro e raiz andando nos clipes "In Place" na velocidade medida do pé de apoio (o pé não patina).
+- `prototipo_mixamo.html`: cena de teste só com movimento capturado (chega andando, golpe no boneco de palha, o boneco volta e derruba o Ren, ele levanta, gesto de raiva, guarda). HUD só no golpe (vida aparece, perde, some). Vídeo: `testes/prototipo_3d_mixamo.mp4`.
+- `teste_mixamo.html`: folha de conferência. `?f=0.5` mostra o Ren no meio das 28 animações; `?clip=Getting%20Up` mostra 28 quadros de uma animação só (bom para achar o tempo de cada fase).
+- `sfx_mixamo.py`: efeitos e trilha da cena (`python3 sfx_mixamo.py <pasta scripts do kit>` dentro de `saida/`).
+- Render: `PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers node servidor.js prototipo_mixamo.html saida/quadros 0 13.41 30` (~1 s por quadro) e depois ffmpeg com `saida/sfx.wav` + `saida/musica.wav`.
