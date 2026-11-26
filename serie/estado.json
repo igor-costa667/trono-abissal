@@ -102,11 +102,11 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-26T15:10-03:00",
-        "views": 271,
-        "alcance": 244,
-        "tempo_medio_s": 29.1,
-        "skip_rate": 0.478,
+        "coletado_em": "2026-11-26T15:14-03:00",
+        "views": 272,
+        "alcance": 245,
+        "tempo_medio_s": 28.95,
+        "skip_rate": 0.476,
         "compartilhamentos": 0,
         "salvamentos": 0,
         "curtidas": 5,
@@ -307,6 +307,53 @@
           }
         },
         "notas": "ep4 com 3,25 h: 151 views (ep3 com 3,4 h: 184, ~82%); pulo 3 s 51,5% (ep3 43,9%); 0 comentários no ep4, nenhum voto novo. Conector Windsor 'instagram' geral devolveu cache sem os eps 3 e 4; os dados vieram do Windsor para Social Media com date_from 25/11."
+      },
+      {
+        "data_hora": "2026-11-26T15:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.03,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.95,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 199,
+            "alcance": 169,
+            "tempo_medio": 11.25,
+            "pulo_3s": 0.439,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 151,
+            "alcance": 136,
+            "tempo_medio": 9.99,
+            "pulo_3s": 0.515,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 2
+          }
+        },
+        "notas": "Windsor devolveu o cache (plano sem atualização sob demanda): eps 3 e 4 iguais à leitura das 15h; ep2 +1 view. Nenhum voto novo no ep4. Sem sinal novo; ajustes mantidos."
       }
     ],
     "resumo_diario": [],
