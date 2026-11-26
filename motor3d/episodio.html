@@ -52,7 +52,9 @@ const W = 1080, H = 1920;
 const q = new URLSearchParams(location.search);
 const PL = await (await fetch(q.get('plano'))).json();
 const HS = PL.historia, TL = PL.timeline, FALAS = PL.falas, D = TL.duration;
-const T_ESC = HS.escolha ? D - (TL.tempo_escolha || 6) : D + 1;
+// o cartão A ou B entra quando o narrador começa a ler as opções (falas com "le_escolha"), ou no fim se ninguém lê
+const LE = PL.falas.filter(f => f.le_escolha);
+const T_ESC = !HS.escolha ? D + 1 : LE.length ? LE[0].bloco.start - 0.15 : D - (TL.tempo_escolha || 6);
 const ESPACO = 3.2;                                   // largura do palco (m) para x de 0 a 1
 const X = (x) => (x - 0.5) * ESPACO;
 
@@ -486,6 +488,10 @@ function textos(t) {
   const ke = suave((t - T_ESC) / 0.35); $('escolha').style.opacity = ke;
   $('opA').style.transform = `translateX(${(1 - suave((t - T_ESC - 0.2) / 0.35)) * -1100}px)`;
   $('opB').style.transform = `translateX(${(1 - suave((t - T_ESC - 0.45) / 0.35)) * 1100}px)`;
+  // destaca a opção que o narrador está lendo
+  const lendo = LE.find(f => t >= f.bloco.start - 0.1 && t <= f.bloco.end + 0.2);
+  const qual = lendo ? String(lendo.le_escolha).toLowerCase() : '';
+  for (const [k, el] of [['a', $('opA')], ['b', $('opB')]]) { if (qual === k) { el.style.transform += ' scale(1.07)'; el.style.filter = 'brightness(1.15)'; el.style.opacity = 1; } else { el.style.filter = ''; el.style.opacity = qual ? 0.55 : 1; } }
 }
 
 // ---------------- boca (fala) e piscar

@@ -112,7 +112,7 @@ def montar_falas(H, T):
                 if w:
                     t = w[1]
             lista.append(dict(a, t=round(t, 3)))
-        out.append({k: f[k] for k in ('quem', 'txt', 'cena', 'pose', 'expressao', 'efeito', 'etiqueta') if k in f} | {'bloco': {'start': b['start'], 'end': b['end'], 'words': b['words']}, 'acoes': lista})
+        out.append({k: f[k] for k in ('quem', 'txt', 'cena', 'pose', 'expressao', 'efeito', 'etiqueta', 'le_escolha') if k in f} | {'bloco': {'start': b['start'], 'end': b['end'], 'words': b['words']}, 'acoes': lista})
     return out
 
 
