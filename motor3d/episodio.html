@@ -23,7 +23,9 @@
   .op .x { color: #fff; } .op .x b { display: block; font-size: 60px; line-height: 1.08; font-weight: 900; } .op .x i { display: block; font-style: normal; font-size: 38px; margin-top: 14px; opacity: .92; font-weight: 700; }
   #opA { top: 720px; background: linear-gradient(135deg, #2f6bff, #1b3fb3); } #opA .l { color: #1b3fb3; }
   #opB { top: 1170px; background: linear-gradient(135deg, #ff3d5a, #b3172f); } #opB .l { color: #b3172f; }
-  #escolha .c { position: absolute; left: 0; right: 0; top: 1640px; text-align: center; color: #ffd23c; font-weight: 900; font-size: 64px; -webkit-text-stroke: 10px #0b0a12; paint-order: stroke fill; }
+  #escolha .c { position: absolute; left: 0; right: 0; top: 1615px; text-align: center; color: #ffd23c; font-weight: 900; font-size: 64px; -webkit-text-stroke: 10px #0b0a12; paint-order: stroke fill; }
+  #escolha .cta { position: absolute; left: 40px; right: 40px; top: 1750px; display: flex; justify-content: center; gap: 18px; }
+  #escolha .cta span { background: #ffffff; color: #1a1020; font-weight: 900; font-size: 34px; padding: 12px 22px; border-radius: 40px; white-space: nowrap; box-shadow: 0 6px 0 #0008; }
   #flash { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; background: #fff; opacity: 0; }
 </style></head><body>
 <div class="camada" id="ov">
@@ -33,7 +35,8 @@
   <div id="escolha"><div class="p" id="esp"></div>
     <div class="op" id="opA"><div class="l">A</div><div class="x"><b id="ea"></b><i id="eas"></i></div></div>
     <div class="op" id="opB"><div class="l">B</div><div class="x"><b id="eb"></b><i id="ebs"></i></div></div>
-    <div class="c">COMENTA A OU B</div></div>
+    <div class="c">COMENTA A OU B</div>
+    <div class="cta"><span>SEGUE</span><span>COMPARTILHA</span><span>SALVA</span><span>CURTE</span></div></div>
   <div id="flash"></div>
 </div>
 <script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>

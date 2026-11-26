@@ -107,5 +107,11 @@
       }
     }
   ],
-  "motor": "3d"
+  "motor": "3d",
+  "meta": {
+    "seguidores": 100000,
+    "prazo": "2026-12-11",
+    "definida_em": "2026-11-26",
+    "historico_seguidores": []
+  }
 }
