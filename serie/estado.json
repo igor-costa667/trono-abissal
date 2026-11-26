@@ -175,5 +175,18 @@
         "seguidores": 16
       }
     ]
+  },
+  "agenda": {
+    "postagens_por_dia": 2,
+    "horarios": [
+      "12:00",
+      "20:00"
+    ],
+    "inicio_da_rotina": [
+      "11:31",
+      "19:31"
+    ],
+    "desde": "2026-11-26",
+    "motivo": "Igor pediu 2 por dia; meio-dia (pico do almoço e janela de Reels de manhã) e 20h (pico geral 19-21h e público gamer 18-23h)"
   }
 }
