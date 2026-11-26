@@ -247,7 +247,7 @@
     "motivo": "Igor pediu 2 por dia; meio-dia (pico do almoço e janela de Reels de manhã) e 20h (pico geral 19-21h e público gamer 18-23h)"
   },
   "monitor": {
-    "intervalo": "a cada 2 h (1h13 a 23h13, menos 11h e 19h)",
+    "intervalo": "a cada 2 h, 7h13 a 23h13 (sem 11h, 19h e madrugada)",
     "leituras": [],
     "resumo_diario": [],
     "ajustes_para_o_proximo": [],

@@ -35,7 +35,7 @@ Arquivos:
 
 ## Monitor de 2 em 2 horas (pedido do Igor, 26/11/2026)
 
-Uma segunda tarefa agendada ("Monitor Trono Abissal") roda às 1h13, 3h13, 5h13, 7h13, 9h13, 13h13, 15h13, 17h13, 21h13 e 23h13 (Brasília). Às 11h e às 19h quem mede é a própria rotina do episódio. O monitor é leve: **não produz episódio, não gera voz, não renderiza, não publica nada, não comenta e não responde ninguém.** Ele só mede e ajusta a rotina.
+Uma segunda tarefa agendada ("Monitor Trono Abissal") roda às 7h13, 9h13, 13h13, 15h13, 17h13, 21h13 e 23h13 (Brasília), sem rodadas de madrugada (Igor, 26/11/2026). Às 11h e às 19h quem mede é a própria rotina do episódio. O monitor é leve: **não produz episódio, não gera voz, não renderiza, não publica nada, não comenta e não responde ninguém.** Ele só mede e ajusta a rotina.
 
 1. `git pull`. Se a rotina do episódio estiver rodando agora (último commit "Episódio N" sem o commit "Registra episódio N" depois dele, há menos de 1 hora), só leia os números e não faça commit; termine.
 2. Windsor (`instagram`, conta `17841427440990578`): métricas de cada Reel da série (mesmos campos do passo 3), seguidores da conta e comentários dos últimos 2 episódios.
