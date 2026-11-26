@@ -1,0 +1,313 @@
+{
+ "versao": "1.0-ptbr",
+ "nota": "27 fórmulas de gancho para Reels, Shorts e TikTok, em português. Cada uma tem modelo, exemplo, versão de tela, para que serve, a armadilha e uma expressão (match) que reconhece a fórmula num gancho já pronto. Adaptado do Instagram Agent Skill (MIT).",
+ "regras": [
+  "Escreva a frase falada e a frase da tela separadas. A da tela é mais curta: até 6 palavras.",
+  "Nada de introdução. O vídeo começa na frase que normalmente chegaria no segundo seis.",
+  "Diga o número. 'Muito' não é número.",
+  "O primeiro quadro também é gancho: movimento e texto na tela desde o quadro 1.",
+  "Se o gancho serve para qualquer canal do nicho, ele ainda não é seu. Coloque o detalhe que só o seu vídeo tem.",
+  "Gancho é promessa. Entregue antes da metade do vídeo."
+ ],
+ "ordem_classificacao": [
+  27,
+  1,
+  23,
+  5,
+  4,
+  3,
+  15,
+  20,
+  7,
+  9,
+  19,
+  25,
+  24,
+  18,
+  17,
+  8,
+  6,
+  16,
+  12,
+  10,
+  2,
+  13,
+  21,
+  22,
+  11,
+  14,
+  26
+ ],
+ "ganchos": [
+  {
+   "id": 1,
+   "nome": "Confissão do prejuízo",
+   "modelo": "{Valor} foi o que {um erro} custou.",
+   "exemplo": "Trezentos reais foi o que uma panela barata me custou.",
+   "na_tela": "R$ 300 JOGADOS FORA",
+   "serve_para": "Confiança rápida: quem conta o próprio erro prende até o fim. Ótimo para afiliado (o antes).",
+   "armadilha": "Prejuízo falso ou vago ('custou minha paz'). Tem que ter número.",
+   "match": "\\b(?:me|nos|lhe|te) custou\\b|\\bfoi o que (?:me |nos )?custou\\b|\\bperdi\\b[^.!?]{0,25}(?:r\\$|reais|\\d)"
+  },
+  {
+   "id": 2,
+   "nome": "Ordem negativa",
+   "modelo": "Pare de {coisa comum}. Faça {alternativa}.",
+   "exemplo": "Pare de lavar o arroz assim.",
+   "na_tela": "PARE DE FAZER ISSO",
+   "serve_para": "Corrigir um hábito que quase todo mundo tem.",
+   "armadilha": "Mandar parar sem mostrar o que fazer no lugar.",
+   "match": "^\\s*(?:pare|para|nunca|não (?:faça|use|compre|poste|coloque|lave|deixe)|nao (?:faça|faca|use|compre))\\b"
+  },
+  {
+   "id": 3,
+   "nome": "Ninguém te conta",
+   "modelo": "Ninguém te conta que {verdade incômoda}.",
+   "exemplo": "Ninguém te conta o que tinha na caixa de Davi.",
+   "na_tela": "NINGUÉM TE CONTA ISSO",
+   "serve_para": "Abrir curiosidade sobre um bastidor ou segredo do nicho.",
+   "armadilha": "Prometer segredo e entregar o óbvio.",
+   "match": "\\b(?:ningu[ée]m|nunca ningu[ée]m)\\s+(?:te |nos |vai te )?(?:conta|contou|fala|falou|diz|disse|ensina|ensinou|mostra|explica)\\b|\\bo que ningu[ée]m\\b"
+  },
+  {
+   "id": 4,
+   "nome": "A troca",
+   "modelo": "{Isto} substituiu {coisa cara} por {preço}.",
+   "exemplo": "Essa panela de quarenta reais substituiu minha air fryer.",
+   "na_tela": "R$ 40 NO LUGAR DE R$ 400",
+   "serve_para": "Afiliado: mostrar economia concreta.",
+   "armadilha": "Comparar coisas que não fazem o mesmo serviço.",
+   "match": "\\bsubstitu(?:i|iu|ir|indo)\\b|\\bno lugar d[eoa]\\b|\\bem vez de (?:pagar|comprar|gastar)\\b"
+  },
+  {
+   "id": 5,
+   "nome": "Tempo encolhido",
+   "modelo": "Isso levava {tempo longo}. Agora leva {tempo curto}.",
+   "exemplo": "Eu levava uma hora pra fazer marmita. Agora são dez minutos.",
+   "na_tela": "1 HORA → 10 MIN",
+   "serve_para": "Dica prática, produto que economiza tempo.",
+   "armadilha": "Tempo inventado. Use o real.",
+   "match": "\\blevava\\b|\\bagora (?:só )?leva\\b|\\bem (?:\\d+|dez|cinco|tr[eê]s|dois|duas|vinte|trinta) (?:segundos|minutos|min)\\b"
+  },
+  {
+   "id": 6,
+   "nome": "O resultado real",
+   "modelo": "Fiz {coisa} por {N dias}. Olha os números.",
+   "exemplo": "Postei uma historinha por dia durante trinta dias. Olha o que aconteceu.",
+   "na_tela": "30 DIAS, OS NÚMEROS",
+   "serve_para": "Prova. Precisa ser verdade.",
+   "armadilha": "Número inventado. Se não tem, não use esta fórmula.",
+   "match": "\\b(?:por|durante) (?:\\d+|trinta|sete|quinze|dez|sessenta|noventa) (?:dias|semanas|meses|anos)\\b|\\bolha (?:os|o) (?:n[uú]meros|resultado)\\b|\\bolha o que aconteceu\\b"
+  },
+  {
+   "id": 7,
+   "nome": "Jeito errado, jeito certo",
+   "modelo": "Você faz {coisa} errado, e a culpa não é sua.",
+   "exemplo": "Você guarda o pão do jeito errado.",
+   "na_tela": "VOCÊ FAZ ERRADO",
+   "serve_para": "Corrigir um erro comum com a solução logo em seguida.",
+   "armadilha": "Acusar e não ensinar.",
+   "match": "\\b(?:jeito|forma|modo) errad[oa]\\b|\\bfaz(?:endo)? (?:isso |isto )?errado\\b|\\berro (?:que|mais|comum)\\b|\\b(?:maior|principal) erro\\b"
+  },
+  {
+   "id": 8,
+   "nome": "Vazou de dentro",
+   "modelo": "Passei {N anos} {lá dentro}. Isso a gente nunca falava.",
+   "exemplo": "Trabalhei dez anos em cozinha industrial. Isso ninguém de fora sabe.",
+   "na_tela": "10 ANOS LÁ DENTRO",
+   "serve_para": "Autoridade de quem viveu o assunto.",
+   "armadilha": "Experiência que a pessoa não tem.",
+   "match": "\\b(?:trabalhei|passei|fiquei|vivi)\\b[^.!?]{0,30}\\b(?:\\d+|dez|cinco|vinte) anos\\b|\\ba gente nunca (?:falava|contava)\\b"
+  },
+  {
+   "id": 9,
+   "nome": "Pode copiar",
+   "modelo": "Copia esse {modelo}. Levei {tempo} pra acertar.",
+   "exemplo": "Copia essa lista de compras da semana.",
+   "na_tela": "COPIA ESSA LISTA",
+   "serve_para": "Entregar algo pronto para salvar.",
+   "armadilha": "Entregar algo genérico que existe em qualquer lugar.",
+   "match": "^\\s*(?:copia|copie|rouba|salva|pega) (?:essa|esse|isso|essas|esses|minha|meu)\\b"
+  },
+  {
+   "id": 10,
+   "nome": "Se isso, assiste",
+   "modelo": "Se você {situação}, isso resolve em {tempo}.",
+   "exemplo": "Se o seu arroz sempre gruda, assiste isso.",
+   "na_tela": "ARROZ GRUDANDO?",
+   "serve_para": "Filtrar o público certo no primeiro segundo.",
+   "armadilha": "Situação vaga demais ('se você quer ser feliz').",
+   "match": "^\\s*se (?:voc[eê]|o seu|a sua|seu|sua|tu)\\b"
+  },
+  {
+   "id": 11,
+   "nome": "Lista com favorito",
+   "modelo": "{N} {coisas} que {resultado}. A número {k} quase ninguém usa.",
+   "exemplo": "Três coisas que a Bíblia não diz. A segunda vai te surpreender.",
+   "na_tela": "3 COISAS QUE A BÍBLIA NÃO DIZ",
+   "serve_para": "Conteúdo de lista, bom para carrossel também.",
+   "armadilha": "Lista longa demais para 60 segundos.",
+   "match": "^\\s*(?:\\d+|tr[eê]s|quatro|cinco|sete|dez)\\s+(?:coisas|erros|dicas|segredos|motivos|jeitos|formas|curiosidades|sinais)\\b|\\ba (?:n[uú]mero|n[º°]) ?\\d\\b"
+  },
+  {
+   "id": 12,
+   "nome": "A objeção",
+   "modelo": "\"{Objeção que o público fala}.\" Beleza. Olha o jeito que funciona mesmo assim.",
+   "exemplo": "\"Não tenho tempo pra cozinhar.\" Beleza. Olha isso.",
+   "na_tela": "SEM TEMPO?",
+   "serve_para": "Responder a desculpa que o público repete.",
+   "armadilha": "Inventar uma objeção que ninguém faz.",
+   "match": "^\\s*[\\\"“'][^\\\"”']{5,120}[\\\"”'][,.]?\\s*(?:beleza|tudo bem|ok|certo|então|olha)"
+  },
+  {
+   "id": 13,
+   "nome": "Antes e depois",
+   "modelo": "{Mostra o antes}. {Mostra o depois}. {Uma frase sobre o que mudou}.",
+   "exemplo": "Essa era a minha cozinha. Essa é agora.",
+   "na_tela": "ANTES / DEPOIS",
+   "serve_para": "Mudança visual. Ideal para afiliado.",
+   "armadilha": "Antes e depois falso ou com outra luz.",
+   "match": "\\bantes\\b[^.!?]*\\bdepois\\b|\\b(?:essa|esse|isso) era\\b[^.!?]*[.!?]\\s*(?:essa|esse|isso) [eé]\\b"
+  },
+  {
+   "id": 14,
+   "nome": "Chamada direta",
+   "modelo": "{Grupo específico}, esse é pra você.",
+   "exemplo": "Quem trabalha de moto, esse vídeo é pra você.",
+   "na_tela": "MOTOBOY, PRESTA ATENÇÃO",
+   "serve_para": "Falar com um grupo que se reconhece na hora.",
+   "armadilha": "Grupo amplo demais ('pessoas').",
+   "match": "^\\s*(?:todo|toda|todos|todas|quem)\\s+\\w+|^\\s*(?:aten[cç][aã]o|presta aten[cç][aã]o)\\b|\\besse (?:v[ií]deo )?[eé] pra (?:voc[eê]|quem)\\b"
+  },
+  {
+   "id": 15,
+   "nome": "Os fracassos",
+   "modelo": "Meus primeiros {N} {tentativas} deram em nada. Olha o que mudou no {N+1}.",
+   "exemplo": "Meus primeiros vinte vídeos tiveram cem visualizações. O vinte e um mudou tudo.",
+   "na_tela": "20 VÍDEOS NO ZERO",
+   "serve_para": "Bastidor de quem está começando. Gera identificação.",
+   "armadilha": "Fracasso inventado para parecer humilde.",
+   "match": "\\bmeus primeiros\\s+(?:\\d+|dez|vinte|trinta|cinco)\\b|\\bprimeiros\\s+\\d+\\s+(?:v[ií]deos|posts|reels|clientes|meses)\\b"
+  },
+  {
+   "id": 16,
+   "nome": "A pergunta do público",
+   "modelo": "\"{Pergunta exatamente como chegou}\" Toda semana me perguntam isso.",
+   "exemplo": "\"Davi era baixinho mesmo?\" Me perguntam isso toda semana.",
+   "na_tela": "DAVI ERA BAIXINHO?",
+   "serve_para": "Responder dúvida real dos comentários ou da caixinha de perguntas.",
+   "armadilha": "Pergunta inventada.",
+   "match": "^\\s*[\\\"“'][^\\\"”']{3,110}\\?|^\\s*(?:como|o que|por ?que|porque|quando|onde|quem|qual|quais|d[aá] pra|pode|posso|vale a pena|[eé] verdade)\\b[^?]{3,110}\\?"
+  },
+  {
+   "id": 17,
+   "nome": "Frente a frente",
+   "modelo": "{A} contra {B}. Testei os dois e não teve nem comparação.",
+   "exemplo": "Panela de pressão contra panela elétrica. Uma ganhou fácil.",
+   "na_tela": "PRESSÃO x ELÉTRICA",
+   "serve_para": "Comparação de produtos ou de opções.",
+   "armadilha": "Comparar sem ter testado.",
+   "match": "\\b(?:vs\\.?|versus|contra)\\b|\\bdiferen[cç]a entre\\b|\\bqual (?:[eé] )?melhor\\b"
+  },
+  {
+   "id": 18,
+   "nome": "Abre na ação",
+   "modelo": "{Começa no meio da ação.} Olha o que isso faz.",
+   "exemplo": "Olha o que acontece quando o rei abre a porta.",
+   "na_tela": "OLHA ISSO",
+   "serve_para": "Historinha e demonstração: a imagem já é o gancho.",
+   "armadilha": "Ação parada no primeiro quadro.",
+   "match": "^\\s*(?:olha|olhe|veja|repara) (?:o que|isso|isto|s[oó])\\b|^\\s*deixa eu te mostrar\\b"
+  },
+  {
+   "id": 19,
+   "nome": "O prazo",
+   "modelo": "{Coisa} muda em {data}. Faça {ação} antes.",
+   "exemplo": "A promoção da panela acaba domingo.",
+   "na_tela": "ACABA DOMINGO",
+   "serve_para": "Urgência real (lançamento, promoção, mudança de regra).",
+   "armadilha": "Prazo falso. Só use com data verdadeira.",
+   "match": "\\b(?:acaba|termina|muda|vence|encerra)\\b[^.!?]{0,25}\\b(?:hoje|amanh[aã]|domingo|segunda|ter[cç]a|quarta|quinta|sexta|s[aá]bado|dia \\d+)\\b|\\bat[eé] (?:dia \\d+|domingo|amanh[aã])\\b"
+  },
+  {
+   "id": 20,
+   "nome": "Permissão",
+   "modelo": "Você não precisa de {coisa que todo mundo diz que precisa}.",
+   "exemplo": "Você não precisa aparecer pra ter um canal que cresce.",
+   "na_tela": "NÃO PRECISA APARECER",
+   "serve_para": "Tirar uma barreira do público.",
+   "armadilha": "Permissão que vira promessa de resultado.",
+   "match": "\\bvoc[eê] n[aã]o precisa\\b|\\bn[aã]o precisa (?:ter|ser|saber|aparecer|gastar)\\b"
+  },
+  {
+   "id": 21,
+   "nome": "Começa no meio da frase",
+   "modelo": "...e foi aí que {a virada}.",
+   "exemplo": "...e foi aí que o gigante caiu.",
+   "na_tela": "E FOI AÍ QUE...",
+   "serve_para": "Historinha: entra no ponto mais tenso.",
+   "armadilha": "Ninguém entende de onde veio. A cena seguinte precisa explicar.",
+   "match": "^\\s*(?:\\.\\.\\.|…)|^\\s*(?:e (?:foi|era) a[ií] que|e a[ií] (?:ele|ela|eles))\\b"
+  },
+  {
+   "id": 22,
+   "nome": "Ditado ao contrário",
+   "modelo": "{Ditado famoso, invertido.}",
+   "exemplo": "Devagar não se vai longe.",
+   "na_tela": "DEVAGAR NÃO SE VAI LONGE",
+   "serve_para": "Opinião forte que gera comentário.",
+   "armadilha": "Inverter só para chocar, sem argumento.",
+   "match": "^\\s*[^.!?]{3,40}\\bn[aã]o (?:se vai|vale|presta|funciona|existe)\\b"
+  },
+  {
+   "id": 23,
+   "nome": "A estatística",
+   "modelo": "{N}% {do grupo} {fato surpreendente}.",
+   "exemplo": "Noventa por cento das pessoas usam a air fryer errado.",
+   "na_tela": "90% USAM ERRADO",
+   "serve_para": "Curiosidade com número.",
+   "armadilha": "Número sem fonte. Pesquise ou não use.",
+   "match": "^\\s*\\d[\\d.,]*\\s?%|\\b\\d[\\d.,]*\\s?%\\s+d[aoe]s?\\b|\\bpor cento\\b"
+  },
+  {
+   "id": 24,
+   "nome": "A revelação",
+   "modelo": "Esse é o novo {coisa}.",
+   "exemplo": "Esse é o novo jeito de fazer marmita.",
+   "na_tela": "O NOVO JEITO",
+   "serve_para": "Produto novo, tendência, novidade.",
+   "armadilha": "Chamar de novo o que é velho.",
+   "match": "^\\s*(?:esse|essa|este|esta|isso) [eé] (?:o|a) nov[oa]\\b|^\\s*(?:essa|esse) (?:coisinha|coisa) (?:aqui )?[eé]\\b"
+  },
+  {
+   "id": 25,
+   "nome": "O resultado de outra pessoa",
+   "modelo": "Teve um {pessoa} que {resultado} em {tempo}.",
+   "exemplo": "Teve um soldado que derrubou um exército inteiro com uma pedra.",
+   "na_tela": "UMA PEDRA SÓ",
+   "serve_para": "Historinha e história bíblica: personagem com feito concreto.",
+   "armadilha": "Feito inventado sobre pessoa real.",
+   "match": "^\\s*(?:teve|existiu|era uma vez) (?:um|uma)\\b|\\b(?:um|uma) (?:menino|menina|cara|mulher|homem|rei|soldado|aluno|cliente) que\\b"
+  },
+  {
+   "id": 26,
+   "nome": "O superlativo",
+   "modelo": "O {mais rápido / maior / único} {coisa} é {resposta}.",
+   "exemplo": "O jeito mais rápido de descascar alho é esse.",
+   "na_tela": "O MAIS RÁPIDO",
+   "serve_para": "Dica única e direta.",
+   "armadilha": "Superlativo sem prova ('o melhor do mundo').",
+   "match": "^\\s*(?:o|a)\\s+(?:jeito|forma|coisa|segredo|erro|truque)?\\s*(?:mais (?:r[aá]pid[oa]|f[aá]cil|barat[oa]|estranh[oa]|perigos[oa])|[uú]nic[oa]|maior|melhor|pior)\\b"
+  },
+  {
+   "id": 27,
+   "nome": "E se...?",
+   "modelo": "E se {situação impossível ou extrema}?",
+   "exemplo": "E se o rei que te protegeu morresse e te deixasse a coroa?",
+   "na_tela": "E SE O REI MORRESSE?",
+   "serve_para": "Historinha e série com escolha: abre um mundo e coloca quem assiste dentro dele.",
+   "armadilha": "Pergunta sem consequência ('e se chovesse?'). Precisa ter algo em jogo.",
+   "match": "^\\s*e se\\b"
+  }
+ ]
+}

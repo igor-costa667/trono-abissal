@@ -1,0 +1,611 @@
+{
+ "versao": "1.0-ptbr",
+ "nota": "Vícios de texto de IA em português, usados por humanizar.py. Cada item troca uma expressão de robô por uma palavra simples (ou apaga). O último grupo é de redes sociais. Pode editar à vontade: se o aluno usa de verdade alguma dessas palavras, tire da lista.",
+ "invisiveis": [
+  "​",
+  "‌",
+  "‍",
+  "⁠",
+  "­",
+  "﻿",
+  "⁣",
+  "⁢",
+  "⁡",
+  "᠎"
+ ],
+ "espacos": [
+  " ",
+  " ",
+  " ",
+  " ",
+  " "
+ ],
+ "tipografia": [
+  {
+   "de": " — ",
+   "para": ", "
+  },
+  {
+   "de": "—",
+   "para": ", "
+  },
+  {
+   "de": " – ",
+   "para": " - "
+  },
+  {
+   "de": "–",
+   "para": "-"
+  },
+  {
+   "de": "“",
+   "para": "\""
+  },
+  {
+   "de": "”",
+   "para": "\""
+  },
+  {
+   "de": "‘",
+   "para": "'"
+  },
+  {
+   "de": "’",
+   "para": "'"
+  },
+  {
+   "de": "…",
+   "para": "..."
+  },
+  {
+   "de": "•",
+   "para": "-"
+  }
+ ],
+ "palavras": [
+  {
+   "de": "mergulhar fundo em",
+   "para": "entrar em"
+  },
+  {
+   "de": "mergulhe fundo em",
+   "para": "entre em"
+  },
+  {
+   "de": "mergulhar em",
+   "para": "entrar em"
+  },
+  {
+   "de": "mergulhe em",
+   "para": "veja"
+  },
+  {
+   "de": "desvendar",
+   "para": "descobrir"
+  },
+  {
+   "de": "desvende",
+   "para": "descubra"
+  },
+  {
+   "de": "desvendando",
+   "para": "descobrindo"
+  },
+  {
+   "de": "alavancar",
+   "para": "aumentar"
+  },
+  {
+   "de": "alavanque",
+   "para": "aumente"
+  },
+  {
+   "de": "potencializar",
+   "para": "aumentar"
+  },
+  {
+   "de": "potencialize",
+   "para": "aumente"
+  },
+  {
+   "de": "otimizar",
+   "para": "melhorar"
+  },
+  {
+   "de": "otimize",
+   "para": "melhore"
+  },
+  {
+   "de": "impulsionar",
+   "para": "ajudar"
+  },
+  {
+   "de": "fomentar",
+   "para": "ajudar"
+  },
+  {
+   "de": "propiciar",
+   "para": "dar"
+  },
+  {
+   "de": "robusto",
+   "para": "forte"
+  },
+  {
+   "de": "robusta",
+   "para": "forte"
+  },
+  {
+   "de": "crucial",
+   "para": "importante"
+  },
+  {
+   "de": "primordial",
+   "para": "importante"
+  },
+  {
+   "de": "imprescindível",
+   "para": "necessário"
+  },
+  {
+   "de": "transformador",
+   "para": "que muda muito"
+  },
+  {
+   "de": "transformadora",
+   "para": "que muda muito"
+  },
+  {
+   "de": "revolucionário",
+   "para": "novo"
+  },
+  {
+   "de": "revolucionária",
+   "para": "nova"
+  },
+  {
+   "de": "inovador",
+   "para": "novo"
+  },
+  {
+   "de": "inovadora",
+   "para": "nova"
+  },
+  {
+   "de": "disruptivo",
+   "para": "novo"
+  },
+  {
+   "de": "disruptiva",
+   "para": "nova"
+  },
+  {
+   "de": "incrível jornada",
+   "para": "caminho"
+  },
+  {
+   "de": "sua jornada",
+   "para": "seu caminho"
+  },
+  {
+   "de": "nessa jornada",
+   "para": "nesse caminho"
+  },
+  {
+   "de": "tapeçaria",
+   "para": "mistura"
+  },
+  {
+   "de": "paradigma",
+   "para": "jeito"
+  },
+  {
+   "de": "sinergia",
+   "para": "parceria"
+  },
+  {
+   "de": "holístico",
+   "para": "completo"
+  },
+  {
+   "de": "holística",
+   "para": "completa"
+  },
+  {
+   "de": "abrangente",
+   "para": "completo"
+  },
+  {
+   "de": "meticuloso",
+   "para": "cuidadoso"
+  },
+  {
+   "de": "meticulosamente",
+   "para": "com cuidado"
+  },
+  {
+   "de": "notavelmente",
+   "para": "bem"
+  },
+  {
+   "de": "significativamente",
+   "para": "bem"
+  },
+  {
+   "de": "substancialmente",
+   "para": "bem"
+  },
+  {
+   "de": "ademais",
+   "para": "e"
+  },
+  {
+   "de": "outrossim",
+   "para": "também"
+  },
+  {
+   "de": "destarte",
+   "para": "assim"
+  },
+  {
+   "de": "dessarte",
+   "para": "assim"
+  },
+  {
+   "de": "no entanto",
+   "para": "mas"
+  },
+  {
+   "de": "todavia",
+   "para": "mas"
+  },
+  {
+   "de": "contudo",
+   "para": "mas"
+  },
+  {
+   "de": "além disso",
+   "para": "e"
+  },
+  {
+   "de": "ademais disso",
+   "para": "e"
+  },
+  {
+   "de": "utilizar",
+   "para": "usar"
+  },
+  {
+   "de": "utilize",
+   "para": "use"
+  },
+  {
+   "de": "utilizando",
+   "para": "usando"
+  },
+  {
+   "de": "utilizado",
+   "para": "usado"
+  },
+  {
+   "de": "adquirir",
+   "para": "comprar"
+  },
+  {
+   "de": "adquira",
+   "para": "compre"
+  },
+  {
+   "de": "efetuar",
+   "para": "fazer"
+  },
+  {
+   "de": "visando",
+   "para": "para"
+  },
+  {
+   "de": "elevar o nível",
+   "para": "melhorar"
+  },
+  {
+   "de": "elevar seu",
+   "para": "melhorar seu"
+  },
+  {
+   "de": "elevar sua",
+   "para": "melhorar sua"
+  },
+  {
+   "de": "um verdadeiro divisor de águas",
+   "para": "uma grande mudança"
+  },
+  {
+   "de": "divisor de águas",
+   "para": "grande mudança"
+  },
+  {
+   "de": "game changer",
+   "para": "grande mudança"
+  },
+  {
+   "de": "virada de chave",
+   "para": "mudança"
+  }
+ ],
+ "frases": [
+  {
+   "de": "no mundo acelerado de hoje",
+   "para": "hoje"
+  },
+  {
+   "de": "no mundo atual",
+   "para": "hoje"
+  },
+  {
+   "de": "nos dias de hoje",
+   "para": "hoje"
+  },
+  {
+   "de": "na era digital",
+   "para": "hoje"
+  },
+  {
+   "de": "no cenário atual",
+   "para": "hoje"
+  },
+  {
+   "de": "em um mundo cada vez mais",
+   "para": "num mundo"
+  },
+  {
+   "de": "é importante ressaltar que",
+   "para": ""
+  },
+  {
+   "de": "é importante destacar que",
+   "para": ""
+  },
+  {
+   "de": "vale ressaltar que",
+   "para": ""
+  },
+  {
+   "de": "vale destacar que",
+   "para": ""
+  },
+  {
+   "de": "vale lembrar que",
+   "para": ""
+  },
+  {
+   "de": "cabe ressaltar que",
+   "para": ""
+  },
+  {
+   "de": "é fundamental entender que",
+   "para": ""
+  },
+  {
+   "de": "é crucial entender que",
+   "para": ""
+  },
+  {
+   "de": "é essencial entender que",
+   "para": ""
+  },
+  {
+   "de": "em suma",
+   "para": "resumindo"
+  },
+  {
+   "de": "em síntese",
+   "para": "resumindo"
+  },
+  {
+   "de": "em resumo",
+   "para": "resumindo"
+  },
+  {
+   "de": "em última análise",
+   "para": "no fim"
+  },
+  {
+   "de": "por fim, mas não menos importante",
+   "para": "por último"
+  },
+  {
+   "de": "não é mesmo?",
+   "para": ""
+  },
+  {
+   "de": "sem sombra de dúvidas",
+   "para": ""
+  },
+  {
+   "de": "sem dúvida alguma",
+   "para": ""
+  },
+  {
+   "de": "neste artigo",
+   "para": ""
+  },
+  {
+   "de": "nesse artigo",
+   "para": ""
+  },
+  {
+   "de": "ao longo deste texto",
+   "para": ""
+  },
+  {
+   "de": "um mundo de possibilidades",
+   "para": "muitas opções"
+  },
+  {
+   "de": "um leque de opções",
+   "para": "várias opções"
+  },
+  {
+   "de": "desbloquear todo o seu potencial",
+   "para": "ir mais longe"
+  },
+  {
+   "de": "todo o seu potencial",
+   "para": "o seu melhor"
+  },
+  {
+   "de": "dar o próximo passo",
+   "para": "começar"
+  },
+  {
+   "de": "sair da zona de conforto",
+   "para": "tentar algo novo"
+  },
+  {
+   "de": "e o melhor de tudo?",
+   "para": "e mais:"
+  },
+  {
+   "de": "mas não para por aí",
+   "para": "e tem mais"
+  },
+  {
+   "de": "para de rolar o feed",
+   "para": ""
+  },
+  {
+   "de": "pare de rolar o feed",
+   "para": ""
+  },
+  {
+   "de": "para de rolar",
+   "para": ""
+  },
+  {
+   "de": "pare de rolar",
+   "para": ""
+  },
+  {
+   "de": "no vídeo de hoje",
+   "para": ""
+  },
+  {
+   "de": "nesse vídeo eu vou te mostrar",
+   "para": ""
+  },
+  {
+   "de": "neste vídeo eu vou te mostrar",
+   "para": ""
+  },
+  {
+   "de": "nesse vídeo",
+   "para": ""
+  },
+  {
+   "de": "neste vídeo",
+   "para": ""
+  },
+  {
+   "de": "segue para mais conteúdos como esse",
+   "para": "segue pra mais"
+  },
+  {
+   "de": "segue para mais conteúdo",
+   "para": "segue pra mais"
+  },
+  {
+   "de": "marca aquele amigo que precisa ver isso",
+   "para": "manda pra quem precisa ver isso"
+  },
+  {
+   "de": "marque um amigo",
+   "para": "manda pra um amigo"
+  },
+  {
+   "de": "o algoritmo ama",
+   "para": ""
+  },
+  {
+   "de": "corre que é por tempo limitado",
+   "para": ""
+  },
+  {
+   "de": "corre antes que acabe",
+   "para": ""
+  },
+  {
+   "de": "você não vai acreditar",
+   "para": ""
+  },
+  {
+   "de": "isso vai mudar sua vida",
+   "para": ""
+  },
+  {
+   "de": "isso vai mudar a sua vida",
+   "para": ""
+  }
+ ],
+ "estruturas": [
+  {
+   "id": "nao-e-so",
+   "regex": "(?i)\\bn[aã]o [eé] (?:s[oó]|apenas) [^.!?\\n]{2,60}[,.]\\s*[eé]\\b",
+   "nome": "\"Não é só X, é Y\"",
+   "conserto": "Diga só o que você quer dizer. Apague a primeira metade."
+  },
+  {
+   "id": "nao-so-mas",
+   "regex": "(?i)\\bn[aã]o s[oó]\\b[^.!?\\n]{2,80}\\bmas (?:tamb[eé]m|ainda)\\b",
+   "nome": "\"Não só X, mas também Y\"",
+   "conserto": "Duas frases, ou fique com a metade mais forte."
+  },
+  {
+   "id": "nao-se-trata",
+   "regex": "(?i)\\bn[aã]o se trata de [^.!?\\n]{2,60}[.,]\\s*(?:se trata|trata-se)\\b",
+   "nome": "\"Não se trata de X. Se trata de Y\"",
+   "conserto": "Comece pelo Y."
+  },
+  {
+   "id": "trio",
+   "regex": "(?i)\\b\\w+, \\w+ e \\w+\\b[^.!?\\n]{0,20}[.!]",
+   "nome": "Lista de três por reflexo",
+   "conserto": "Fique com a palavra mais forte. Três por hábito soa robô."
+  },
+  {
+   "id": "pergunta-retorica",
+   "regex": "(?m)^\\s*(?:O resultado|A resposta|O motivo|O segredo|A verdade|E o melhor)\\?\\s*$",
+   "nome": "Pergunta de uma palavra (\"O resultado?\")",
+   "conserto": "Diga o resultado direto."
+  },
+  {
+   "id": "preambulo",
+   "regex": "(?i)\\b(?:nesse|neste) v[ií]deo\\b|\\bhoje eu vou (?:te )?(?:mostrar|ensinar)\\b|\\bvem comigo que\\b",
+   "nome": "Introdução de vídeo",
+   "conserto": "Comece pela parte boa."
+  },
+  {
+   "id": "lista-emoji",
+   "regex": "(?m)^\\s*[\\U0001F300-\\U0001FAFF\\u2600-\\u27BF]\\s+\\S",
+   "nome": "Lista com emoji no começo de cada linha",
+   "conserto": "Use hífen ou texto corrido."
+  },
+  {
+   "id": "caps",
+   "regex": "\\b[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{3,}\\s+[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{3,}\\s+[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{3,}\\b",
+   "nome": "Três palavras seguidas em caixa alta",
+   "conserto": "Caixa alta só no texto da tela, não na legenda."
+  },
+  {
+   "id": "parede-hashtag",
+   "regex": "(?:#[\\wÀ-ÿ]+\\s*){6,}",
+   "nome": "Parede de hashtags",
+   "conserto": "Até 5, do nicho."
+  },
+  {
+   "id": "isca",
+   "regex": "(?i)\\b(?:segue pra mais|marca (?:um|aquele) amigo|deixa (?:seu|o) like|curte se|d[aá] dois toques)\\b",
+   "nome": "Pedido de reflexo (isca)",
+   "conserto": "Um pedido só, com motivo: 'Segue pra ver a parte 2'."
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "versao": "1.0-ptbr",
+ "total": 100,
+ "nota": "Rubrica de 12 itens para dar nota ao perfil (0 a 100), adaptada para canais que não mostram o rosto. Adaptada do Instagram Agent Skill (MIT).",
+ "itens": [
+  {"id": "campo_nome", "nome": "Campo Nome (30 caracteres)", "pontos": 12, "nota_maxima": "A linha em negrito (não o @) tem o nome do canal + o assunto em palavras que as pessoas buscam: 'Contos Sem Órbita | Historinhas animadas'. A busca do Instagram lê esse campo.", "erro_comum": "Só o nome, ou nome com emoji."},
+  {"id": "bio_linha1", "nome": "Bio, primeira linha", "pontos": 12, "nota_maxima": "Diz para quem é e o que a pessoa ganha seguindo: 'Uma história nova por dia. Você escolhe o final.'", "erro_comum": "'Criador de conteúdo | Sonhador | Gamer'."},
+  {"id": "bio_resto", "nome": "Bio, resto", "pontos": 8, "nota_maxima": "O resto dos 150 caracteres traz uma prova ou uma oferta clara, em frase normal.", "erro_comum": "Lista de palavras soltas ou vazio."},
+  {"id": "fixados", "nome": "Os 3 fixados", "pontos": 10, "nota_maxima": "Três posts fixados com três funções: o melhor resultado (o vídeo que mais viralizou), o que explica o canal (Parte 1 da série principal) e o que leva à oferta (afiliado ou curso).", "erro_comum": "Nada fixado: o topo é o que foi postado por último."},
+  {"id": "link", "nome": "Link", "pontos": 8, "nota_maxima": "Um destino que cumpre o que a bio promete. Mais de dois links já vira cardápio.", "erro_comum": "Árvore de links com onze opções, ou nenhum link."},
+  {"id": "destaques", "nome": "Destaques", "pontos": 8, "nota_maxima": "De 4 a 6 destaques com nomes de pergunta do público: 'Parte 1', 'Personagens', 'Produtos', 'Como funciona'. Capas no mesmo estilo.", "erro_comum": "'Aleatório', 'Vida', '2023', ou 14 destaques sem ordem."},
+  {"id": "grade", "nome": "Grade legível", "pontos": 8, "nota_maxima": "As 9 primeiras capas se entendem em miniatura: título curto na capa e número da parte em série ('PARTE 3').", "erro_comum": "Capas no primeiro quadro do vídeo, sem texto."},
+  {"id": "foto", "nome": "Foto do perfil", "pontos": 6, "nota_maxima": "O rosto do personagem do canal ocupando ~60% do círculo, fundo simples, cor forte. Reconhecível com 40 pixels.", "erro_comum": "Personagem de corpo inteiro, logo cheio de texto ou imagem escura."},
+  {"id": "arroba", "nome": "@ do perfil", "pontos": 6, "nota_maxima": "Fácil de falar e de escrever depois de ouvir uma vez; igual no TikTok e no YouTube.", "erro_comum": "Vários underlines e números no lugar de letras."},
+  {"id": "categoria", "nome": "Conta profissional e categoria", "pontos": 6, "nota_maxima": "Conta profissional (criador de conteúdo) com categoria certa e botão de contato funcionando.", "erro_comum": "Conta pessoal: sem estatísticas e sem botão."},
+  {"id": "atividade", "nome": "Atividade recente", "pontos": 10, "nota_maxima": "Postou nos últimos 7 dias e respondeu os comentários do último post.", "erro_comum": "Cinco semanas sem postar, ou comentários sem resposta."},
+  {"id": "stories", "nome": "Stories", "pontos": 6, "nota_maxima": "Story no ar hoje ou na maioria dos dias (bastidor, enquete da próxima parte).", "erro_comum": "Nunca tem a bolinha colorida."}
+ ]
+}
