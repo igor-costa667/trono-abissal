@@ -110,6 +110,38 @@
         "gancho com conflito/segredo na 1ª frase",
         "episódio mais enxuto (144 palavras)"
       ]
+    },
+    {
+      "n": 3,
+      "titulo": "O Preço da Túnica",
+      "publicado_em": "2026-11-26",
+      "media_id": "17918081835549669",
+      "link": "https://www.instagram.com/reel/DgM_9jih_gw/",
+      "video": "episodios/ep03.mp4",
+      "story_video": "episodios/ep03_story.mp4",
+      "historia": "episodios/ep03_historia.json",
+      "duracao_video_s": 69.9,
+      "duracao_com_anuncio_s": 76.6,
+      "motor": "3d",
+      "escolha": {
+        "pergunta": "Onde o Ren vai treinar?",
+        "a": "Kagegakure, os ninjas",
+        "a_sub": "Sombras, mas mestre caçado",
+        "b": "Frostheim, os vikings",
+        "b_sub": "Corpo forte, treino brutal"
+      },
+      "votos": null,
+      "vencedora": null,
+      "metricas": null,
+      "creditos_elevenlabs": 1067,
+      "story_id": "17997263322055541",
+      "gancho": "Ninguém te conta o preço que Ren pagou.",
+      "formula": "#3 Ninguém te conta",
+      "nota_gancho": 81.4,
+      "mudancas_testadas": [
+        "gancho #3 'Ninguém te conta' (nota 81)",
+        "pergunta direta ao público no meio ('Você pagaria esse preço?') + narrador lê pergunta e opções A/B com chamado segue/compartilha"
+      ]
     }
   ],
   "promo": [
