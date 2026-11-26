@@ -224,6 +224,49 @@
       "mudancas_testadas": [
         "episódio mais curto: 145 palavras, 62,7 s de história (ep. 3: 69,9 s)"
       ]
+    },
+    {
+      "n": 5,
+      "titulo": "O Preço do Não",
+      "publicado_em": "2026-11-26",
+      "horario": "20h",
+      "media_id": "18089868005309409",
+      "link": "https://www.instagram.com/reel/DgOOCEXhSmQ/",
+      "video": "episodios/ep05.mp4",
+      "story_video": "episodios/ep05_story.mp4",
+      "historia": "episodios/ep05_historia.json",
+      "duracao_video_s": 64.5,
+      "duracao_com_anuncio_s": 71.2,
+      "motor": "3d",
+      "escolha": {
+        "pergunta": "O desertor tem um segredo. E agora?",
+        "a": "Ouve o desertor",
+        "a_sub": "Segredo revelado, vila fechada",
+        "b": "Entrega ao Kuroha",
+        "b_sub": "Vila perdoa, segredo morre"
+      },
+      "votos": null,
+      "vencedora": null,
+      "metricas": {},
+      "creditos_elevenlabs": 1066,
+      "story_id": "18097178375485587",
+      "gancho": "Olha só: Ren disse não e virou inimigo.",
+      "formula": "#18 Abre na ação",
+      "nota_gancho": 85.8,
+      "ganchos_testados": {
+        "#27 E se...?": "E se você recusasse uma morte e a vila inteira virasse inimiga? (81,4)",
+        "#21 Começa no meio da frase": "...e foi aí que a vila inteira virou as costas pro Ren. (42,2)"
+      },
+      "vozes": {
+        "narrador": "acdKA5HckGxoxxvy40dA",
+        "ren": "gzQG1wjdcAjdmmsny6Y8",
+        "kuroha": "H6CTgG0uZDmiNsMwijeo (Neto)",
+        "desertor": "NvHN9pLXN2C3JhUv7ZCi (Rannox Elion)"
+      },
+      "mudancas_testadas": [
+        "gancho #18 Abre na ação (nota 85,8) no lugar do #3",
+        "'No fim, você decide o que o Ren faz.' aos ~9 s"
+      ]
     }
   ],
   "promo": [
