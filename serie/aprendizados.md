@@ -24,3 +24,7 @@ O que está funcionando e o que não está, episódio a episódio. A tarefa diá
   - Hipótese: com dois episódios por dia, vídeo mais curto deixa mais gente chegar ao cartão A ou B (o ep. 2 reteve 42% de 69 s; o ep. 3 teve 76,6 s com anúncio).
   - Mudança do ep. 4 (só uma): episódio mais curto, 145 palavras, ~63 s de história (ep. 3: 69,9 s). Mantidos: gancho #3 "Ninguém te conta" (nota 81), narrador lendo a pergunta e as opções, chamado segue/compartilha.
   - Técnica: o Whisper do kit separou mal as falas do narrador quando duas frases seguidas terminavam com a mesma palavra ("sombras") e a pausa entre elas era curta; a fala do Kuroha caiu no lugar errado. Correção: antes do render, pôr 0,4 s de silêncio entre as falas do voz_narrador.wav (corte no silêncio mais perto do fim de cada fala) e conferir com o Whisper no timeline_audio.wav.
+
+## Monitor 26/11 17h: voto perdido pelo cache
+- O comentário do ep. 3 ("frostheim", voto B) foi feito às 09:42, antes da produção do ep. 4, mas o Windsor só mostrou o texto às 17h (plano sem atualização sob demanda). O ep. 4 saiu com A pelo "destino", contra a regra "se houver voto, o público decide".
+- Hipótese: com o cache, a contagem de votos da rotina pode chegar horas atrasada. Sugestão ao Igor (regra não mudada): quando `media_comments_count` for maior que o número de comentários com texto na tabela, tratar como voto pendente e citar no recap; ou assinar o plano Standard do Windsor (atualização de hora em hora).

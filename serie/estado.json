@@ -63,10 +63,10 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-26T15:10-03:00",
+        "coletado_em": "2026-11-26T17:14-03:00",
         "views": 336,
         "alcance": 290,
-        "tempo_medio_s": 5.04,
+        "tempo_medio_s": 5.03,
         "skip_rate": 0.808,
         "compartilhamentos": 0,
         "salvamentos": 1,
@@ -102,7 +102,7 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-26T15:14-03:00",
+        "coletado_em": "2026-11-26T17:14-03:00",
         "views": 272,
         "alcance": 245,
         "tempo_medio_s": 28.95,
@@ -141,17 +141,17 @@
       },
       "votos": {
         "A": 0,
-        "B": 0,
-        "total_pessoas": 0,
-        "obs": "nenhum voto em ~3 h no ar (dados do Windsor em cache): o destino (lore) escolheu A, Kagegakure. Ren é otaku de cultura japonesa, o ninjutsu é mana pura (combina com o controle preciso de mana) e o mestre Kuroha é caçado por desertores, o que leva ao favor sombrio do ep. 4 da ficha. Atenção: o Windsor conta 1 comentário no ep. 3, mas o texto ainda não aparece na tabela de comentários (cache); se for voto B, a próxima rodada registra e o Igor foi avisado"
+        "B": 1,
+        "total_pessoas": 1,
+        "obs": "Voto B ('frostheim', @emanuelbarbieri2011, 26/11 09:42 BRT) só apareceu no Windsor às 17h (cache). Chegou antes da produção do ep. 4, então pela regra do Igor o público tinha escolhido B; o ep. 4 saiu com A (Kagegakure) porque a rotina não viu o voto."
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-26T15:10-03:00",
+        "coletado_em": "2026-11-26T17:14-03:00",
         "horas_no_ar": 6.7,
         "views": 199,
         "alcance": 169,
-        "tempo_medio_s": 11.25,
+        "tempo_medio_s": 11.37,
         "skip_rate": 0.439,
         "compartilhamentos": 0,
         "salvamentos": 0,
@@ -167,7 +167,8 @@
       "mudancas_testadas": [
         "gancho #3 'Ninguém te conta' (nota 81)",
         "pergunta direta ao público no meio ('Você pagaria esse preço?') + narrador lê pergunta e opções A/B com chamado segue/compartilha"
-      ]
+      ],
+      "vencedora_pela_regra": "B"
     },
     {
       "n": 4,
@@ -191,16 +192,16 @@
       "votos": null,
       "vencedora": null,
       "metricas": {
-        "coletado_em": "2026-11-26T15:10-03:00",
-        "views": 151,
-        "alcance": 136,
-        "tempo_medio_s": 9.99,
-        "skip_rate": 0.515,
+        "coletado_em": "2026-11-26T17:14-03:00",
+        "views": 156,
+        "alcance": 140,
+        "tempo_medio_s": 10.18,
+        "skip_rate": 0.514,
         "compartilhamentos": 0,
         "salvamentos": 0,
         "curtidas": 2,
         "comentarios": 0,
-        "horas_no_ar": 3.25,
+        "horas_no_ar": 5.3,
         "duracao_video_s": 69.5
       },
       "creditos_elevenlabs": 972,
@@ -354,6 +355,53 @@
           }
         },
         "notas": "Windsor devolveu o cache (plano sem atualização sob demanda): eps 3 e 4 iguais à leitura das 15h; ep2 +1 view. Nenhum voto novo no ep4. Sem sinal novo; ajustes mantidos."
+      },
+      {
+        "data_hora": "2026-11-26T17:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.03,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.95,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 199,
+            "alcance": 169,
+            "tempo_medio": 11.37,
+            "pulo_3s": 0.439,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 156,
+            "alcance": 140,
+            "tempo_medio": 10.18,
+            "pulo_3s": 0.514,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 2
+          }
+        },
+        "notas": "Windsor ainda em cache (ep4 +5 views desde 15h). Apareceu o texto do comentário do ep3: 'frostheim' = voto B, feito às 09:42, antes do ep4 (que saiu com A). Ep4 com ~5,3 h: 156 views, pulo 51,4%, 0 comentários, sem voto. Sem disparo; ainda não dá 6 h para julgar travamento."
       }
     ],
     "resumo_diario": [],
