@@ -143,12 +143,21 @@
         "A": 0,
         "B": 0,
         "total_pessoas": 0,
-        "obs": "nenhum voto em ~3 h no ar (dados do Windsor em cache): o destino (lore) escolheu A, Kagegakure. Ren é otaku de cultura japonesa, o ninjutsu é mana pura (combina com o controle preciso de mana) e o mestre Kuroha é caçado por desertores, o que leva ao favor sombrio do ep. 4 da ficha"
+        "obs": "nenhum voto em ~3 h no ar (dados do Windsor em cache): o destino (lore) escolheu A, Kagegakure. Ren é otaku de cultura japonesa, o ninjutsu é mana pura (combina com o controle preciso de mana) e o mestre Kuroha é caçado por desertores, o que leva ao favor sombrio do ep. 4 da ficha. Atenção: o Windsor conta 1 comentário no ep. 3, mas o texto ainda não aparece na tabela de comentários (cache); se for voto B, a próxima rodada registra e o Igor foi avisado"
       },
       "vencedora": "A",
       "metricas": {
         "coletado_em": "2026-11-26",
-        "obs": "ainda não aparece no Windsor (cache sem o post de hoje); medir na próxima rodada"
+        "horas_no_ar": 3.4,
+        "views": 184,
+        "alcance": 165,
+        "tempo_medio_s": 10.18,
+        "skip_rate": 0.434,
+        "compartilhamentos": 0,
+        "salvamentos": 0,
+        "curtidas": 3,
+        "comentarios": 1,
+        "duracao_video_s": 76.6
       },
       "creditos_elevenlabs": 1067,
       "story_id": "17997263322055541",
@@ -158,6 +167,37 @@
       "mudancas_testadas": [
         "gancho #3 'Ninguém te conta' (nota 81)",
         "pergunta direta ao público no meio ('Você pagaria esse preço?') + narrador lê pergunta e opções A/B com chamado segue/compartilha"
+      ]
+    },
+    {
+      "n": 4,
+      "titulo": "O Preço do Mestre",
+      "publicado_em": "2026-11-26",
+      "horario": "12h",
+      "media_id": "18112333681944136",
+      "video": "episodios/ep04.mp4",
+      "story_video": "episodios/ep04_story.mp4",
+      "historia": "episodios/ep04_historia.json",
+      "duracao_video_s": 62.7,
+      "duracao_com_anuncio_s": 69.5,
+      "motor": "3d",
+      "escolha": {
+        "pergunta": "Kuroha pede uma morte. E agora?",
+        "a": "Recusa a missão",
+        "a_sub": "Ética sobe, vila desconfia",
+        "b": "Aceita e elimina o desertor",
+        "b_sub": "Treino liberado, ética cai"
+      },
+      "votos": null,
+      "vencedora": null,
+      "metricas": null,
+      "creditos_elevenlabs": 972,
+      "story_id": "17916908889560503",
+      "gancho": "Ninguém te conta o preço do mestre Kuroha.",
+      "formula": "#3 Ninguém te conta",
+      "nota_gancho": 81.4,
+      "mudancas_testadas": [
+        "episódio mais curto: 145 palavras, 62,7 s de história (ep. 3: 69,9 s)"
       ]
     }
   ],
