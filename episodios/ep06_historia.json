@@ -9,6 +9,13 @@
   "letra": "A",
   "texto": "Destino: ouviu o desertor"
  },
+ "escolha": {
+  "pergunta": "Sombras ou gelo. Onde treinar?",
+  "a": "Treina com o desertor",
+  "a_sub": "Ninjutsu, mas Kuroha caça",
+  "b": "Vai para Frostheim",
+  "b_sub": "Corpo forte, treino brutal"
+ },
  "elenco": {
   "ren": {
    "nome": "Ren",
@@ -38,6 +45,49 @@
    "roupa_cor": "cinza",
    "baixo": "calca",
    "baixo_cor": "preto"
+  },
+  "kuroha": {
+   "nome": "Kuroha",
+   "voz": "kuroha",
+   "corpo": "medio",
+   "altura": 1.75,
+   "pele": "media",
+   "cabelo": "curto",
+   "cabelo_cor": "preto",
+   "barba": "curta",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "preto",
+   "baixo": "calca",
+   "baixo_cor": "preto"
+  },
+  "filho": {
+   "nome": "Filho",
+   "voz": "narrador",
+   "corpo": "magro",
+   "altura": "crianca",
+   "pele": "media",
+   "cabelo": "curto",
+   "cabelo_cor": "preto",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "azul",
+   "baixo": "calca",
+   "baixo_cor": "preto"
+  },
+  "ninja": {
+   "nome": "Ninja",
+   "voz": "narrador",
+   "corpo": "medio",
+   "altura": 1.75,
+   "pele": "media",
+   "cabelo": "curto",
+   "cabelo_cor": "preto",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "vinho",
+   "baixo": "calca",
+   "baixo_cor": "vinho"
   }
  },
  "cenas": [
@@ -63,10 +113,7 @@
      "txt": "Olha só: Kuroha deixou a esposa morrer.",
      "acao": {
       "id": "desertor",
-      "tipo": "golpe",
-      "arma": "espada",
-      "alvo": "ren",
-      "reacao": "queda",
+      "tipo": "impacto",
       "em": 0.1
      }
     },
@@ -87,59 +134,82 @@
      "acao": {
       "id": "desertor",
       "tipo": "impacto",
-      "em": 0.1
+      "em": 0.2
      }
+    }
+   ]
+  },
+  {
+   "cenario": "aldeia",
+   "luz": "noite",
+   "personagens": [
+    {
+     "id": "filho",
+     "x": 0.15,
+     "olhando": "direita"
     },
+    {
+     "id": "kuroha",
+     "x": 0.4,
+     "olhando": "direita",
+     "segura": "espada"
+    },
+    {
+     "id": "ninja",
+     "x": 0.85,
+     "olhando": "esquerda",
+     "segura": "espada"
+    }
+   ],
+   "falas": [
     {
      "quem": "narrador",
      "txt": "Dez anos atrás, doze ninjas cercaram a casa de Kuroha.",
      "acao": {
-      "id": "desertor",
+      "id": "ninja",
       "tipo": "investida",
-      "dist": 0.15,
+      "dist": 0.12,
       "palavra": "cercaram"
      }
     },
     {
      "quem": "narrador",
-     "txt": "Fogo no telhado. Duas pessoas para salvar.",
+     "txt": "Kuroha lutou sozinho contra todos.",
      "acao": {
-      "id": "desertor",
-      "tipo": "feitico",
-      "cor": "vermelho",
-      "palavra": "Fogo"
+      "id": "kuroha",
+      "tipo": "golpe",
+      "arma": "espada",
+      "alvo": "ninja",
+      "palavra": "lutou"
      }
     },
     {
      "quem": "narrador",
-     "txt": "Ele só carregou uma: o filho.",
+     "txt": "Um ninja respondeu com fogo.",
      "acao": {
-      "id": "desertor",
-      "tipo": "impacto",
-      "palavra": "filho"
+      "id": "ninja",
+      "tipo": "feitico",
+      "cor": "vermelho",
+      "alvo": "kuroha",
+      "reacao": "atingido",
+      "palavra": "fogo"
      }
     },
     {
-     "quem": "desertor",
-     "txt": "Ele escolheu. E ela ficou pra trás.",
-     "pose": "apontando"
-    },
-    {
-     "quem": "ren",
-     "txt": "Cara, isso é pior que final de anime triste.",
-     "expressao": "medo",
-     "pose": "bracos_abertos"
-    },
-    {
-     "quem": "desertor",
-     "txt": "E a vila nunca soube disso.",
-     "pose": "bravo"
+     "quem": "narrador",
+     "txt": "Ele só conseguiu proteger um: o filho.",
+     "acao": {
+      "id": "kuroha",
+      "tipo": "aura",
+      "cor": "branco",
+      "palavra": "proteger"
+     }
     }
    ]
   },
   {
    "cenario": "floresta",
-   "luz": "dia",
+   "luz": "noite",
    "personagens": [
     {
      "id": "ren",
@@ -155,27 +225,34 @@
    ],
    "falas": [
     {
-     "quem": "narrador",
-     "txt": "Ao amanhecer, o desertor sumiu nas sombras.",
-     "acao": {
-      "id": "desertor",
-      "tipo": "pulo",
-      "palavra": "sumiu"
-     }
+     "quem": "desertor",
+     "txt": "Ele escolheu. E ela ficou pra trás.",
+     "pose": "apontando"
+    },
+    {
+     "quem": "ren",
+     "txt": "Cara, isso é pior que final de anime triste.",
+     "expressao": "medo",
+     "pose": "bracos_abertos"
+    },
+    {
+     "quem": "desertor",
+     "txt": "E a vila nunca soube disso.",
+     "pose": "bravo"
     },
     {
      "quem": "narrador",
-     "txt": "E apareceu atrás do Ren.",
+     "txt": "Então o desertor acendeu mana na ponta dos dedos.",
      "acao": {
       "id": "desertor",
-      "tipo": "investida",
-      "dist": 0.1,
-      "palavra": "apareceu"
+      "tipo": "faisca",
+      "cor": "azul",
+      "palavra": "acendeu"
      }
     },
     {
      "quem": "ren",
-     "txt": "Ei! Isso é teletransporte de verdade?",
+     "txt": "Ei! Isso é ninjutsu de verdade?",
      "expressao": "feliz",
      "pose": "bracos_abertos"
     },
@@ -189,36 +266,25 @@
      "txt": "Treinar com o desertor dá ao Ren o ninjutsu.",
      "acao": {
       "id": "ren",
-      "tipo": "feitico",
+      "tipo": "faisca",
       "cor": "azul",
       "palavra": "ninjutsu"
      }
     },
     {
      "quem": "narrador",
-     "txt": "Mas põe o Ren na mira de Kuroha.",
-     "acao": {
-      "id": "ren",
-      "tipo": "atingido",
-      "palavra": "mira"
-     }
+     "txt": "Mas Kuroha vira inimigo de vez."
     },
     {
      "quem": "narrador",
-     "txt": "Ao norte, os vikings de Frostheim aceitam qualquer um.",
-     "acao": {
-      "id": "ren",
-      "tipo": "impacto",
-      "palavra": "vikings"
-     }
+     "txt": "Ao norte, os vikings de Frostheim aceitam qualquer um."
     },
     {
      "quem": "narrador",
      "txt": "Lá, o corpo magrelo do Ren vira pedra.",
      "acao": {
       "id": "ren",
-      "tipo": "aura",
-      "cor": "gelo",
+      "tipo": "impacto",
       "palavra": "pedra"
      }
     },
@@ -253,12 +319,5 @@
     }
    ]
   }
- ],
- "escolha": {
-  "pergunta": "Sombras ou gelo. Onde treinar?",
-  "a": "Treina com o desertor",
-  "a_sub": "Ninjutsu, mas Kuroha caça",
-  "b": "Vai para Frostheim",
-  "b_sub": "Corpo forte, treino brutal"
- }
+ ]
 }
