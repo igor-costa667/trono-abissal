@@ -741,6 +741,63 @@
           }
         },
         "notas": "Windsor em cache (plano sem refresh): números de todos os episódios e seguidores (16) idênticos aos das 7h13. Nenhum comentário novo; ep5 segue sem voto (ep6 pelo destino/lore). Sem sinal; ajustes mantidos."
+      },
+      {
+        "data_hora": "2026-11-27T13:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.02,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 211,
+            "alcance": 179,
+            "tempo_medio": 10.96,
+            "pulo_3s": 0.445,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 173,
+            "alcance": 152,
+            "tempo_medio": 10.09,
+            "pulo_3s": 0.507,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          },
+          "5": {
+            "views": 262,
+            "alcance": 217,
+            "tempo_medio": 9.73,
+            "pulo_3s": 0.463,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 6
+          }
+        },
+        "notas": "Windsor em cache: eps 1-5 e seguidores (16) iguais às 9h13. Ep6 refeito (media 18611715352067966, publicado ~12h42) ainda não aparece no Windsor. Nenhum comentário novo; ep6 sem votos ainda. Sem sinal; sem ajustes novos."
       }
     ],
     "resumo_diario": [],
