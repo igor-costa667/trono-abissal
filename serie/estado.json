@@ -79,11 +79,11 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-27T07:14-03:00",
-        "views": 336,
-        "alcance": 290,
-        "tempo_medio_s": 5.02,
-        "skip_rate": 0.808,
+        "coletado_em": "2026-11-27T15:14-03:00",
+        "views": 338,
+        "alcance": 291,
+        "tempo_medio_s": 5.316,
+        "skip_rate": 0.805,
         "compartilhamentos": 0,
         "salvamentos": 1,
         "curtidas": 5,
@@ -118,7 +118,7 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-27T07:14-03:00",
+        "coletado_em": "2026-11-27T15:14-03:00",
         "views": 272,
         "alcance": 245,
         "tempo_medio_s": 28.845,
@@ -163,12 +163,12 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-27T07:14-03:00",
+        "coletado_em": "2026-11-27T15:14-03:00",
         "horas_no_ar": 22.7,
-        "views": 211,
-        "alcance": 179,
-        "tempo_medio_s": 10.964,
-        "skip_rate": 0.445,
+        "views": 214,
+        "alcance": 183,
+        "tempo_medio_s": 11.184,
+        "skip_rate": 0.443,
         "compartilhamentos": 0,
         "salvamentos": 0,
         "curtidas": 4,
@@ -213,11 +213,11 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-27T07:14-03:00",
-        "views": 173,
-        "alcance": 152,
-        "tempo_medio_s": 10.093,
-        "skip_rate": 0.507,
+        "coletado_em": "2026-11-27T15:14-03:00",
+        "views": 177,
+        "alcance": 157,
+        "tempo_medio_s": 10.013,
+        "skip_rate": 0.5,
         "compartilhamentos": 0,
         "salvamentos": 0,
         "curtidas": 3,
@@ -262,11 +262,11 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-27T11:35-03:00",
-        "views": 262,
-        "alcance": 217,
-        "tempo_medio_s": 9.732,
-        "skip_rate": 0.463,
+        "coletado_em": "2026-11-27T15:14-03:00",
+        "views": 298,
+        "alcance": 256,
+        "tempo_medio_s": 9.739,
+        "skip_rate": 0.506,
         "compartilhamentos": 1,
         "salvamentos": 0,
         "curtidas": 6,
@@ -338,7 +338,19 @@
         "story_id": "18080652662441928",
         "motivo": "Igor (27/11): ações sem sentido, personagens se atacando enquanto conversam, narração sem combinar com o desenho, 'sumiu nas sombras e apareceu atrás' virou só um pulo. Igor apaga pelo app (Windsor sem permissão de apagar)."
       },
-      "refeito": "27/11 ~12h45: flashback na vila (ninja avança, Kuroha golpeia, ninja responde com fogo, aura protegendo o filho), sem ataques durante diálogo, sem teleporte"
+      "refeito": "27/11 ~12h45: flashback na vila (ninja avança, Kuroha golpeia, ninja responde com fogo, aura protegendo o filho), sem ataques durante diálogo, sem teleporte",
+      "metricas": {
+        "coletado_em": "2026-11-27T15:14-03:00",
+        "views": 149,
+        "alcance": 122,
+        "tempo_medio_s": 9.408,
+        "skip_rate": 0.469,
+        "compartilhamentos": 7,
+        "salvamentos": 0,
+        "curtidas": 5,
+        "comentarios": 1,
+        "horas_no_ar": 2.6
+      }
     }
   ],
   "promo": [
@@ -798,10 +810,83 @@
           }
         },
         "notas": "Windsor em cache: eps 1-5 e seguidores (16) iguais às 9h13. Ep6 refeito (media 18611715352067966, publicado ~12h42) ainda não aparece no Windsor. Nenhum comentário novo; ep6 sem votos ainda. Sem sinal; sem ajustes novos."
+      },
+      {
+        "data_hora": "2026-11-27T15:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 338,
+            "alcance": 291,
+            "tempo_medio": 5.32,
+            "pulo_3s": 0.805,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 214,
+            "alcance": 183,
+            "tempo_medio": 11.18,
+            "pulo_3s": 0.443,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 177,
+            "alcance": 157,
+            "tempo_medio": 10.01,
+            "pulo_3s": 0.5,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          },
+          "5": {
+            "views": 298,
+            "alcance": 256,
+            "tempo_medio": 9.74,
+            "pulo_3s": 0.506,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 6
+          },
+          "6": {
+            "views": 149,
+            "alcance": 122,
+            "tempo_medio": 9.41,
+            "pulo_3s": 0.469,
+            "comentarios": 1,
+            "compart": 7,
+            "salvos": 0,
+            "curtidas": 5
+          }
+        },
+        "notas": "Windsor atualizou. Ep6 refeito com 2,6 h: 149 views, 7 compartilhamentos (recorde; a série inteira tinha 1), pulo 3 s 46,9%, tempo médio 9,4 s, 1 comentário (ainda não aparece na lista de comentários do Windsor). Views no ritmo do ep4 na mesma idade (151 com ~3,3 h). Ep5 subiu para 298 views, mas pulo 3 s foi de 46,3% para 50,6%."
       }
     ],
     "resumo_diario": [],
-    "ajustes_para_o_proximo": [],
+    "ajustes_para_o_proximo": [
+      {
+        "criado_em": "2026-11-27T15:14-03:00",
+        "motivo": "Ep6 ('Kuroha deixou a esposa morrer' + revelação 'Ela era minha irmã' + flashback) teve 7 compartilhamentos em 2,6 h; os 5 episódios anteriores somaram 1. O drama pessoal de um personagem é o que o público manda para os amigos.",
+        "ajuste": "Manter o gancho #18 com uma revelação pessoal/trágica de um personagem (segredo, perda, traição) e a cena de flashback quando alguém conta o passado. Não trocar por ação genérica."
+      }
+    ],
     "ajustes_aplicados": [
       {
         "criado_em": "2026-11-26T15:10-03:00",

@@ -51,3 +51,8 @@ O que está funcionando e o que não está, episódio a episódio. A tarefa diá
 - Roteiro: com o Ren e o desertor na floresta, a escolha virou treino (desertor x Frostheim). Frostheim volta como opção porque teve o único voto de vila (ep. 3).
 - Técnica: o Whisper ouviu "Ren ouviu" como "ou Will" e desalinhou a contagem de palavras do corte automático; os cortes da cena 1 foram marcados à mão pelos tempos das palavras. Conferir sempre a lista de palavras antes de colar os silêncios.
 - Igor reprovou a 1ª versão do ep. 6 (27/11): personagens se atacando enquanto conversavam, ações sem relação com a narração e "sumiu nas sombras e apareceu atrás do Ren" mostrado como um pulo (o motor não tem sumir/teletransportar). Refeito e republicado: cada ação mostra exatamente o que o narrador conta; nada de golpe ou feitiço em quem está só conversando; a história contada (os ninjas cercando a casa de Kuroha) virou flashback na aldeia. Lição: só narrar o que existe no pacote de ações; o que não existe (teleporte, sumir, carregar alguém) sai do roteiro.
+
+## Monitor 27/11 15h: ep. 6 é o mais compartilhado
+- Ep. 6 com ~2,6 h: 149 views (ritmo igual ao do ep. 4 na mesma idade), mas 7 compartilhamentos (eps. 1 a 5 somados: 1), pulo nos 3 s 46,9%, tempo médio 9,4 s, 1 comentário.
+- Hipótese: o drama pessoal (esposa morta, "ela era minha irmã", flashback) faz as pessoas mandarem o vídeo; a retenção ainda trava em ~10 s.
+- Ajuste para o ep. 7: manter gancho #18 com revelação pessoal/trágica e flashback quando houver história contada.
