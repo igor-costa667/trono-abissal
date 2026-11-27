@@ -299,12 +299,12 @@
       "titulo": "O Segredo de Kuroha",
       "publicado_em": "2026-11-27",
       "horario": "12h",
-      "media_id": "17884916193630259",
+      "media_id": "18611715352067966",
       "video": "episodios/ep06.mp4",
       "story_video": "episodios/ep06_story.mp4",
       "historia": "episodios/ep06_historia.json",
-      "duracao_video_s": 63.7,
-      "duracao_com_anuncio_s": 70.4,
+      "duracao_video_s": 64.0,
+      "duracao_com_anuncio_s": 70.7,
       "motor": "3d",
       "escolha": {
         "pergunta": "Sombras ou gelo. Onde treinar?",
@@ -315,8 +315,8 @@
       },
       "votos": null,
       "vencedora": null,
-      "creditos_elevenlabs": 1068,
-      "story_id": "18080652662441928",
+      "creditos_elevenlabs": 1970,
+      "story_id": "publicação do Story deu timeout no Windsor; confirmar no perfil",
       "gancho": "Olha só: Kuroha deixou a esposa morrer.",
       "formula": "#18 Abre na ação",
       "nota_gancho": 85.8,
@@ -332,7 +332,13 @@
       "mudancas_testadas": [
         "gancho #18 de novo (nota 85,8)",
         "revelação nova aos 8,7 s: 'Ela era minha irmã.' (desertor)"
-      ]
+      ],
+      "versao_apagada": {
+        "media_id": "17884916193630259",
+        "story_id": "18080652662441928",
+        "motivo": "Igor (27/11): ações sem sentido, personagens se atacando enquanto conversam, narração sem combinar com o desenho, 'sumiu nas sombras e apareceu atrás' virou só um pulo. Igor apaga pelo app (Windsor sem permissão de apagar)."
+      },
+      "refeito": "27/11 ~12h45: flashback na vila (ninja avança, Kuroha golpeia, ninja responde com fogo, aura protegendo o filho), sem ataques durante diálogo, sem teleporte"
     }
   ],
   "promo": [
