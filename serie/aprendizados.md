@@ -56,3 +56,10 @@ O que está funcionando e o que não está, episódio a episódio. A tarefa diá
 - Ep. 6 com ~2,6 h: 149 views (ritmo igual ao do ep. 4 na mesma idade), mas 7 compartilhamentos (eps. 1 a 5 somados: 1), pulo nos 3 s 46,9%, tempo médio 9,4 s, 1 comentário.
 - Hipótese: o drama pessoal (esposa morta, "ela era minha irmã", flashback) faz as pessoas mandarem o vídeo; a retenção ainda trava em ~10 s.
 - Ajuste para o ep. 7: manter gancho #18 com revelação pessoal/trágica e flashback quando houver história contada.
+
+## 27/11 (rodada das 20h, ep. 7)
+- Números (Windsor em cache desde 15h13, iguais aos do monitor): ep. 6 com ~7 h: 149 views, alcance 122, tempo médio 9,4 s (15% de 64 s), pulo nos 3 s 46,9%, 7 compartilhamentos (série inteira antes: 1), 5 curtidas, 1 comentário. Eps. 3 a 5 seguem em 9,7 a 11,2 s de tempo médio. Seguidores: 16 (sem mudança desde 26/11). Faltam 99.984 em 14 dias: 7.141,7 por dia; ritmo real: 0 por dia.
+- Votação do ep. 6: 1 voto, B (Frostheim). Primeira vez desde o ep. 3 que o público decide no voto.
+- Hipótese: drama pessoal gera compartilhamento, mas ainda não segura além de ~10 s nem vira seguidor. A revelação precisa chegar antes dos 10 s e deixar uma pergunta aberta até o fim.
+- Mudanças do ep. 7 (ajuste do monitor aplicado): (1) gancho #18 de novo, "Olha só: um machado, e o Ren caiu." (85,8), com golpe de verdade nos 3 primeiros segundos; (2) revelação pessoal do Bjorn aos ~14 s ("Meu filho também caía assim. Até descer o túnel sozinho.") com flashback do Leif e uma vida em jogo na escolha (descer atrás do Leif x treinar). Medir: compartilhamentos ≥ ep. 6 por hora e tempo médio > 10 s.
+- Roteiro: Frostheim entra com o fundador Bjorn (lore) e a regra das runas (reforço físico via mana); a mana exata do Ren vira "dom de runa", ligando ao segredo do ritual. A escolha A prepara a descida ao andar 1 da ficha; o motor 3D não tem bichos, então a descida precisa mostrar o perigo sem animais (escuro, tocha, quedas).

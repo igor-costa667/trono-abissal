@@ -1,0 +1,288 @@
+{
+ "titulo": "O Filho de Bjorn",
+ "parte": 7,
+ "rotulo_parte": "Episódio",
+ "clima": "suspense",
+ "ritmo": "rapido",
+ "protagonista": "ren",
+ "recap": {
+  "letra": "B",
+  "texto": "1 voto: Frostheim"
+ },
+ "escolha": {
+  "pergunta": "O filho do Bjorn sumiu. E agora?",
+  "a": "Desce atrás do Leif",
+  "a_sub": "Herói, mas ainda fraco",
+  "b": "Treina as runas",
+  "b_sub": "Mais forte, Leif espera"
+ },
+ "elenco": {
+  "ren": {
+   "nome": "Ren",
+   "voz": "ren",
+   "corpo": "magro",
+   "altura": 1.65,
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "preto",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "oliva",
+   "baixo": "calca",
+   "baixo_cor": "marrom"
+  },
+  "bjorn": {
+   "nome": "Bjorn",
+   "voz": "bjorn",
+   "corpo": "forte",
+   "altura": 1.95,
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "ruivo",
+   "barba": "longa",
+   "olhos": "azul",
+   "roupa": "tunica",
+   "roupa_cor": "marrom",
+   "baixo": "calca",
+   "baixo_cor": "cinza"
+  },
+  "leif": {
+   "nome": "Leif",
+   "voz": "narrador",
+   "corpo": "magro",
+   "altura": 1.7,
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "ruivo",
+   "olhos": "azul",
+   "roupa": "tunica",
+   "roupa_cor": "azul",
+   "baixo": "calca",
+   "baixo_cor": "marrom"
+  }
+ },
+ "cenas": [
+  {
+   "cenario": "campo",
+   "luz": "dia",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.2,
+     "olhando": "direita"
+    },
+    {
+     "id": "bjorn",
+     "x": 0.75,
+     "olhando": "esquerda",
+     "segura": "machado"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Olha só: um machado, e o Ren caiu.",
+     "acao": {
+      "id": "bjorn",
+      "tipo": "golpe",
+      "arma": "machado",
+      "alvo": "ren",
+      "reacao": "queda",
+      "palavra": "machado"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Um voto. Vocês escolheram B: Frostheim.",
+     "acao": {
+      "id": "bjorn",
+      "tipo": "aura",
+      "cor": "gelo",
+      "palavra": "Frostheim"
+     }
+    },
+    {
+     "quem": "bjorn",
+     "txt": "Túnica não segura machado, magrelo.",
+     "pose": "apontando",
+     "etiqueta": "Bjorn, líder de Frostheim"
+    },
+    {
+     "quem": "ren",
+     "txt": "Cara, eu tenho 18 anos e zero músculo!",
+     "expressao": "medo",
+     "pose": "bracos_abertos"
+    },
+    {
+     "quem": "bjorn",
+     "txt": "Meu filho também caía assim.",
+     "pose": "bravo",
+     "acao": {
+      "id": "bjorn",
+      "tipo": "impacto",
+      "em": 0.2
+     }
+    },
+    {
+     "quem": "bjorn",
+     "txt": "Até descer o túnel sozinho.",
+     "pose": "bravo"
+    }
+   ]
+  },
+  {
+   "cenario": "masmorra",
+   "luz": "noite",
+   "personagens": [
+    {
+     "id": "leif",
+     "x": 0.25,
+     "olhando": "direita",
+     "segura": "tocha"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Três dias atrás, Leif pegou uma tocha.",
+     "etiqueta": "Leif, filho de Bjorn",
+     "acao": {
+      "id": "leif",
+      "tipo": "impacto",
+      "palavra": "tocha"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "E correu sozinho para o Abismo.",
+     "acao": {
+      "id": "leif",
+      "tipo": "investida",
+      "dist": 0.3,
+      "palavra": "correu"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Ele brandiu a tocha contra o escuro.",
+     "acao": {
+      "id": "leif",
+      "tipo": "golpe",
+      "arma": "tocha",
+      "palavra": "brandiu"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "E nunca mais subiu.",
+     "acao": {
+      "id": "leif",
+      "tipo": "impacto",
+      "palavra": "nunca"
+     }
+    }
+   ]
+  },
+  {
+   "cenario": "campo",
+   "luz": "dia",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.2,
+     "olhando": "direita"
+    },
+    {
+     "id": "bjorn",
+     "x": 0.75,
+     "olhando": "esquerda",
+     "segura": "machado"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "bjorn",
+     "txt": "E ninguém aqui teve coragem de descer atrás dele.",
+     "pose": "bravo"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Então o Ren acendeu uma faísca. Mana exata, nem uma gota a mais.",
+     "acao": {
+      "id": "ren",
+      "tipo": "faisca",
+      "cor": "azul",
+      "palavra": "faísca"
+     }
+    },
+    {
+     "quem": "bjorn",
+     "txt": "Mana na medida certa... Isso é dom de runa.",
+     "pose": "pensando",
+     "acao": {
+      "id": "bjorn",
+      "tipo": "impacto",
+      "em": 0.3
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "E você? Descia agora para salvar o Leif?",
+     "acao": {
+      "id": "ren",
+      "tipo": "impacto",
+      "palavra": "salvar"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Mas o Ren ainda está fraco demais.",
+     "acao": {
+      "id": "ren",
+      "tipo": "ofegante",
+      "palavra": "fraco"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Com as runas de Frostheim, o Ren vira pedra.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "dourado",
+      "palavra": "runas"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Mas Leif está há três dias no escuro.",
+     "acao": {
+      "id": "bjorn",
+      "tipo": "impacto",
+      "palavra": "Leif"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "O que o Ren faz?",
+     "le_escolha": "pergunta"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Opção A: desce o túnel atrás do Leif.",
+     "le_escolha": "a"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Opção B: treina as runas primeiro.",
+     "le_escolha": "b"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Comenta A ou B, segue o perfil e manda pra quem curte RPG.",
+     "le_escolha": "comenta"
+    }
+   ]
+  }
+ ]
+}
