@@ -365,6 +365,48 @@
     "horas_no_ar": 7.0,
     "obs": "Windsor em cache (sem atualização desde 15h13)"
    }
+  },
+  {
+   "n": 7,
+   "titulo": "O Filho de Bjorn",
+   "publicado_em": "2026-11-27",
+   "horario": "20h",
+   "media_id": "18119449438833048",
+   "video": "episodios/ep07.mp4",
+   "story_video": "episodios/ep07_story.mp4",
+   "historia": "episodios/ep07_historia.json",
+   "duracao_video_s": 62.8,
+   "duracao_com_anuncio_s": 69.6,
+   "motor": "3d",
+   "escolha": {
+    "pergunta": "O filho do Bjorn sumiu. E agora?",
+    "a": "Desce atrás do Leif",
+    "a_sub": "Herói, mas ainda fraco",
+    "b": "Treina as runas",
+    "b_sub": "Mais forte, Leif espera"
+   },
+   "votos": null,
+   "vencedora": null,
+   "creditos_elevenlabs": 1186,
+   "story_id": "17959689759314524",
+   "gancho": "Olha só: um machado, e o Ren caiu.",
+   "formula": "#18 Abre na ação",
+   "nota_gancho": 85.8,
+   "ganchos_testados": {
+    "#27 E se...?": "E se o seu mestre novo te derrubasse no primeiro segundo? (81,4)",
+    "#21 Começa no meio da frase": "...e foi aí que o machado viking acertou o Ren em cheio. (39,2)"
+   },
+   "vozes": {
+    "narrador": "acdKA5HckGxoxxvy40dA",
+    "ren": "gzQG1wjdcAjdmmsny6Y8",
+    "bjorn": "H6CTgG0uZDmiNsMwijeo (Neto)"
+   },
+   "mudancas_testadas": [
+    "gancho #18 com golpe real nos 3 s",
+    "revelação pessoal do Bjorn aos ~14 s + flashback do Leif no túnel",
+    "vida em jogo na escolha (Leif)"
+   ],
+   "metricas": null
   }
  ],
  "promo": [
