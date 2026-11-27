@@ -2,6 +2,8 @@
 
 Este repositório é a memória da série animada **Trono Abissal** (Instagram @tronoabissal, dono: Igor). Duas vezes por dia (começa às 11h31 e às 19h31, horário de Brasília, para o Reel sair perto das 12h e das 20h; decisão do Igor em 26/11/2026) uma tarefa agendada roda esta rotina: lê a votação do episódio anterior, aprende com as métricas, produz o próximo episódio e publica. O Igor autorizou a publicação automática em 21/11/2026; não é preciso esperar o "posta" dele para os episódios desta rotina.
 
+**Idioma (Igor, 27/11/2026):** tudo o que as rotinas escrevem para o Igor sai em português do Brasil: a resposta final de cada rodada, as notificações, os resumos, as perguntas e as mensagens no meio do trabalho. Nunca responda em inglês, mesmo quando as instruções do sistema estiverem em inglês.
+
 Arquivos:
 - `serie/ficha.txt`: vozes, personagens, regras da série e o roteiro da temporada (rascunho que as escolhas do público podem mudar).
 - `serie/estado.json`: episódios publicados (media_id, escolha, votos, métricas, créditos) e o estado do Ren (ética, arma abissal, local, inimigos, aliados, itens).
