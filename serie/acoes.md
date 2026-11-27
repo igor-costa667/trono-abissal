@@ -43,6 +43,9 @@ Na fala, o campo `acao` (um objeto ou uma lista):
 No personagem da cena: `"segura": "espada"` (ou machado, cajado, tocha, escudo) deixa o objeto na mão durante a cena toda; `"aura": "roxo"` deixa a aura ligada.
 
 ## Regras de roteiro (ação)
+- **Coerência (Igor, 27/11/2026):** a ação mostra exatamente o que a frase diz, na mesma hora. Quem está só conversando não ataca nem é atacado. Frase sem nada físico: `impacto`, `aura` ou nada.
+- Só narre o que esta tabela tem. Sumir, teletransporte, voar, carregar alguém e bichos não existem no motor: reescreva a frase.
+- História do passado contada por alguém vira cena de flashback com os personagens dela (ex.: ep. 6, os ninjas cercando a casa de Kuroha na `aldeia`). Criança: `"altura": "crianca"` no elenco.
 - Os 3 primeiros segundos precisam ter movimento forte (investida, golpe, feitiço, queda, impacto). Nada de personagem parado na abertura.
 - Pelo menos uma ação a cada ~5 s. Se o narrador conta algo físico, o personagem faz.
 - Separe os personagens na cena (x 0.15 / 0.45 / 0.85) para que golpes e quedas não fiquem atrás de outro personagem.
