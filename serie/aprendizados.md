@@ -37,3 +37,8 @@ O que está funcionando e o que não está, episódio a episódio. A tarefa diá
 - Mudanças do ep. 5 (os 2 ajustes do monitor): (1) gancho #18 Abre na ação, "Olha só: Ren disse não e virou inimigo." (nota 85,8); (2) "No fim, você decide o que o Ren faz." aos ~9 s. Medir: pulo nos 3 s abaixo de 50% e pelo menos 1 comentário.
 - Técnica: o montar_historia juntou duas falas do narrador na cena 2 de novo (pausa de 0,4 s curta demais para o corte por silêncio). Corrigido antes do render: Whisper com marcação de palavras no voz_narrador.wav, corte no ponto mais silencioso entre a última palavra de uma fala e a primeira da seguinte, e 0,6 s de silêncio colado ali. Vale fazer sempre.
 - Roteiro: o motor 3D não tem bichos (ratos, coelhos, Vorgath). A descida ao andar 1 da ficha foi adiada; o ep. 5 seguiu a consequência da recusa (expulsão e o desertor, que a lore já prevê: Kuroha é perseguido por ex-companheiros).
+
+## Monitor 27/11 7h: ep. 5 melhor que o ep. 4
+- Ep. 5 com ~11 h: 262 views (23/h; ep. 4 ~21/h), pulo nos 3 s 46,3% (ep. 4: 50,7%), 1º compartilhamento da série, 6 curtidas. Tempo médio 9,7 s, igual aos eps. 3 e 4. 0 comentários.
+- Hipótese: o gancho #18 Abre na ação funciona melhor que o #3 repetido; o aviso "no fim, você decide" aos 9 s não segurou ninguém além dos 10 s.
+- Ajustes para o ep. 6: manter #18; pôr uma revelação ou ameaça nova entre 8 e 12 s.

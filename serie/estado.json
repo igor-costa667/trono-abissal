@@ -70,10 +70,10 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-26T19:35-03:00",
+        "coletado_em": "2026-11-27T07:14-03:00",
         "views": 336,
         "alcance": 290,
-        "tempo_medio_s": 5.033,
+        "tempo_medio_s": 5.02,
         "skip_rate": 0.808,
         "compartilhamentos": 0,
         "salvamentos": 1,
@@ -109,10 +109,10 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-26T19:35-03:00",
+        "coletado_em": "2026-11-27T07:14-03:00",
         "views": 272,
         "alcance": 245,
-        "tempo_medio_s": 28.954,
+        "tempo_medio_s": 28.845,
         "skip_rate": 0.476,
         "compartilhamentos": 0,
         "salvamentos": 0,
@@ -154,12 +154,12 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-26T19:35-03:00",
-        "horas_no_ar": 6.7,
-        "views": 199,
-        "alcance": 169,
-        "tempo_medio_s": 11.366,
-        "skip_rate": 0.439,
+        "coletado_em": "2026-11-27T07:14-03:00",
+        "horas_no_ar": 22.7,
+        "views": 211,
+        "alcance": 179,
+        "tempo_medio_s": 10.964,
+        "skip_rate": 0.445,
         "compartilhamentos": 0,
         "salvamentos": 0,
         "curtidas": 4,
@@ -204,16 +204,16 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-26T19:35-03:00",
-        "views": 163,
-        "alcance": 145,
-        "tempo_medio_s": 10.121,
-        "skip_rate": 0.5,
+        "coletado_em": "2026-11-27T07:14-03:00",
+        "views": 173,
+        "alcance": 152,
+        "tempo_medio_s": 10.093,
+        "skip_rate": 0.507,
         "compartilhamentos": 0,
         "salvamentos": 0,
-        "curtidas": 2,
+        "curtidas": 3,
         "comentarios": 0,
-        "horas_no_ar": 7.7,
+        "horas_no_ar": 19.3,
         "duracao_video_s": 69.5
       },
       "creditos_elevenlabs": 972,
@@ -247,7 +247,19 @@
       },
       "votos": null,
       "vencedora": null,
-      "metricas": {},
+      "metricas": {
+        "coletado_em": "2026-11-27T07:14-03:00",
+        "views": 262,
+        "alcance": 217,
+        "tempo_medio_s": 9.732,
+        "skip_rate": 0.463,
+        "compartilhamentos": 1,
+        "salvamentos": 0,
+        "curtidas": 6,
+        "comentarios": 0,
+        "horas_no_ar": 11.4,
+        "duracao_video_s": 64.5
+      },
       "creditos_elevenlabs": 1066,
       "story_id": "18097178375485587",
       "gancho": "Olha só: Ren disse não e virou inimigo.",
@@ -551,10 +563,78 @@
           }
         },
         "notas": "Windsor ainda em cache (plano sem refresh): ep5 (publicado ~19h50, ~3,4 h no ar) ainda não aparece; eps 1-4 e seguidores (16) iguais às 21h. Nenhum comentário novo, nenhum voto no ep5. Sem sinal; nenhum ajuste novo."
+      },
+      {
+        "data_hora": "2026-11-27T07:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.02,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 211,
+            "alcance": 179,
+            "tempo_medio": 10.96,
+            "pulo_3s": 0.445,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 173,
+            "alcance": 152,
+            "tempo_medio": 10.09,
+            "pulo_3s": 0.507,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          },
+          "5": {
+            "views": 262,
+            "alcance": 217,
+            "tempo_medio": 9.73,
+            "pulo_3s": 0.463,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 6
+          }
+        },
+        "notas": "Comparado com 23h13 (8 h). Ep5 apareceu no Windsor: 262 views em ~11,4 h (23/h; ep4 tinha 163 em 7,7 h, ~21/h), alcance 217, pulo 3 s 46,3% (ep4 50,7%), tempo médio 9,7 s (15% de 64,5 s), 1º compartilhamento da série, 6 curtidas (recorde desde ep1), 0 comentários. Ep3 +12 views, ep4 +10. Seguidores 16 (sem mudança). Nenhum voto no ep5: ep6 sai pelo destino (lore). Não disparou (≈1,1x), não travou."
       }
     ],
     "resumo_diario": [],
-    "ajustes_para_o_proximo": [],
+    "ajustes_para_o_proximo": [
+      {
+        "criado_em": "2026-11-27T07:14-03:00",
+        "motivo": "Gancho #18 Abre na ação no ep5 baixou o pulo nos 3 s de 50,7% (ep4, #3) para 46,3% e trouxe o 1º compartilhamento e 6 curtidas; ep5 é o melhor episódio desde o ep2 em views por hora.",
+        "ajuste": "Manter a fórmula #18 Abre na ação (ou #21 se der nota maior), com nota ≥ 80. Não voltar ao #3."
+      },
+      {
+        "criado_em": "2026-11-27T07:14-03:00",
+        "motivo": "Tempo médio continua travado em ~10 s (ep3 11,0; ep4 10,1; ep5 9,7) mesmo com 'No fim, você decide' aos 9 s; o ep2 (único com 29 s) prendeu mais. 0 comentário em ep4 e ep5.",
+        "ajuste": "Segurar o público na virada dos 10 s: entre 8 e 12 s, uma revelação ou ameaça nova em fala curta com ação na tela (ex.: 'Mas ninguém contou pro Ren quem estava atrás dele.'), em vez de só avisar que o público decide."
+      }
+    ],
     "ajustes_aplicados": [
       {
         "criado_em": "2026-11-26T15:10-03:00",
