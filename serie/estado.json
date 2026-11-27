@@ -457,6 +457,53 @@
           }
         },
         "notas": "Windsor ainda em cache (ep4 +5 views desde 15h). Apareceu o texto do comentário do ep3: 'frostheim' = voto B, feito às 09:42, antes do ep4 (que saiu com A). Ep4 com ~5,3 h: 156 views, pulo 51,4%, 0 comentários, sem voto. Sem disparo; ainda não dá 6 h para julgar travamento."
+      },
+      {
+        "data_hora": "2026-11-26T21:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.03,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.95,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 199,
+            "alcance": 169,
+            "tempo_medio": 11.37,
+            "pulo_3s": 0.439,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 163,
+            "alcance": 145,
+            "tempo_medio": 10.12,
+            "pulo_3s": 0.5,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 2
+          }
+        },
+        "notas": "Windsor ainda em cache: ep5 (publicado ~19h50) não aparece nas métricas; eps 1-4 iguais à leitura das 19h35. Ep4 com ~8,3 h: 163 views (acima da metade da mediana), pulo 50%: não travou. Nenhum voto novo (ep4 e ep5 sem comentários). Seguidores 16. Sem sinal; nenhum ajuste novo."
       }
     ],
     "resumo_diario": [],
