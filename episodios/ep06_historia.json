@@ -1,0 +1,264 @@
+{
+ "titulo": "O Segredo de Kuroha",
+ "parte": 6,
+ "rotulo_parte": "Episódio",
+ "clima": "suspense",
+ "ritmo": "rapido",
+ "protagonista": "ren",
+ "recap": {
+  "letra": "A",
+  "texto": "Destino: ouviu o desertor"
+ },
+ "elenco": {
+  "ren": {
+   "nome": "Ren",
+   "voz": "ren",
+   "corpo": "magro",
+   "altura": 1.65,
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "preto",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "oliva",
+   "baixo": "calca",
+   "baixo_cor": "marrom"
+  },
+  "desertor": {
+   "nome": "Desertor",
+   "voz": "desertor",
+   "corpo": "magro",
+   "altura": 1.82,
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "grisalho",
+   "barba": "curta",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "cinza",
+   "baixo": "calca",
+   "baixo_cor": "preto"
+  }
+ },
+ "cenas": [
+  {
+   "cenario": "floresta",
+   "luz": "noite",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.2,
+     "olhando": "direita"
+    },
+    {
+     "id": "desertor",
+     "x": 0.8,
+     "olhando": "esquerda",
+     "segura": "espada"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Olha só: Kuroha deixou a esposa morrer.",
+     "acao": {
+      "id": "desertor",
+      "tipo": "golpe",
+      "arma": "espada",
+      "alvo": "ren",
+      "reacao": "queda",
+      "em": 0.1
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Zero votos. O destino escolheu A: Ren ouviu.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "dourado",
+      "palavra": "ouviu"
+     }
+    },
+    {
+     "quem": "desertor",
+     "txt": "Ela era minha irmã.",
+     "pose": "bravo",
+     "acao": {
+      "id": "desertor",
+      "tipo": "impacto",
+      "em": 0.1
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Dez anos atrás, doze ninjas cercaram a casa de Kuroha.",
+     "acao": {
+      "id": "desertor",
+      "tipo": "investida",
+      "dist": 0.15,
+      "palavra": "cercaram"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Fogo no telhado. Duas pessoas para salvar.",
+     "acao": {
+      "id": "desertor",
+      "tipo": "feitico",
+      "cor": "vermelho",
+      "palavra": "Fogo"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Ele só carregou uma: o filho.",
+     "acao": {
+      "id": "desertor",
+      "tipo": "impacto",
+      "palavra": "filho"
+     }
+    },
+    {
+     "quem": "desertor",
+     "txt": "Ele escolheu. E ela ficou pra trás.",
+     "pose": "apontando"
+    },
+    {
+     "quem": "ren",
+     "txt": "Cara, isso é pior que final de anime triste.",
+     "expressao": "medo",
+     "pose": "bracos_abertos"
+    },
+    {
+     "quem": "desertor",
+     "txt": "E a vila nunca soube disso.",
+     "pose": "bravo"
+    }
+   ]
+  },
+  {
+   "cenario": "floresta",
+   "luz": "dia",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.2,
+     "olhando": "direita"
+    },
+    {
+     "id": "desertor",
+     "x": 0.8,
+     "olhando": "esquerda",
+     "segura": "espada"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Ao amanhecer, o desertor sumiu nas sombras.",
+     "acao": {
+      "id": "desertor",
+      "tipo": "pulo",
+      "palavra": "sumiu"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "E apareceu atrás do Ren.",
+     "acao": {
+      "id": "desertor",
+      "tipo": "investida",
+      "dist": 0.1,
+      "palavra": "apareceu"
+     }
+    },
+    {
+     "quem": "ren",
+     "txt": "Ei! Isso é teletransporte de verdade?",
+     "expressao": "feliz",
+     "pose": "bracos_abertos"
+    },
+    {
+     "quem": "desertor",
+     "txt": "Eu te ensino as sombras. Mas Kuroha vai te caçar.",
+     "pose": "apontando"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Treinar com o desertor dá ao Ren o ninjutsu.",
+     "acao": {
+      "id": "ren",
+      "tipo": "feitico",
+      "cor": "azul",
+      "palavra": "ninjutsu"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Mas põe o Ren na mira de Kuroha.",
+     "acao": {
+      "id": "ren",
+      "tipo": "atingido",
+      "palavra": "mira"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Ao norte, os vikings de Frostheim aceitam qualquer um.",
+     "acao": {
+      "id": "ren",
+      "tipo": "impacto",
+      "palavra": "vikings"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Lá, o corpo magrelo do Ren vira pedra.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "gelo",
+      "palavra": "pedra"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Mas o treino é brutal.",
+     "acao": {
+      "id": "ren",
+      "tipo": "ofegante",
+      "palavra": "brutal"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "O que o Ren faz?",
+     "le_escolha": "pergunta"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Opção A: treina com o desertor.",
+     "le_escolha": "a"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Opção B: vai para Frostheim.",
+     "le_escolha": "b"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Comenta A ou B, segue o perfil e manda pra quem curte RPG.",
+     "le_escolha": "comenta"
+    }
+   ]
+  }
+ ],
+ "escolha": {
+  "pergunta": "Sombras ou gelo. Onde treinar?",
+  "a": "Treina com o desertor",
+  "a_sub": "Ninjutsu, mas Kuroha caça",
+  "b": "Vai para Frostheim",
+  "b_sub": "Corpo forte, treino brutal"
+ }
+}

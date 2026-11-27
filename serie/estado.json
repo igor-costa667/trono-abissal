@@ -6,11 +6,13 @@
   "estado_do_ren": {
     "etica": 1,
     "usou_arma_abissal": false,
-    "local": "Floresta perto de Kagegakure (expulso da vila no ep. 5)",
+    "local": "Floresta perto de Kagegakure, com o desertor (ep. 6)",
     "inimigos": [
       "Kuroha e Kagegakure: Ren recusou a missão de matar o desertor; reputação local caiu e Kuroha o expulsou (ep. 5)"
     ],
-    "aliados": [],
+    "aliados": [
+      "Desertor (cunhado de Kuroha): oferece ensinar as sombras ao Ren (ep. 6, depende da escolha)"
+    ],
     "itens": [
       "Túnica de mana (mais mana máxima, feitiço mais barato, nenhuma defesa)"
     ],
@@ -18,7 +20,8 @@
       "O mago da corte diz que o ritual pega qualquer um e que o rei não quer ver (ep. 2)",
       "Com a túnica, a faísca do Ren vira bola de fogo gastando quase nada de mana (ep. 3)",
       "Kuroha é caçado por um desertor há dez anos e pede que Ren o elimine em troca de ensinar tudo (ep. 4)",
-      "O desertor que caça Kuroha há dez anos diz que Kuroha também desertou e manda Ren perguntar como a esposa dele morreu (ep. 5)"
+      "O desertor que caça Kuroha há dez anos diz que Kuroha também desertou e manda Ren perguntar como a esposa dele morreu (ep. 5)",
+      "O desertor era irmão da esposa de Kuroha. Dez anos atrás, doze ninjas cercaram a casa de Kuroha; ele só carregou o filho e a esposa ficou para trás. A vila nunca soube (ep. 6)"
     ],
     "historico_etica": [
       {
@@ -43,6 +46,12 @@
         "ep": 4,
         "escolha": "A",
         "etica": "sobe (+1): recusou o assassinato pedido por um líder (lore)",
+        "arma_abissal": false
+      },
+      {
+        "ep": 5,
+        "escolha": "A",
+        "etica": "mantém (1): ouviu em vez de entregar o desertor à morte",
         "arma_abissal": false
       }
     ]
@@ -245,10 +254,15 @@
         "b": "Entrega ao Kuroha",
         "b_sub": "Vila perdoa, segredo morre"
       },
-      "votos": null,
-      "vencedora": null,
+      "votos": {
+        "A": 0,
+        "B": 0,
+        "total_pessoas": 0,
+        "obs": "nenhum comentário no ep. 5 até 27/11 11h35 (media_comments_count 0): o destino (lore) escolheu A, ouvir o desertor. Entregá-lo para ser morto iria contra a ética que subiu no ep. 4, e a lore já diz que Kuroha perdeu a esposa e salvou só o filho"
+      },
+      "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-27T07:14-03:00",
+        "coletado_em": "2026-11-27T11:35-03:00",
         "views": 262,
         "alcance": 217,
         "tempo_medio_s": 9.732,
@@ -257,7 +271,7 @@
         "salvamentos": 0,
         "curtidas": 6,
         "comentarios": 0,
-        "horas_no_ar": 11.4,
+        "horas_no_ar": 15.7,
         "duracao_video_s": 64.5
       },
       "creditos_elevenlabs": 1066,
@@ -309,6 +323,10 @@
     "historico_seguidores": [
       {
         "data": "2026-11-26",
+        "seguidores": 16
+      },
+      {
+        "data": "2026-11-27",
         "seguidores": 16
       }
     ]
@@ -680,18 +698,7 @@
       }
     ],
     "resumo_diario": [],
-    "ajustes_para_o_proximo": [
-      {
-        "criado_em": "2026-11-27T07:14-03:00",
-        "motivo": "Gancho #18 Abre na ação no ep5 baixou o pulo nos 3 s de 50,7% (ep4, #3) para 46,3% e trouxe o 1º compartilhamento e 6 curtidas; ep5 é o melhor episódio desde o ep2 em views por hora.",
-        "ajuste": "Manter a fórmula #18 Abre na ação (ou #21 se der nota maior), com nota ≥ 80. Não voltar ao #3."
-      },
-      {
-        "criado_em": "2026-11-27T07:14-03:00",
-        "motivo": "Tempo médio continua travado em ~10 s (ep3 11,0; ep4 10,1; ep5 9,7) mesmo com 'No fim, você decide' aos 9 s; o ep2 (único com 29 s) prendeu mais. 0 comentário em ep4 e ep5.",
-        "ajuste": "Segurar o público na virada dos 10 s: entre 8 e 12 s, uma revelação ou ameaça nova em fala curta com ação na tela (ex.: 'Mas ninguém contou pro Ren quem estava atrás dele.'), em vez de só avisar que o público decide."
-      }
-    ],
+    "ajustes_para_o_proximo": [],
     "ajustes_aplicados": [
       {
         "criado_em": "2026-11-26T15:10-03:00",
@@ -708,6 +715,20 @@
         "aplicado_em": "2026-11-26T19:40-03:00",
         "episodio": 5,
         "como": "3ª fala do narrador, ~9 s: 'No fim, você decide o que o Ren faz.' (o título ocupa 1,6 s antes da 1ª fala)"
+      },
+      {
+        "criado_em": "2026-11-27T07:14-03:00",
+        "motivo": "Gancho #18 Abre na ação no ep5 baixou o pulo nos 3 s de 50,7% (ep4, #3) para 46,3% e trouxe o 1º compartilhamento e 6 curtidas; ep5 é o melhor episódio desde o ep2 em views por hora.",
+        "ajuste": "Manter a fórmula #18 Abre na ação (ou #21 se der nota maior), com nota ≥ 80. Não voltar ao #3.",
+        "aplicado_em": "2026-11-27",
+        "episodio": 6
+      },
+      {
+        "criado_em": "2026-11-27T07:14-03:00",
+        "motivo": "Tempo médio continua travado em ~10 s (ep3 11,0; ep4 10,1; ep5 9,7) mesmo com 'No fim, você decide' aos 9 s; o ep2 (único com 29 s) prendeu mais. 0 comentário em ep4 e ep5.",
+        "ajuste": "Segurar o público na virada dos 10 s: entre 8 e 12 s, uma revelação ou ameaça nova em fala curta com ação na tela (ex.: 'Mas ninguém contou pro Ren quem estava atrás dele.'), em vez de só avisar que o público decide.",
+        "aplicado_em": "2026-11-27",
+        "episodio": 6
       }
     ]
   }

@@ -42,3 +42,11 @@ O que está funcionando e o que não está, episódio a episódio. A tarefa diá
 - Ep. 5 com ~11 h: 262 views (23/h; ep. 4 ~21/h), pulo nos 3 s 46,3% (ep. 4: 50,7%), 1º compartilhamento da série, 6 curtidas. Tempo médio 9,7 s, igual aos eps. 3 e 4. 0 comentários.
 - Hipótese: o gancho #18 Abre na ação funciona melhor que o #3 repetido; o aviso "no fim, você decide" aos 9 s não segurou ninguém além dos 10 s.
 - Ajustes para o ep. 6: manter #18; pôr uma revelação ou ameaça nova entre 8 e 12 s.
+
+## 27/11 (rodada das 12h, ep. 6)
+- Números (Windsor em cache, iguais aos das 7h): ep. 5 com ~15,7 h: 262 views, alcance 217, tempo médio 9,7 s (14% de 71,2 s), pulo nos 3 s 46,3%, 1 compart., 6 curtidas, 0 comentários. Ep. 4: 173 views, 50,7%. Ep. 3: 211 views, 44,5%. Seguidores: 16 (sem mudança desde 26/11). Faltam 99.984 em 14 dias: 7.141,7 por dia; ritmo real: 0 por dia.
+- Votação do ep. 5: nenhum comentário. O destino seguiu a lore (A, ouvir o desertor; entregar à morte iria contra a ética que subiu no ep. 4).
+- Hipótese: o #18 Abre na ação segura melhor nos 3 s; o que falta é motivo para passar dos 10 s.
+- Mudanças do ep. 6 (os 2 ajustes do monitor): (1) gancho #18 de novo, "Olha só: Kuroha deixou a esposa morrer." (nota 85,8); (2) revelação nova aos 8,7 s, na voz do desertor: "Ela era minha irmã." Medir: tempo médio acima de 10 s e pulo nos 3 s até 46%.
+- Roteiro: com o Ren e o desertor na floresta, a escolha virou treino (desertor x Frostheim). Frostheim volta como opção porque teve o único voto de vila (ep. 3).
+- Técnica: o Whisper ouviu "Ren ouviu" como "ou Will" e desalinhou a contagem de palavras do corte automático; os cortes da cena 1 foram marcados à mão pelos tempos das palavras. Conferir sempre a lista de palavras antes de colar os silêncios.
