@@ -877,6 +877,73 @@
           }
         },
         "notas": "Windsor atualizou. Ep6 refeito com 2,6 h: 149 views, 7 compartilhamentos (recorde; a série inteira tinha 1), pulo 3 s 46,9%, tempo médio 9,4 s, 1 comentário (ainda não aparece na lista de comentários do Windsor). Views no ritmo do ep4 na mesma idade (151 com ~3,3 h). Ep5 subiu para 298 views, mas pulo 3 s foi de 46,3% para 50,6%."
+      },
+      {
+        "data_hora": "2026-11-27T17:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 338,
+            "alcance": 291,
+            "tempo_medio": 5.32,
+            "pulo_3s": 0.805,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 214,
+            "alcance": 183,
+            "tempo_medio": 11.18,
+            "pulo_3s": 0.443,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 177,
+            "alcance": 157,
+            "tempo_medio": 10.01,
+            "pulo_3s": 0.5,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          },
+          "5": {
+            "views": 298,
+            "alcance": 256,
+            "tempo_medio": 9.74,
+            "pulo_3s": 0.506,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 6
+          },
+          "6": {
+            "views": 149,
+            "alcance": 122,
+            "tempo_medio": 9.41,
+            "pulo_3s": 0.469,
+            "comentarios": 1,
+            "compart": 7,
+            "salvos": 0,
+            "curtidas": 5
+          }
+        },
+        "notas": "Windsor em cache (sem atualização desde 15h13): números iguais. Ep6 com ~4,6 h no ar: 149 views, 7 compartilhamentos, 1 comentário ainda invisível na lista do Windsor (sem voto A/B contável). Sem sinal novo; ajuste das 15h mantido."
       }
     ],
     "resumo_diario": [],
