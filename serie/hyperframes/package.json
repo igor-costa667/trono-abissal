@@ -1,0 +1,1 @@
+{ "name": "trono-hyperframes", "private": true, "dependencies": { "hyperframes": "0.9.104", "gsap": "3.15.0" } }
