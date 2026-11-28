@@ -87,10 +87,10 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-27T19:40-03:00",
+        "coletado_em": "2026-11-27T23:14-03:00",
         "views": 338,
         "alcance": 291,
-        "tempo_medio_s": 5.316,
+        "tempo_medio_s": 5.518,
         "skip_rate": 0.805,
         "compartilhamentos": 0,
         "salvamentos": 1,
@@ -126,7 +126,7 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-27T19:40-03:00",
+        "coletado_em": "2026-11-27T23:14-03:00",
         "views": 272,
         "alcance": 245,
         "tempo_medio_s": 28.845,
@@ -171,11 +171,11 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-27T19:40-03:00",
+        "coletado_em": "2026-11-27T23:14-03:00",
         "horas_no_ar": 22.7,
         "views": 214,
         "alcance": 183,
-        "tempo_medio_s": 11.184,
+        "tempo_medio_s": 11.252,
         "skip_rate": 0.443,
         "compartilhamentos": 0,
         "salvamentos": 0,
@@ -221,14 +221,14 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-27T19:40-03:00",
-        "views": 177,
-        "alcance": 157,
-        "tempo_medio_s": 10.013,
-        "skip_rate": 0.5,
+        "coletado_em": "2026-11-27T23:14-03:00",
+        "views": 180,
+        "alcance": 160,
+        "tempo_medio_s": 9.886,
+        "skip_rate": 0.503,
         "compartilhamentos": 0,
         "salvamentos": 0,
-        "curtidas": 3,
+        "curtidas": 4,
         "comentarios": 0,
         "horas_no_ar": 19.3,
         "duracao_video_s": 69.5
@@ -270,14 +270,14 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-27T19:40-03:00",
-        "views": 298,
-        "alcance": 256,
-        "tempo_medio_s": 9.739,
-        "skip_rate": 0.506,
+        "coletado_em": "2026-11-27T23:14-03:00",
+        "views": 308,
+        "alcance": 265,
+        "tempo_medio_s": 9.689,
+        "skip_rate": 0.513,
         "compartilhamentos": 1,
         "salvamentos": 0,
-        "curtidas": 6,
+        "curtidas": 7,
         "comentarios": 0,
         "horas_no_ar": 15.7,
         "duracao_video_s": 64.5
@@ -353,17 +353,16 @@
       },
       "refeito": "27/11 ~12h45: flashback na vila (ninja avança, Kuroha golpeia, ninja responde com fogo, aura protegendo o filho), sem ataques durante diálogo, sem teleporte",
       "metricas": {
-        "coletado_em": "2026-11-27T19:40-03:00",
-        "views": 149,
-        "alcance": 122,
-        "tempo_medio_s": 9.408,
-        "skip_rate": 0.469,
+        "coletado_em": "2026-11-27T23:14-03:00",
+        "views": 160,
+        "alcance": 136,
+        "tempo_medio_s": 9.071,
+        "skip_rate": 0.529,
         "compartilhamentos": 7,
         "salvamentos": 0,
-        "curtidas": 5,
+        "curtidas": 6,
         "comentarios": 1,
-        "horas_no_ar": 7.0,
-        "obs": "Windsor em cache (sem atualização desde 15h13)"
+        "horas_no_ar": 7.0
       }
     },
     {
@@ -406,7 +405,19 @@
         "revelação pessoal do Bjorn aos ~14 s + flashback do Leif no túnel",
         "vida em jogo na escolha (Leif)"
       ],
-      "metricas": null
+      "metricas": {
+        "coletado_em": "2026-11-27T23:14-03:00",
+        "views": 153,
+        "alcance": 132,
+        "tempo_medio_s": 9.241,
+        "skip_rate": 0.566,
+        "compartilhamentos": 0,
+        "salvamentos": 0,
+        "curtidas": 3,
+        "comentarios": 0,
+        "horas_no_ar": 3.4,
+        "duracao_video_s": 62.8
+      }
     }
   ],
   "promo": [
@@ -1067,10 +1078,93 @@
           }
         },
         "notas": "Windsor em cache sem atualização desde 15h13 (6 h; plano sem refresh sob demanda): números iguais. Ep7 (publicado ~19h50) ainda não aparece no Windsor. Nenhum comentário novo; sem votos para o ep7. Sem sinal novo."
+      },
+      {
+        "data_hora": "2026-11-27T23:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 338,
+            "alcance": 291,
+            "tempo_medio": 5.52,
+            "pulo_3s": 0.805,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 214,
+            "alcance": 183,
+            "tempo_medio": 11.25,
+            "pulo_3s": 0.443,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 180,
+            "alcance": 160,
+            "tempo_medio": 9.89,
+            "pulo_3s": 0.503,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "5": {
+            "views": 308,
+            "alcance": 265,
+            "tempo_medio": 9.69,
+            "pulo_3s": 0.513,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 7
+          },
+          "6": {
+            "views": 160,
+            "alcance": 136,
+            "tempo_medio": 9.07,
+            "pulo_3s": 0.529,
+            "comentarios": 1,
+            "compart": 7,
+            "salvos": 0,
+            "curtidas": 6
+          },
+          "7": {
+            "views": 153,
+            "alcance": 132,
+            "tempo_medio": 9.24,
+            "pulo_3s": 0.566,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          }
+        },
+        "notas": "Windsor atualizou o cache. Ep7 com 3,4 h: 153 views (ep6 tinha 149 com 7 h, ritmo melhor), mas pulo 3 s 56,6% (pior desde o ep1) e 0 compartilhamento (ep6: 7 em 2,6 h). Ep6 subiu para 160. Nenhum comentário/voto novo no ep7. Seguidores 16."
       }
     ],
     "resumo_diario": [],
-    "ajustes_para_o_proximo": [],
+    "ajustes_para_o_proximo": [
+      {
+        "criado_em": "2026-11-27T23:14-03:00",
+        "motivo": "Ep7 abriu com ação genérica ('Olha só: um machado, e o Ren caiu.') e a revelação pessoal só aos ~13 s: pulo 3 s 56,6% e 0 compartilhamento em 3,4 h. Ep6, que pôs o drama pessoal já na 1ª frase ('Kuroha deixou a esposa morrer'), teve 52,9% e 7 compartilhamentos.",
+        "ajuste": "Gancho #18 com a perda/segredo do personagem já na 1ª frase (quem + o que perdeu/escondeu), com ação na tela, em vez de só um golpe. Revelação dentro dos 3 primeiros segundos, não aos 13 s."
+      }
+    ],
     "ajustes_aplicados": [
       {
         "criado_em": "2026-11-26T15:10-03:00",
