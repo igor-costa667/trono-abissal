@@ -97,7 +97,7 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-28T11:35-03:00",
+        "coletado_em": "2026-11-28T15:14-03:00",
         "views": 338,
         "alcance": 291,
         "tempo_medio_s": 5.52,
@@ -141,7 +141,7 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-28T11:35-03:00",
+        "coletado_em": "2026-11-28T15:14-03:00",
         "views": 272,
         "alcance": 245,
         "tempo_medio_s": 28.84,
@@ -191,19 +191,19 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-28T11:35-03:00",
+        "coletado_em": "2026-11-28T15:14-03:00",
         "horas_no_ar": 22.7,
-        "views": 214,
-        "alcance": 183,
-        "tempo_medio_s": 11.19,
-        "skip_rate": 0.443,
+        "views": 215,
+        "alcance": 184,
+        "tempo_medio_s": 11.14,
+        "skip_rate": 0.446,
         "compartilhamentos": 0,
         "salvamentos": 0,
         "curtidas": 4,
         "comentarios": 1,
         "duracao_video_s": 76.6,
-        "tempo_medio": 11.19,
-        "pulo_3s": 0.443,
+        "tempo_medio": 11.14,
+        "pulo_3s": 0.446,
         "compart": 0,
         "salvos": 0,
         "obs": "Windsor em cache (plano sem atualização sob demanda)"
@@ -246,7 +246,7 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-28T11:35-03:00",
+        "coletado_em": "2026-11-28T15:14-03:00",
         "views": 180,
         "alcance": 160,
         "tempo_medio_s": 9.83,
@@ -300,19 +300,19 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-28T11:35-03:00",
-        "views": 310,
+        "coletado_em": "2026-11-28T15:14-03:00",
+        "views": 311,
         "alcance": 268,
-        "tempo_medio_s": 9.56,
-        "skip_rate": 0.516,
+        "tempo_medio_s": 9.54,
+        "skip_rate": 0.518,
         "compartilhamentos": 1,
         "salvamentos": 0,
         "curtidas": 7,
         "comentarios": 0,
         "horas_no_ar": 15.7,
         "duracao_video_s": 64.5,
-        "tempo_medio": 9.56,
-        "pulo_3s": 0.516,
+        "tempo_medio": 9.54,
+        "pulo_3s": 0.518,
         "compart": 1,
         "salvos": 0,
         "obs": "Windsor em cache (plano sem atualização sob demanda)"
@@ -388,19 +388,19 @@
       },
       "refeito": "27/11 ~12h45: flashback na vila (ninja avança, Kuroha golpeia, ninja responde com fogo, aura protegendo o filho), sem ataques durante diálogo, sem teleporte",
       "metricas": {
-        "coletado_em": "2026-11-28T11:35-03:00",
-        "views": 160,
-        "alcance": 136,
-        "tempo_medio_s": 9.4,
-        "skip_rate": 0.529,
-        "compartilhamentos": 7,
+        "coletado_em": "2026-11-28T15:14-03:00",
+        "views": 176,
+        "alcance": 142,
+        "tempo_medio_s": 9.15,
+        "skip_rate": 0.531,
+        "compartilhamentos": 8,
         "salvamentos": 0,
-        "curtidas": 6,
+        "curtidas": 7,
         "comentarios": 1,
         "horas_no_ar": 7.0,
-        "tempo_medio": 9.4,
-        "pulo_3s": 0.529,
-        "compart": 7,
+        "tempo_medio": 9.15,
+        "pulo_3s": 0.531,
+        "compart": 8,
         "salvos": 0,
         "obs": "Windsor em cache (plano sem atualização sob demanda)"
       }
@@ -451,19 +451,19 @@
         "vida em jogo na escolha (Leif)"
       ],
       "metricas": {
-        "coletado_em": "2026-11-28T11:35-03:00",
-        "views": 157,
-        "alcance": 135,
-        "tempo_medio_s": 9.52,
-        "skip_rate": 0.564,
+        "coletado_em": "2026-11-28T15:14-03:00",
+        "views": 188,
+        "alcance": 165,
+        "tempo_medio_s": 9.2,
+        "skip_rate": 0.58,
         "compartilhamentos": 0,
         "salvamentos": 0,
-        "curtidas": 3,
+        "curtidas": 4,
         "comentarios": 0,
         "horas_no_ar": 3.4,
         "duracao_video_s": 62.8,
-        "tempo_medio": 9.52,
-        "pulo_3s": 0.564,
+        "tempo_medio": 9.2,
+        "pulo_3s": 0.58,
         "compart": 0,
         "salvos": 0,
         "obs": "Windsor em cache (plano sem atualização sob demanda)"
@@ -509,7 +509,31 @@
         "gancho #18 com o segredo do Bjorn na 1ª frase e o Leif correndo com a tocha aos 1,8 s (ajuste do monitor)",
         "cliffhanger: Leif vivo, tocha no fim"
       ],
-      "legenda_1a_linha": "O pai mandou o Leif sozinho pro Abismo. E o Ren ficou treinando."
+      "legenda_1a_linha": "O pai mandou o Leif sozinho pro Abismo. E o Ren ficou treinando.",
+      "metricas": {
+        "coletado_em": "2026-11-28T15:14-03:00",
+        "views": 165,
+        "alcance": 145,
+        "tempo_medio_s": 11.28,
+        "tempo_medio": 11.28,
+        "skip_rate": 0.55,
+        "pulo_3s": 0.55,
+        "compartilhamentos": 1,
+        "compart": 1,
+        "salvamentos": 0,
+        "salvos": 0,
+        "curtidas": 5,
+        "comentarios": 2,
+        "obs": "Windsor em cache (plano sem atualização sob demanda)",
+        "horas_no_ar": 3.1
+      },
+      "votos_parcial": {
+        "A": 1,
+        "B": 0,
+        "total_pessoas": 1,
+        "lido_em": "2026-11-28T15:14-03:00",
+        "obs": "'Opção A' (@igaocs29hotmailcom, 28/11 12:19 BRT); 'Mantém a constância❤️' (@s.c.iago) é apoio, não voto"
+      }
     }
   ],
   "promo": [
@@ -1482,6 +1506,93 @@
           }
         },
         "notas": "Windsor ainda no mesmo cache (sem atualização sob demanda): números idênticos às 07h13/09h13. Ep8 (publicado ~12h07) ainda não aparece no Windsor. Ep7 157 views, 0 voto. Seguidores 16. Sem sinal novo."
+      },
+      {
+        "data_hora": "2026-11-28T15:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 338,
+            "alcance": 291,
+            "tempo_medio": 5.52,
+            "pulo_3s": 0.805,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 215,
+            "alcance": 184,
+            "tempo_medio": 11.14,
+            "pulo_3s": 0.446,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 180,
+            "alcance": 160,
+            "tempo_medio": 9.83,
+            "pulo_3s": 0.503,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "5": {
+            "views": 311,
+            "alcance": 268,
+            "tempo_medio": 9.54,
+            "pulo_3s": 0.518,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 7
+          },
+          "6": {
+            "views": 176,
+            "alcance": 142,
+            "tempo_medio": 9.15,
+            "pulo_3s": 0.531,
+            "comentarios": 1,
+            "compart": 8,
+            "salvos": 0,
+            "curtidas": 7
+          },
+          "7": {
+            "views": 188,
+            "alcance": 165,
+            "tempo_medio": 9.2,
+            "pulo_3s": 0.58,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "8": {
+            "views": 165,
+            "alcance": 145,
+            "tempo_medio": 11.28,
+            "pulo_3s": 0.55,
+            "comentarios": 2,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 5
+          }
+        },
+        "notas": "Cache do Windsor atualizou. Ep8 com 3,1 h: 165 views (ep7 tinha 157 com 3,4 h), tempo médio 11,3 s (melhor desde o ep3), pulo 3 s 55%, 2 comentários. Parcial ep8: A 1 x B 0. Ep7 subiu para 188 views, pulo 3 s 58%. Ep6 chegou a 8 compartilhamentos. Seguidores 16. Sem disparo nem trava."
       }
     ],
     "resumo_diario": [],
