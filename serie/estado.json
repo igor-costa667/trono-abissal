@@ -468,6 +468,48 @@
         "salvos": 0,
         "obs": "Windsor em cache (plano sem atualização sob demanda)"
       }
+    },
+    {
+      "n": 8,
+      "titulo": "A Runa do Ren",
+      "publicado_em": "2026-11-28",
+      "horario": "12h",
+      "media_id": "18030713993698405",
+      "video": "episodios/ep08.mp4",
+      "story_video": "episodios/ep08_story.mp4",
+      "historia": "episodios/ep08_historia.json",
+      "duracao_video_s": 70.8,
+      "duracao_com_anuncio_s": 77.6,
+      "motor": "3d",
+      "acabamento": "HyperFrames: cartão Seguir @tronoabissal nos últimos 4,5 s",
+      "escolha": {
+        "pergunta": "Leif está vivo. E agora?",
+        "a": "Desce agora",
+        "a_sub": "1 runa só, Ren em risco",
+        "b": "Treina mais 3 dias",
+        "b_sub": "Ren forte, a tocha apaga"
+      },
+      "votos": null,
+      "vencedora": null,
+      "creditos_elevenlabs": 1187,
+      "story_id": "18157443658491579",
+      "gancho": "Olha só: o pai mandou o Leif sozinho pro Abismo.",
+      "formula": "#18 Abre na ação",
+      "nota_gancho": 94.8,
+      "ganchos_testados": {
+        "#27 E se...?": "E se o seu pai te mandasse sozinho pro Abismo? (87,0)",
+        "#21 Começa no meio da frase": "...e foi o próprio pai que mandou o Leif pro Abismo. (42,2)"
+      },
+      "vozes": {
+        "narrador": "acdKA5HckGxoxxvy40dA",
+        "ren": "gzQG1wjdcAjdmmsny6Y8",
+        "bjorn": "H6CTgG0uZDmiNsMwijeo (Neto)"
+      },
+      "mudancas_testadas": [
+        "gancho #18 com o segredo do Bjorn na 1ª frase e o Leif correndo com a tocha aos 1,8 s (ajuste do monitor)",
+        "cliffhanger: Leif vivo, tocha no fim"
+      ],
+      "legenda_1a_linha": "O pai mandou o Leif sozinho pro Abismo. E o Ren ficou treinando."
     }
   ],
   "promo": [
