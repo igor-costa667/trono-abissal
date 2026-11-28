@@ -1,1048 +1,1115 @@
 {
- "serie": "Trono Abissal",
- "perfil": "@tronoabissal",
- "instagram_account_id": "17841427440990578",
- "lore_artifact": "https://claude.ai/artifact/DqHo74VRsZN6cv5rv9yhkp",
- "estado_do_ren": {
-  "etica": 1,
-  "usou_arma_abissal": false,
-  "local": "Frostheim, vila viking (ep. 7)",
-  "inimigos": [
-   "Kuroha e Kagegakure: Ren recusou a missão de matar o desertor; reputação local caiu e Kuroha o expulsou (ep. 5)"
+  "serie": "Trono Abissal",
+  "perfil": "@tronoabissal",
+  "instagram_account_id": "17841427440990578",
+  "lore_artifact": "https://claude.ai/artifact/DqHo74VRsZN6cv5rv9yhkp",
+  "estado_do_ren": {
+    "etica": 1,
+    "usou_arma_abissal": false,
+    "local": "Frostheim, vila viking (ep. 7)",
+    "inimigos": [
+      "Kuroha e Kagegakure: Ren recusou a missão de matar o desertor; reputação local caiu e Kuroha o expulsou (ep. 5)"
+    ],
+    "aliados": [
+      "Bjorn, líder de Frostheim: treina o Ren; viu que a mana exata dele é dom de runa (ep. 7)",
+      "Desertor (cunhado de Kuroha): ofereceu as sombras, mas o Ren foi para Frostheim; ficou na floresta (ep. 6)"
+    ],
+    "itens": [
+      "Túnica de mana (mais mana máxima, feitiço mais barato, nenhuma defesa)"
+    ],
+    "segredos": [
+      "O mago da corte diz que o ritual pega qualquer um e que o rei não quer ver (ep. 2)",
+      "Com a túnica, a faísca do Ren vira bola de fogo gastando quase nada de mana (ep. 3)",
+      "Kuroha é caçado por um desertor há dez anos e pede que Ren o elimine em troca de ensinar tudo (ep. 4)",
+      "O desertor que caça Kuroha há dez anos diz que Kuroha também desertou e manda Ren perguntar como a esposa dele morreu (ep. 5)",
+      "O desertor era irmão da esposa de Kuroha. Dez anos atrás, doze ninjas cercaram a casa de Kuroha; ele só carregou o filho e a esposa ficou para trás. A vila nunca soube (ep. 6)",
+      "Leif, filho de Bjorn, correu sozinho para o túnel do Abismo com uma tocha há três dias e não voltou; ninguém em Frostheim teve coragem de descer atrás dele (ep. 7)"
+    ],
+    "historico_etica": [
+      {
+        "ep": 1,
+        "escolha": "B",
+        "etica": "mantém (0)",
+        "arma_abissal": false
+      },
+      {
+        "ep": 2,
+        "escolha": "B",
+        "etica": "mantém (0)",
+        "arma_abissal": false
+      },
+      {
+        "ep": 3,
+        "escolha": "A",
+        "etica": "mantém (0)",
+        "arma_abissal": false
+      },
+      {
+        "ep": 4,
+        "escolha": "A",
+        "etica": "sobe (+1): recusou o assassinato pedido por um líder (lore)",
+        "arma_abissal": false
+      },
+      {
+        "ep": 5,
+        "escolha": "A",
+        "etica": "mantém (1): ouviu em vez de entregar o desertor à morte",
+        "arma_abissal": false
+      },
+      {
+        "ep": 6,
+        "escolha": "B",
+        "etica": "mantém (1): foi treinar em Frostheim",
+        "arma_abissal": false
+      }
+    ]
+  },
+  "episodios": [
+    {
+      "n": 1,
+      "titulo": "O Invocado",
+      "publicado_em": "2026-11-21",
+      "media_id": "18348563719281452",
+      "video": "episodios/ep01.mp4",
+      "historia": "episodios/ep01_historia.json",
+      "escolha": {
+        "pergunta": "O mago zombou do Ren. O que ele faz?",
+        "a": "Responde à altura",
+        "a_sub": "O mago vira inimigo",
+        "b": "Fica calado e observa",
+        "b_sub": "Ren descobre os segredos da corte"
+      },
+      "votos": {
+        "A": 0,
+        "B": 1,
+        "total_pessoas": 1,
+        "obs": "menos de 3 votos: o destino escolheu B (mais coerente com a lore)"
+      },
+      "vencedora": "B",
+      "metricas": {
+        "coletado_em": "2026-11-27T19:40-03:00",
+        "views": 338,
+        "alcance": 291,
+        "tempo_medio_s": 5.316,
+        "skip_rate": 0.805,
+        "compartilhamentos": 0,
+        "salvamentos": 1,
+        "curtidas": 5,
+        "comentarios": 1,
+        "duracao_video_s": 59.5
+      },
+      "creditos_elevenlabs": 968,
+      "story_id": "18159285514517251"
+    },
+    {
+      "n": 2,
+      "titulo": "O Teste",
+      "publicado_em": "2026-11-22",
+      "media_id": "17968544538238718",
+      "video": "episodios/ep02.mp4",
+      "story_video": "episodios/ep02_story.mp4",
+      "historia": "episodios/ep02_historia.json",
+      "duracao_video_s": 62.2,
+      "duracao_com_anuncio_s": 69.0,
+      "escolha": {
+        "pergunta": "Com o ouro do rei, o que o Ren compra?",
+        "a": "Espada e escudo de Valdenmoor",
+        "a_sub": "Força e defesa, mas pesa",
+        "b": "Túnica de mana",
+        "b_sub": "Mais magia, nenhuma proteção"
+      },
+      "votos": {
+        "A": 0,
+        "B": 0,
+        "total_pessoas": 0,
+        "obs": "nenhum voto: o destino (lore) escolheu B, a túnica de mana combina com o controle preciso de mana que o ritual enxergou"
+      },
+      "vencedora": "B",
+      "metricas": {
+        "coletado_em": "2026-11-27T19:40-03:00",
+        "views": 272,
+        "alcance": 245,
+        "tempo_medio_s": 28.845,
+        "skip_rate": 0.476,
+        "compartilhamentos": 0,
+        "salvamentos": 0,
+        "curtidas": 5,
+        "comentarios": 0,
+        "duracao_video_s": 69.0
+      },
+      "creditos_elevenlabs": 1049,
+      "story_id": "18320978512304307",
+      "mudancas_testadas": [
+        "gancho com conflito/segredo na 1ª frase",
+        "episódio mais enxuto (144 palavras)"
+      ]
+    },
+    {
+      "n": 3,
+      "titulo": "O Preço da Túnica",
+      "publicado_em": "2026-11-26",
+      "media_id": "17918081835549669",
+      "link": "https://www.instagram.com/reel/DgM_9jih_gw/",
+      "video": "episodios/ep03.mp4",
+      "story_video": "episodios/ep03_story.mp4",
+      "historia": "episodios/ep03_historia.json",
+      "duracao_video_s": 69.9,
+      "duracao_com_anuncio_s": 76.6,
+      "motor": "3d",
+      "escolha": {
+        "pergunta": "Onde o Ren vai treinar?",
+        "a": "Kagegakure, os ninjas",
+        "a_sub": "Sombras, mas mestre caçado",
+        "b": "Frostheim, os vikings",
+        "b_sub": "Corpo forte, treino brutal"
+      },
+      "votos": {
+        "A": 0,
+        "B": 1,
+        "total_pessoas": 1,
+        "obs": "Voto B ('frostheim', @emanuelbarbieri2011, 26/11 09:42 BRT) só apareceu no Windsor às 17h (cache). Chegou antes da produção do ep. 4, então pela regra do Igor o público tinha escolhido B; o ep. 4 saiu com A (Kagegakure) porque a rotina não viu o voto."
+      },
+      "vencedora": "A",
+      "metricas": {
+        "coletado_em": "2026-11-27T19:40-03:00",
+        "horas_no_ar": 22.7,
+        "views": 214,
+        "alcance": 183,
+        "tempo_medio_s": 11.184,
+        "skip_rate": 0.443,
+        "compartilhamentos": 0,
+        "salvamentos": 0,
+        "curtidas": 4,
+        "comentarios": 1,
+        "duracao_video_s": 76.6
+      },
+      "creditos_elevenlabs": 1067,
+      "story_id": "17997263322055541",
+      "gancho": "Ninguém te conta o preço que Ren pagou.",
+      "formula": "#3 Ninguém te conta",
+      "nota_gancho": 81.4,
+      "mudancas_testadas": [
+        "gancho #3 'Ninguém te conta' (nota 81)",
+        "pergunta direta ao público no meio ('Você pagaria esse preço?') + narrador lê pergunta e opções A/B com chamado segue/compartilha"
+      ],
+      "vencedora_pela_regra": "B"
+    },
+    {
+      "n": 4,
+      "titulo": "O Preço do Mestre",
+      "publicado_em": "2026-11-26",
+      "horario": "12h",
+      "media_id": "18112333681944136",
+      "video": "episodios/ep04.mp4",
+      "story_video": "episodios/ep04_story.mp4",
+      "historia": "episodios/ep04_historia.json",
+      "duracao_video_s": 62.7,
+      "duracao_com_anuncio_s": 69.5,
+      "motor": "3d",
+      "escolha": {
+        "pergunta": "Kuroha pede uma morte. E agora?",
+        "a": "Recusa a missão",
+        "a_sub": "Ética sobe, vila desconfia",
+        "b": "Aceita e elimina o desertor",
+        "b_sub": "Treino liberado, ética cai"
+      },
+      "votos": {
+        "A": 0,
+        "B": 0,
+        "total_pessoas": 0,
+        "obs": "nenhum comentário no ep. 4 (media_comments_count 0): o destino (lore) escolheu A, recusar; a lore diz que recusar um assassinato pedido por um líder derruba a reputação local mas sobe a ética, e só o Ren limpo chega ao final heroico"
+      },
+      "vencedora": "A",
+      "metricas": {
+        "coletado_em": "2026-11-27T19:40-03:00",
+        "views": 177,
+        "alcance": 157,
+        "tempo_medio_s": 10.013,
+        "skip_rate": 0.5,
+        "compartilhamentos": 0,
+        "salvamentos": 0,
+        "curtidas": 3,
+        "comentarios": 0,
+        "horas_no_ar": 19.3,
+        "duracao_video_s": 69.5
+      },
+      "creditos_elevenlabs": 972,
+      "story_id": "17916908889560503",
+      "gancho": "Ninguém te conta o preço do mestre Kuroha.",
+      "formula": "#3 Ninguém te conta",
+      "nota_gancho": 81.4,
+      "mudancas_testadas": [
+        "episódio mais curto: 145 palavras, 62,7 s de história (ep. 3: 69,9 s)"
+      ]
+    },
+    {
+      "n": 5,
+      "titulo": "O Preço do Não",
+      "publicado_em": "2026-11-26",
+      "horario": "20h",
+      "media_id": "18089868005309409",
+      "link": "https://www.instagram.com/reel/DgOOCEXhSmQ/",
+      "video": "episodios/ep05.mp4",
+      "story_video": "episodios/ep05_story.mp4",
+      "historia": "episodios/ep05_historia.json",
+      "duracao_video_s": 64.5,
+      "duracao_com_anuncio_s": 71.2,
+      "motor": "3d",
+      "escolha": {
+        "pergunta": "O desertor tem um segredo. E agora?",
+        "a": "Ouve o desertor",
+        "a_sub": "Segredo revelado, vila fechada",
+        "b": "Entrega ao Kuroha",
+        "b_sub": "Vila perdoa, segredo morre"
+      },
+      "votos": {
+        "A": 0,
+        "B": 0,
+        "total_pessoas": 0,
+        "obs": "nenhum comentário no ep. 5 até 27/11 11h35 (media_comments_count 0): o destino (lore) escolheu A, ouvir o desertor. Entregá-lo para ser morto iria contra a ética que subiu no ep. 4, e a lore já diz que Kuroha perdeu a esposa e salvou só o filho"
+      },
+      "vencedora": "A",
+      "metricas": {
+        "coletado_em": "2026-11-27T19:40-03:00",
+        "views": 298,
+        "alcance": 256,
+        "tempo_medio_s": 9.739,
+        "skip_rate": 0.506,
+        "compartilhamentos": 1,
+        "salvamentos": 0,
+        "curtidas": 6,
+        "comentarios": 0,
+        "horas_no_ar": 15.7,
+        "duracao_video_s": 64.5
+      },
+      "creditos_elevenlabs": 1066,
+      "story_id": "18097178375485587",
+      "gancho": "Olha só: Ren disse não e virou inimigo.",
+      "formula": "#18 Abre na ação",
+      "nota_gancho": 85.8,
+      "ganchos_testados": {
+        "#27 E se...?": "E se você recusasse uma morte e a vila inteira virasse inimiga? (81,4)",
+        "#21 Começa no meio da frase": "...e foi aí que a vila inteira virou as costas pro Ren. (42,2)"
+      },
+      "vozes": {
+        "narrador": "acdKA5HckGxoxxvy40dA",
+        "ren": "gzQG1wjdcAjdmmsny6Y8",
+        "kuroha": "H6CTgG0uZDmiNsMwijeo (Neto)",
+        "desertor": "NvHN9pLXN2C3JhUv7ZCi (Rannox Elion)"
+      },
+      "mudancas_testadas": [
+        "gancho #18 Abre na ação (nota 85,8) no lugar do #3",
+        "'No fim, você decide o que o Ren faz.' aos ~9 s"
+      ]
+    },
+    {
+      "n": 6,
+      "titulo": "O Segredo de Kuroha",
+      "publicado_em": "2026-11-27",
+      "horario": "12h",
+      "media_id": "18611715352067966",
+      "video": "episodios/ep06.mp4",
+      "story_video": "episodios/ep06_story.mp4",
+      "historia": "episodios/ep06_historia.json",
+      "duracao_video_s": 64.0,
+      "duracao_com_anuncio_s": 70.7,
+      "motor": "3d",
+      "escolha": {
+        "pergunta": "Sombras ou gelo. Onde treinar?",
+        "a": "Treina com o desertor",
+        "a_sub": "Ninjutsu, mas Kuroha caça",
+        "b": "Vai para Frostheim",
+        "b_sub": "Corpo forte, treino brutal"
+      },
+      "votos": {
+        "A": 0,
+        "B": 1,
+        "total_pessoas": 1,
+        "obs": "1 comentário 'Opção b' (@igaocs29hotmailcom, 27/11 13:01 BRT). Regra do Igor: havendo voto, o público decide."
+      },
+      "vencedora": "B",
+      "creditos_elevenlabs": 1970,
+      "story_id": "publicação do Story deu timeout no Windsor; confirmar no perfil",
+      "gancho": "Olha só: Kuroha deixou a esposa morrer.",
+      "formula": "#18 Abre na ação",
+      "nota_gancho": 85.8,
+      "ganchos_testados": {
+        "#27 E se...?": "E se você descobrisse que o seu mestre deixou a esposa morrer? (55,8)",
+        "#21 Começa no meio da frase": "...e foi aí que o Ren ouviu: Kuroha deixou a esposa morrer. (55,4)"
+      },
+      "vozes": {
+        "narrador": "acdKA5HckGxoxxvy40dA",
+        "ren": "gzQG1wjdcAjdmmsny6Y8",
+        "desertor": "NvHN9pLXN2C3JhUv7ZCi (Rannox Elion)"
+      },
+      "mudancas_testadas": [
+        "gancho #18 de novo (nota 85,8)",
+        "revelação nova aos 8,7 s: 'Ela era minha irmã.' (desertor)"
+      ],
+      "versao_apagada": {
+        "media_id": "17884916193630259",
+        "story_id": "18080652662441928",
+        "motivo": "Igor (27/11): ações sem sentido, personagens se atacando enquanto conversam, narração sem combinar com o desenho, 'sumiu nas sombras e apareceu atrás' virou só um pulo. Igor apaga pelo app (Windsor sem permissão de apagar)."
+      },
+      "refeito": "27/11 ~12h45: flashback na vila (ninja avança, Kuroha golpeia, ninja responde com fogo, aura protegendo o filho), sem ataques durante diálogo, sem teleporte",
+      "metricas": {
+        "coletado_em": "2026-11-27T19:40-03:00",
+        "views": 149,
+        "alcance": 122,
+        "tempo_medio_s": 9.408,
+        "skip_rate": 0.469,
+        "compartilhamentos": 7,
+        "salvamentos": 0,
+        "curtidas": 5,
+        "comentarios": 1,
+        "horas_no_ar": 7.0,
+        "obs": "Windsor em cache (sem atualização desde 15h13)"
+      }
+    },
+    {
+      "n": 7,
+      "titulo": "O Filho de Bjorn",
+      "publicado_em": "2026-11-27",
+      "horario": "20h",
+      "media_id": "18119449438833048",
+      "video": "episodios/ep07.mp4",
+      "story_video": "episodios/ep07_story.mp4",
+      "historia": "episodios/ep07_historia.json",
+      "duracao_video_s": 62.8,
+      "duracao_com_anuncio_s": 69.6,
+      "motor": "3d",
+      "escolha": {
+        "pergunta": "O filho do Bjorn sumiu. E agora?",
+        "a": "Desce atrás do Leif",
+        "a_sub": "Herói, mas ainda fraco",
+        "b": "Treina as runas",
+        "b_sub": "Mais forte, Leif espera"
+      },
+      "votos": null,
+      "vencedora": null,
+      "creditos_elevenlabs": 1186,
+      "story_id": "17959689759314524",
+      "gancho": "Olha só: um machado, e o Ren caiu.",
+      "formula": "#18 Abre na ação",
+      "nota_gancho": 85.8,
+      "ganchos_testados": {
+        "#27 E se...?": "E se o seu mestre novo te derrubasse no primeiro segundo? (81,4)",
+        "#21 Começa no meio da frase": "...e foi aí que o machado viking acertou o Ren em cheio. (39,2)"
+      },
+      "vozes": {
+        "narrador": "acdKA5HckGxoxxvy40dA",
+        "ren": "gzQG1wjdcAjdmmsny6Y8",
+        "bjorn": "H6CTgG0uZDmiNsMwijeo (Neto)"
+      },
+      "mudancas_testadas": [
+        "gancho #18 com golpe real nos 3 s",
+        "revelação pessoal do Bjorn aos ~14 s + flashback do Leif no túnel",
+        "vida em jogo na escolha (Leif)"
+      ],
+      "metricas": null
+    }
   ],
-  "aliados": [
-   "Bjorn, líder de Frostheim: treina o Ren; viu que a mana exata dele é dom de runa (ep. 7)",
-   "Desertor (cunhado de Kuroha): ofereceu as sombras, mas o Ren foi para Frostheim; ficou na floresta (ep. 6)"
+  "promo": [
+    {
+      "tipo": "video_vendas_curso",
+      "publicado_em": "2026-11-22",
+      "media_id": "18223322164352419",
+      "video": "promo/video_vendas.mp4",
+      "story_id": "17876155269602153",
+      "metricas": {
+        "coletado_em": "2026-11-26T19:35-03:00",
+        "views": 196,
+        "alcance": 176,
+        "tempo_medio_s": 4.48,
+        "skip_rate": 0.699,
+        "compartilhamentos": 0,
+        "salvamentos": 0,
+        "curtidas": 2,
+        "comentarios": 0
+      }
+    }
   ],
-  "itens": [
-   "Túnica de mana (mais mana máxima, feitiço mais barato, nenhuma defesa)"
-  ],
-  "segredos": [
-   "O mago da corte diz que o ritual pega qualquer um e que o rei não quer ver (ep. 2)",
-   "Com a túnica, a faísca do Ren vira bola de fogo gastando quase nada de mana (ep. 3)",
-   "Kuroha é caçado por um desertor há dez anos e pede que Ren o elimine em troca de ensinar tudo (ep. 4)",
-   "O desertor que caça Kuroha há dez anos diz que Kuroha também desertou e manda Ren perguntar como a esposa dele morreu (ep. 5)",
-   "O desertor era irmão da esposa de Kuroha. Dez anos atrás, doze ninjas cercaram a casa de Kuroha; ele só carregou o filho e a esposa ficou para trás. A vila nunca soube (ep. 6)",
-   "Leif, filho de Bjorn, correu sozinho para o túnel do Abismo com uma tocha há três dias e não voltou; ninguém em Frostheim teve coragem de descer atrás dele (ep. 7)"
-  ],
-  "historico_etica": [
-   {
-    "ep": 1,
-    "escolha": "B",
-    "etica": "mantém (0)",
-    "arma_abissal": false
-   },
-   {
-    "ep": 2,
-    "escolha": "B",
-    "etica": "mantém (0)",
-    "arma_abissal": false
-   },
-   {
-    "ep": 3,
-    "escolha": "A",
-    "etica": "mantém (0)",
-    "arma_abissal": false
-   },
-   {
-    "ep": 4,
-    "escolha": "A",
-    "etica": "sobe (+1): recusou o assassinato pedido por um líder (lore)",
-    "arma_abissal": false
-   },
-   {
-    "ep": 5,
-    "escolha": "A",
-    "etica": "mantém (1): ouviu em vez de entregar o desertor à morte",
-    "arma_abissal": false
-   },
-   {
-    "ep": 6,
-    "escolha": "B",
-    "etica": "mantém (1): foi treinar em Frostheim",
-    "arma_abissal": false
-   }
-  ]
- },
- "episodios": [
-  {
-   "n": 1,
-   "titulo": "O Invocado",
-   "publicado_em": "2026-11-21",
-   "media_id": "18348563719281452",
-   "video": "episodios/ep01.mp4",
-   "historia": "episodios/ep01_historia.json",
-   "escolha": {
-    "pergunta": "O mago zombou do Ren. O que ele faz?",
-    "a": "Responde à altura",
-    "a_sub": "O mago vira inimigo",
-    "b": "Fica calado e observa",
-    "b_sub": "Ren descobre os segredos da corte"
-   },
-   "votos": {
-    "A": 0,
-    "B": 1,
-    "total_pessoas": 1,
-    "obs": "menos de 3 votos: o destino escolheu B (mais coerente com a lore)"
-   },
-   "vencedora": "B",
-   "metricas": {
-    "coletado_em": "2026-11-27T19:40-03:00",
-    "views": 338,
-    "alcance": 291,
-    "tempo_medio_s": 5.316,
-    "skip_rate": 0.805,
-    "compartilhamentos": 0,
-    "salvamentos": 1,
-    "curtidas": 5,
-    "comentarios": 1,
-    "duracao_video_s": 59.5
-   },
-   "creditos_elevenlabs": 968,
-   "story_id": "18159285514517251"
+  "motor": "3d",
+  "meta": {
+    "seguidores": 100000,
+    "prazo": "2026-12-11",
+    "definida_em": "2026-11-26",
+    "historico_seguidores": [
+      {
+        "data": "2026-11-26",
+        "seguidores": 16
+      },
+      {
+        "data": "2026-11-27",
+        "seguidores": 16
+      }
+    ]
   },
-  {
-   "n": 2,
-   "titulo": "O Teste",
-   "publicado_em": "2026-11-22",
-   "media_id": "17968544538238718",
-   "video": "episodios/ep02.mp4",
-   "story_video": "episodios/ep02_story.mp4",
-   "historia": "episodios/ep02_historia.json",
-   "duracao_video_s": 62.2,
-   "duracao_com_anuncio_s": 69.0,
-   "escolha": {
-    "pergunta": "Com o ouro do rei, o que o Ren compra?",
-    "a": "Espada e escudo de Valdenmoor",
-    "a_sub": "Força e defesa, mas pesa",
-    "b": "Túnica de mana",
-    "b_sub": "Mais magia, nenhuma proteção"
-   },
-   "votos": {
-    "A": 0,
-    "B": 0,
-    "total_pessoas": 0,
-    "obs": "nenhum voto: o destino (lore) escolheu B, a túnica de mana combina com o controle preciso de mana que o ritual enxergou"
-   },
-   "vencedora": "B",
-   "metricas": {
-    "coletado_em": "2026-11-27T19:40-03:00",
-    "views": 272,
-    "alcance": 245,
-    "tempo_medio_s": 28.845,
-    "skip_rate": 0.476,
-    "compartilhamentos": 0,
-    "salvamentos": 0,
-    "curtidas": 5,
-    "comentarios": 0,
-    "duracao_video_s": 69.0
-   },
-   "creditos_elevenlabs": 1049,
-   "story_id": "18320978512304307",
-   "mudancas_testadas": [
-    "gancho com conflito/segredo na 1ª frase",
-    "episódio mais enxuto (144 palavras)"
-   ]
+  "agenda": {
+    "postagens_por_dia": 2,
+    "horarios": [
+      "12:00",
+      "20:00"
+    ],
+    "inicio_da_rotina": [
+      "11:31",
+      "19:31"
+    ],
+    "desde": "2026-11-26",
+    "motivo": "Igor pediu 2 por dia; meio-dia (pico do almoço e janela de Reels de manhã) e 20h (pico geral 19-21h e público gamer 18-23h)"
   },
-  {
-   "n": 3,
-   "titulo": "O Preço da Túnica",
-   "publicado_em": "2026-11-26",
-   "media_id": "17918081835549669",
-   "link": "https://www.instagram.com/reel/DgM_9jih_gw/",
-   "video": "episodios/ep03.mp4",
-   "story_video": "episodios/ep03_story.mp4",
-   "historia": "episodios/ep03_historia.json",
-   "duracao_video_s": 69.9,
-   "duracao_com_anuncio_s": 76.6,
-   "motor": "3d",
-   "escolha": {
-    "pergunta": "Onde o Ren vai treinar?",
-    "a": "Kagegakure, os ninjas",
-    "a_sub": "Sombras, mas mestre caçado",
-    "b": "Frostheim, os vikings",
-    "b_sub": "Corpo forte, treino brutal"
-   },
-   "votos": {
-    "A": 0,
-    "B": 1,
-    "total_pessoas": 1,
-    "obs": "Voto B ('frostheim', @emanuelbarbieri2011, 26/11 09:42 BRT) só apareceu no Windsor às 17h (cache). Chegou antes da produção do ep. 4, então pela regra do Igor o público tinha escolhido B; o ep. 4 saiu com A (Kagegakure) porque a rotina não viu o voto."
-   },
-   "vencedora": "A",
-   "metricas": {
-    "coletado_em": "2026-11-27T19:40-03:00",
-    "horas_no_ar": 22.7,
-    "views": 214,
-    "alcance": 183,
-    "tempo_medio_s": 11.184,
-    "skip_rate": 0.443,
-    "compartilhamentos": 0,
-    "salvamentos": 0,
-    "curtidas": 4,
-    "comentarios": 1,
-    "duracao_video_s": 76.6
-   },
-   "creditos_elevenlabs": 1067,
-   "story_id": "17997263322055541",
-   "gancho": "Ninguém te conta o preço que Ren pagou.",
-   "formula": "#3 Ninguém te conta",
-   "nota_gancho": 81.4,
-   "mudancas_testadas": [
-    "gancho #3 'Ninguém te conta' (nota 81)",
-    "pergunta direta ao público no meio ('Você pagaria esse preço?') + narrador lê pergunta e opções A/B com chamado segue/compartilha"
-   ],
-   "vencedora_pela_regra": "B"
-  },
-  {
-   "n": 4,
-   "titulo": "O Preço do Mestre",
-   "publicado_em": "2026-11-26",
-   "horario": "12h",
-   "media_id": "18112333681944136",
-   "video": "episodios/ep04.mp4",
-   "story_video": "episodios/ep04_story.mp4",
-   "historia": "episodios/ep04_historia.json",
-   "duracao_video_s": 62.7,
-   "duracao_com_anuncio_s": 69.5,
-   "motor": "3d",
-   "escolha": {
-    "pergunta": "Kuroha pede uma morte. E agora?",
-    "a": "Recusa a missão",
-    "a_sub": "Ética sobe, vila desconfia",
-    "b": "Aceita e elimina o desertor",
-    "b_sub": "Treino liberado, ética cai"
-   },
-   "votos": {
-    "A": 0,
-    "B": 0,
-    "total_pessoas": 0,
-    "obs": "nenhum comentário no ep. 4 (media_comments_count 0): o destino (lore) escolheu A, recusar; a lore diz que recusar um assassinato pedido por um líder derruba a reputação local mas sobe a ética, e só o Ren limpo chega ao final heroico"
-   },
-   "vencedora": "A",
-   "metricas": {
-    "coletado_em": "2026-11-27T19:40-03:00",
-    "views": 177,
-    "alcance": 157,
-    "tempo_medio_s": 10.013,
-    "skip_rate": 0.5,
-    "compartilhamentos": 0,
-    "salvamentos": 0,
-    "curtidas": 3,
-    "comentarios": 0,
-    "horas_no_ar": 19.3,
-    "duracao_video_s": 69.5
-   },
-   "creditos_elevenlabs": 972,
-   "story_id": "17916908889560503",
-   "gancho": "Ninguém te conta o preço do mestre Kuroha.",
-   "formula": "#3 Ninguém te conta",
-   "nota_gancho": 81.4,
-   "mudancas_testadas": [
-    "episódio mais curto: 145 palavras, 62,7 s de história (ep. 3: 69,9 s)"
-   ]
-  },
-  {
-   "n": 5,
-   "titulo": "O Preço do Não",
-   "publicado_em": "2026-11-26",
-   "horario": "20h",
-   "media_id": "18089868005309409",
-   "link": "https://www.instagram.com/reel/DgOOCEXhSmQ/",
-   "video": "episodios/ep05.mp4",
-   "story_video": "episodios/ep05_story.mp4",
-   "historia": "episodios/ep05_historia.json",
-   "duracao_video_s": 64.5,
-   "duracao_com_anuncio_s": 71.2,
-   "motor": "3d",
-   "escolha": {
-    "pergunta": "O desertor tem um segredo. E agora?",
-    "a": "Ouve o desertor",
-    "a_sub": "Segredo revelado, vila fechada",
-    "b": "Entrega ao Kuroha",
-    "b_sub": "Vila perdoa, segredo morre"
-   },
-   "votos": {
-    "A": 0,
-    "B": 0,
-    "total_pessoas": 0,
-    "obs": "nenhum comentário no ep. 5 até 27/11 11h35 (media_comments_count 0): o destino (lore) escolheu A, ouvir o desertor. Entregá-lo para ser morto iria contra a ética que subiu no ep. 4, e a lore já diz que Kuroha perdeu a esposa e salvou só o filho"
-   },
-   "vencedora": "A",
-   "metricas": {
-    "coletado_em": "2026-11-27T19:40-03:00",
-    "views": 298,
-    "alcance": 256,
-    "tempo_medio_s": 9.739,
-    "skip_rate": 0.506,
-    "compartilhamentos": 1,
-    "salvamentos": 0,
-    "curtidas": 6,
-    "comentarios": 0,
-    "horas_no_ar": 15.7,
-    "duracao_video_s": 64.5
-   },
-   "creditos_elevenlabs": 1066,
-   "story_id": "18097178375485587",
-   "gancho": "Olha só: Ren disse não e virou inimigo.",
-   "formula": "#18 Abre na ação",
-   "nota_gancho": 85.8,
-   "ganchos_testados": {
-    "#27 E se...?": "E se você recusasse uma morte e a vila inteira virasse inimiga? (81,4)",
-    "#21 Começa no meio da frase": "...e foi aí que a vila inteira virou as costas pro Ren. (42,2)"
-   },
-   "vozes": {
-    "narrador": "acdKA5HckGxoxxvy40dA",
-    "ren": "gzQG1wjdcAjdmmsny6Y8",
-    "kuroha": "H6CTgG0uZDmiNsMwijeo (Neto)",
-    "desertor": "NvHN9pLXN2C3JhUv7ZCi (Rannox Elion)"
-   },
-   "mudancas_testadas": [
-    "gancho #18 Abre na ação (nota 85,8) no lugar do #3",
-    "'No fim, você decide o que o Ren faz.' aos ~9 s"
-   ]
-  },
-  {
-   "n": 6,
-   "titulo": "O Segredo de Kuroha",
-   "publicado_em": "2026-11-27",
-   "horario": "12h",
-   "media_id": "18611715352067966",
-   "video": "episodios/ep06.mp4",
-   "story_video": "episodios/ep06_story.mp4",
-   "historia": "episodios/ep06_historia.json",
-   "duracao_video_s": 64.0,
-   "duracao_com_anuncio_s": 70.7,
-   "motor": "3d",
-   "escolha": {
-    "pergunta": "Sombras ou gelo. Onde treinar?",
-    "a": "Treina com o desertor",
-    "a_sub": "Ninjutsu, mas Kuroha caça",
-    "b": "Vai para Frostheim",
-    "b_sub": "Corpo forte, treino brutal"
-   },
-   "votos": {
-    "A": 0,
-    "B": 1,
-    "total_pessoas": 1,
-    "obs": "1 comentário 'Opção b' (@igaocs29hotmailcom, 27/11 13:01 BRT). Regra do Igor: havendo voto, o público decide."
-   },
-   "vencedora": "B",
-   "creditos_elevenlabs": 1970,
-   "story_id": "publicação do Story deu timeout no Windsor; confirmar no perfil",
-   "gancho": "Olha só: Kuroha deixou a esposa morrer.",
-   "formula": "#18 Abre na ação",
-   "nota_gancho": 85.8,
-   "ganchos_testados": {
-    "#27 E se...?": "E se você descobrisse que o seu mestre deixou a esposa morrer? (55,8)",
-    "#21 Começa no meio da frase": "...e foi aí que o Ren ouviu: Kuroha deixou a esposa morrer. (55,4)"
-   },
-   "vozes": {
-    "narrador": "acdKA5HckGxoxxvy40dA",
-    "ren": "gzQG1wjdcAjdmmsny6Y8",
-    "desertor": "NvHN9pLXN2C3JhUv7ZCi (Rannox Elion)"
-   },
-   "mudancas_testadas": [
-    "gancho #18 de novo (nota 85,8)",
-    "revelação nova aos 8,7 s: 'Ela era minha irmã.' (desertor)"
-   ],
-   "versao_apagada": {
-    "media_id": "17884916193630259",
-    "story_id": "18080652662441928",
-    "motivo": "Igor (27/11): ações sem sentido, personagens se atacando enquanto conversam, narração sem combinar com o desenho, 'sumiu nas sombras e apareceu atrás' virou só um pulo. Igor apaga pelo app (Windsor sem permissão de apagar)."
-   },
-   "refeito": "27/11 ~12h45: flashback na vila (ninja avança, Kuroha golpeia, ninja responde com fogo, aura protegendo o filho), sem ataques durante diálogo, sem teleporte",
-   "metricas": {
-    "coletado_em": "2026-11-27T19:40-03:00",
-    "views": 149,
-    "alcance": 122,
-    "tempo_medio_s": 9.408,
-    "skip_rate": 0.469,
-    "compartilhamentos": 7,
-    "salvamentos": 0,
-    "curtidas": 5,
-    "comentarios": 1,
-    "horas_no_ar": 7.0,
-    "obs": "Windsor em cache (sem atualização desde 15h13)"
-   }
-  },
-  {
-   "n": 7,
-   "titulo": "O Filho de Bjorn",
-   "publicado_em": "2026-11-27",
-   "horario": "20h",
-   "media_id": "18119449438833048",
-   "video": "episodios/ep07.mp4",
-   "story_video": "episodios/ep07_story.mp4",
-   "historia": "episodios/ep07_historia.json",
-   "duracao_video_s": 62.8,
-   "duracao_com_anuncio_s": 69.6,
-   "motor": "3d",
-   "escolha": {
-    "pergunta": "O filho do Bjorn sumiu. E agora?",
-    "a": "Desce atrás do Leif",
-    "a_sub": "Herói, mas ainda fraco",
-    "b": "Treina as runas",
-    "b_sub": "Mais forte, Leif espera"
-   },
-   "votos": null,
-   "vencedora": null,
-   "creditos_elevenlabs": 1186,
-   "story_id": "17959689759314524",
-   "gancho": "Olha só: um machado, e o Ren caiu.",
-   "formula": "#18 Abre na ação",
-   "nota_gancho": 85.8,
-   "ganchos_testados": {
-    "#27 E se...?": "E se o seu mestre novo te derrubasse no primeiro segundo? (81,4)",
-    "#21 Começa no meio da frase": "...e foi aí que o machado viking acertou o Ren em cheio. (39,2)"
-   },
-   "vozes": {
-    "narrador": "acdKA5HckGxoxxvy40dA",
-    "ren": "gzQG1wjdcAjdmmsny6Y8",
-    "bjorn": "H6CTgG0uZDmiNsMwijeo (Neto)"
-   },
-   "mudancas_testadas": [
-    "gancho #18 com golpe real nos 3 s",
-    "revelação pessoal do Bjorn aos ~14 s + flashback do Leif no túnel",
-    "vida em jogo na escolha (Leif)"
-   ],
-   "metricas": null
+  "monitor": {
+    "intervalo": "a cada 2 h, 7h13 a 23h13 (sem 11h, 19h e madrugada)",
+    "leituras": [
+      {
+        "data_hora": "2026-11-26T15:10-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.04,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 271,
+            "alcance": 244,
+            "tempo_medio": 29.1,
+            "pulo_3s": 0.478,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 199,
+            "alcance": 169,
+            "tempo_medio": 11.25,
+            "pulo_3s": 0.439,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 151,
+            "alcance": 136,
+            "tempo_medio": 9.99,
+            "pulo_3s": 0.515,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 2
+          }
+        },
+        "notas": "ep4 com 3,25 h: 151 views (ep3 com 3,4 h: 184, ~82%); pulo 3 s 51,5% (ep3 43,9%); 0 comentários no ep4, nenhum voto novo. Conector Windsor 'instagram' geral devolveu cache sem os eps 3 e 4; os dados vieram do Windsor para Social Media com date_from 25/11."
+      },
+      {
+        "data_hora": "2026-11-26T15:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.03,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.95,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 199,
+            "alcance": 169,
+            "tempo_medio": 11.25,
+            "pulo_3s": 0.439,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 151,
+            "alcance": 136,
+            "tempo_medio": 9.99,
+            "pulo_3s": 0.515,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 2
+          }
+        },
+        "notas": "Windsor devolveu o cache (plano sem atualização sob demanda): eps 3 e 4 iguais à leitura das 15h; ep2 +1 view. Nenhum voto novo no ep4. Sem sinal novo; ajustes mantidos."
+      },
+      {
+        "data_hora": "2026-11-26T17:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.03,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.95,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 199,
+            "alcance": 169,
+            "tempo_medio": 11.37,
+            "pulo_3s": 0.439,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 156,
+            "alcance": 140,
+            "tempo_medio": 10.18,
+            "pulo_3s": 0.514,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 2
+          }
+        },
+        "notas": "Windsor ainda em cache (ep4 +5 views desde 15h). Apareceu o texto do comentário do ep3: 'frostheim' = voto B, feito às 09:42, antes do ep4 (que saiu com A). Ep4 com ~5,3 h: 156 views, pulo 51,4%, 0 comentários, sem voto. Sem disparo; ainda não dá 6 h para julgar travamento."
+      },
+      {
+        "data_hora": "2026-11-26T21:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.03,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.95,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 199,
+            "alcance": 169,
+            "tempo_medio": 11.37,
+            "pulo_3s": 0.439,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 163,
+            "alcance": 145,
+            "tempo_medio": 10.12,
+            "pulo_3s": 0.5,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 2
+          }
+        },
+        "notas": "Windsor ainda em cache: ep5 (publicado ~19h50) não aparece nas métricas; eps 1-4 iguais à leitura das 19h35. Ep4 com ~8,3 h: 163 views (acima da metade da mediana), pulo 50%: não travou. Nenhum voto novo (ep4 e ep5 sem comentários). Seguidores 16. Sem sinal; nenhum ajuste novo."
+      },
+      {
+        "data_hora": "2026-11-26T23:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.03,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.95,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 199,
+            "alcance": 169,
+            "tempo_medio": 11.37,
+            "pulo_3s": 0.439,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 163,
+            "alcance": 145,
+            "tempo_medio": 10.12,
+            "pulo_3s": 0.5,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 2
+          }
+        },
+        "notas": "Windsor ainda em cache (plano sem refresh): ep5 (publicado ~19h50, ~3,4 h no ar) ainda não aparece; eps 1-4 e seguidores (16) iguais às 21h. Nenhum comentário novo, nenhum voto no ep5. Sem sinal; nenhum ajuste novo."
+      },
+      {
+        "data_hora": "2026-11-27T07:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.02,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 211,
+            "alcance": 179,
+            "tempo_medio": 10.96,
+            "pulo_3s": 0.445,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 173,
+            "alcance": 152,
+            "tempo_medio": 10.09,
+            "pulo_3s": 0.507,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          },
+          "5": {
+            "views": 262,
+            "alcance": 217,
+            "tempo_medio": 9.73,
+            "pulo_3s": 0.463,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 6
+          }
+        },
+        "notas": "Comparado com 23h13 (8 h). Ep5 apareceu no Windsor: 262 views em ~11,4 h (23/h; ep4 tinha 163 em 7,7 h, ~21/h), alcance 217, pulo 3 s 46,3% (ep4 50,7%), tempo médio 9,7 s (15% de 64,5 s), 1º compartilhamento da série, 6 curtidas (recorde desde ep1), 0 comentários. Ep3 +12 views, ep4 +10. Seguidores 16 (sem mudança). Nenhum voto no ep5: ep6 sai pelo destino (lore). Não disparou (≈1,1x), não travou."
+      },
+      {
+        "data_hora": "2026-11-27T09:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.02,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 211,
+            "alcance": 179,
+            "tempo_medio": 10.96,
+            "pulo_3s": 0.445,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 173,
+            "alcance": 152,
+            "tempo_medio": 10.09,
+            "pulo_3s": 0.507,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          },
+          "5": {
+            "views": 262,
+            "alcance": 217,
+            "tempo_medio": 9.73,
+            "pulo_3s": 0.463,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 6
+          }
+        },
+        "notas": "Windsor em cache (plano sem refresh): números de todos os episódios e seguidores (16) idênticos aos das 7h13. Nenhum comentário novo; ep5 segue sem voto (ep6 pelo destino/lore). Sem sinal; ajustes mantidos."
+      },
+      {
+        "data_hora": "2026-11-27T13:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 336,
+            "alcance": 290,
+            "tempo_medio": 5.02,
+            "pulo_3s": 0.808,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 211,
+            "alcance": 179,
+            "tempo_medio": 10.96,
+            "pulo_3s": 0.445,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 173,
+            "alcance": 152,
+            "tempo_medio": 10.09,
+            "pulo_3s": 0.507,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          },
+          "5": {
+            "views": 262,
+            "alcance": 217,
+            "tempo_medio": 9.73,
+            "pulo_3s": 0.463,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 6
+          }
+        },
+        "notas": "Windsor em cache: eps 1-5 e seguidores (16) iguais às 9h13. Ep6 refeito (media 18611715352067966, publicado ~12h42) ainda não aparece no Windsor. Nenhum comentário novo; ep6 sem votos ainda. Sem sinal; sem ajustes novos."
+      },
+      {
+        "data_hora": "2026-11-27T15:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 338,
+            "alcance": 291,
+            "tempo_medio": 5.32,
+            "pulo_3s": 0.805,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 214,
+            "alcance": 183,
+            "tempo_medio": 11.18,
+            "pulo_3s": 0.443,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 177,
+            "alcance": 157,
+            "tempo_medio": 10.01,
+            "pulo_3s": 0.5,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          },
+          "5": {
+            "views": 298,
+            "alcance": 256,
+            "tempo_medio": 9.74,
+            "pulo_3s": 0.506,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 6
+          },
+          "6": {
+            "views": 149,
+            "alcance": 122,
+            "tempo_medio": 9.41,
+            "pulo_3s": 0.469,
+            "comentarios": 1,
+            "compart": 7,
+            "salvos": 0,
+            "curtidas": 5
+          }
+        },
+        "notas": "Windsor atualizou. Ep6 refeito com 2,6 h: 149 views, 7 compartilhamentos (recorde; a série inteira tinha 1), pulo 3 s 46,9%, tempo médio 9,4 s, 1 comentário (ainda não aparece na lista de comentários do Windsor). Views no ritmo do ep4 na mesma idade (151 com ~3,3 h). Ep5 subiu para 298 views, mas pulo 3 s foi de 46,3% para 50,6%."
+      },
+      {
+        "data_hora": "2026-11-27T17:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 338,
+            "alcance": 291,
+            "tempo_medio": 5.32,
+            "pulo_3s": 0.805,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 214,
+            "alcance": 183,
+            "tempo_medio": 11.18,
+            "pulo_3s": 0.443,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 177,
+            "alcance": 157,
+            "tempo_medio": 10.01,
+            "pulo_3s": 0.5,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          },
+          "5": {
+            "views": 298,
+            "alcance": 256,
+            "tempo_medio": 9.74,
+            "pulo_3s": 0.506,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 6
+          },
+          "6": {
+            "views": 149,
+            "alcance": 122,
+            "tempo_medio": 9.41,
+            "pulo_3s": 0.469,
+            "comentarios": 1,
+            "compart": 7,
+            "salvos": 0,
+            "curtidas": 5
+          }
+        },
+        "notas": "Windsor em cache (sem atualização desde 15h13): números iguais. Ep6 com ~4,6 h no ar: 149 views, 7 compartilhamentos, 1 comentário ainda invisível na lista do Windsor (sem voto A/B contável). Sem sinal novo; ajuste das 15h mantido."
+      },
+      {
+        "data_hora": "2026-11-27T21:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 338,
+            "alcance": 291,
+            "tempo_medio": 5.32,
+            "pulo_3s": 0.805,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 214,
+            "alcance": 183,
+            "tempo_medio": 11.18,
+            "pulo_3s": 0.443,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 177,
+            "alcance": 157,
+            "tempo_medio": 10.01,
+            "pulo_3s": 0.5,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          },
+          "5": {
+            "views": 298,
+            "alcance": 256,
+            "tempo_medio": 9.74,
+            "pulo_3s": 0.506,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 6
+          },
+          "6": {
+            "views": 149,
+            "alcance": 122,
+            "tempo_medio": 9.41,
+            "pulo_3s": 0.469,
+            "comentarios": 1,
+            "compart": 7,
+            "salvos": 0,
+            "curtidas": 5
+          }
+        },
+        "notas": "Windsor em cache sem atualização desde 15h13 (6 h; plano sem refresh sob demanda): números iguais. Ep7 (publicado ~19h50) ainda não aparece no Windsor. Nenhum comentário novo; sem votos para o ep7. Sem sinal novo."
+      }
+    ],
+    "resumo_diario": [],
+    "ajustes_para_o_proximo": [],
+    "ajustes_aplicados": [
+      {
+        "criado_em": "2026-11-26T15:10-03:00",
+        "motivo": "Mesmo gancho #3 'Ninguém te conta' (nota 81,4) nos eps 3 e 4: pulo nos 3 s subiu de 43,9% (ep3) para 51,5% (ep4); a fórmula repetida parece cansar quem já viu.",
+        "ajuste": "Trocar a fórmula do gancho: #18 Abre na ação (golpe ou impacto já na 1ª frase) ou #21 Começa no meio da frase, nota ≥ 60. Não usar #3 de novo no ep. 5.",
+        "aplicado_em": "2026-11-26T19:40-03:00",
+        "episodio": 5,
+        "como": "gancho #18 Abre na ação: 'Olha só: Ren disse não e virou inimigo.' (nota 85,8)"
+      },
+      {
+        "criado_em": "2026-11-26T15:10-03:00",
+        "motivo": "Tempo médio ~10 s nos eps 3 e 4 (13-14% do vídeo) e 0 comentário no ep4: quase ninguém chega ao cartão A ou B no fim. Encurtar de 69,9 para 62,7 s não mudou o tempo médio (10,2 → 10,0 s).",
+        "ajuste": "Anunciar o dilema cedo: até o 8º segundo o narrador diz numa frase curta que no fim o público decide (ex.: 'No fim, você decide o que o Ren faz.'). Manter a leitura das opções A e B no fim como manda a regra.",
+        "aplicado_em": "2026-11-26T19:40-03:00",
+        "episodio": 5,
+        "como": "3ª fala do narrador, ~9 s: 'No fim, você decide o que o Ren faz.' (o título ocupa 1,6 s antes da 1ª fala)"
+      },
+      {
+        "criado_em": "2026-11-27T07:14-03:00",
+        "motivo": "Gancho #18 Abre na ação no ep5 baixou o pulo nos 3 s de 50,7% (ep4, #3) para 46,3% e trouxe o 1º compartilhamento e 6 curtidas; ep5 é o melhor episódio desde o ep2 em views por hora.",
+        "ajuste": "Manter a fórmula #18 Abre na ação (ou #21 se der nota maior), com nota ≥ 80. Não voltar ao #3.",
+        "aplicado_em": "2026-11-27",
+        "episodio": 6
+      },
+      {
+        "criado_em": "2026-11-27T07:14-03:00",
+        "motivo": "Tempo médio continua travado em ~10 s (ep3 11,0; ep4 10,1; ep5 9,7) mesmo com 'No fim, você decide' aos 9 s; o ep2 (único com 29 s) prendeu mais. 0 comentário em ep4 e ep5.",
+        "ajuste": "Segurar o público na virada dos 10 s: entre 8 e 12 s, uma revelação ou ameaça nova em fala curta com ação na tela (ex.: 'Mas ninguém contou pro Ren quem estava atrás dele.'), em vez de só avisar que o público decide.",
+        "aplicado_em": "2026-11-27",
+        "episodio": 6
+      },
+      {
+        "criado_em": "2026-11-27T15:14-03:00",
+        "motivo": "Ep6 ('Kuroha deixou a esposa morrer' + revelação 'Ela era minha irmã' + flashback) teve 7 compartilhamentos em 2,6 h; os 5 episódios anteriores somaram 1. O drama pessoal de um personagem é o que o público manda para os amigos.",
+        "ajuste": "Manter o gancho #18 com uma revelação pessoal/trágica de um personagem (segredo, perda, traição) e a cena de flashback quando alguém conta o passado. Não trocar por ação genérica.",
+        "aplicado_em": "2026-11-27",
+        "episodio": 7,
+        "como": "gancho #18 'Olha só: um machado, e o Ren caiu.' (85,8) + revelação pessoal aos ~13 s (Bjorn: 'Meu filho também caía assim. Até descer o túnel sozinho.') + flashback do Leif no túnel"
+      }
+    ]
   }
- ],
- "promo": [
-  {
-   "tipo": "video_vendas_curso",
-   "publicado_em": "2026-11-22",
-   "media_id": "18223322164352419",
-   "video": "promo/video_vendas.mp4",
-   "story_id": "17876155269602153",
-   "metricas": {
-    "coletado_em": "2026-11-26T19:35-03:00",
-    "views": 196,
-    "alcance": 176,
-    "tempo_medio_s": 4.48,
-    "skip_rate": 0.699,
-    "compartilhamentos": 0,
-    "salvamentos": 0,
-    "curtidas": 2,
-    "comentarios": 0
-   }
-  }
- ],
- "motor": "3d",
- "meta": {
-  "seguidores": 100000,
-  "prazo": "2026-12-11",
-  "definida_em": "2026-11-26",
-  "historico_seguidores": [
-   {
-    "data": "2026-11-26",
-    "seguidores": 16
-   },
-   {
-    "data": "2026-11-27",
-    "seguidores": 16
-   }
-  ]
- },
- "agenda": {
-  "postagens_por_dia": 2,
-  "horarios": [
-   "12:00",
-   "20:00"
-  ],
-  "inicio_da_rotina": [
-   "11:31",
-   "19:31"
-  ],
-  "desde": "2026-11-26",
-  "motivo": "Igor pediu 2 por dia; meio-dia (pico do almoço e janela de Reels de manhã) e 20h (pico geral 19-21h e público gamer 18-23h)"
- },
- "monitor": {
-  "intervalo": "a cada 2 h, 7h13 a 23h13 (sem 11h, 19h e madrugada)",
-  "leituras": [
-   {
-    "data_hora": "2026-11-26T15:10-03:00",
-    "seguidores": 16,
-    "por_episodio": {
-     "1": {
-      "views": 336,
-      "alcance": 290,
-      "tempo_medio": 5.04,
-      "pulo_3s": 0.808,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 1,
-      "curtidas": 5
-     },
-     "2": {
-      "views": 271,
-      "alcance": 244,
-      "tempo_medio": 29.1,
-      "pulo_3s": 0.478,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 5
-     },
-     "3": {
-      "views": 199,
-      "alcance": 169,
-      "tempo_medio": 11.25,
-      "pulo_3s": 0.439,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 4
-     },
-     "4": {
-      "views": 151,
-      "alcance": 136,
-      "tempo_medio": 9.99,
-      "pulo_3s": 0.515,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 2
-     }
-    },
-    "notas": "ep4 com 3,25 h: 151 views (ep3 com 3,4 h: 184, ~82%); pulo 3 s 51,5% (ep3 43,9%); 0 comentários no ep4, nenhum voto novo. Conector Windsor 'instagram' geral devolveu cache sem os eps 3 e 4; os dados vieram do Windsor para Social Media com date_from 25/11."
-   },
-   {
-    "data_hora": "2026-11-26T15:14-03:00",
-    "seguidores": 16,
-    "por_episodio": {
-     "1": {
-      "views": 336,
-      "alcance": 290,
-      "tempo_medio": 5.03,
-      "pulo_3s": 0.808,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 1,
-      "curtidas": 5
-     },
-     "2": {
-      "views": 272,
-      "alcance": 245,
-      "tempo_medio": 28.95,
-      "pulo_3s": 0.476,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 5
-     },
-     "3": {
-      "views": 199,
-      "alcance": 169,
-      "tempo_medio": 11.25,
-      "pulo_3s": 0.439,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 4
-     },
-     "4": {
-      "views": 151,
-      "alcance": 136,
-      "tempo_medio": 9.99,
-      "pulo_3s": 0.515,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 2
-     }
-    },
-    "notas": "Windsor devolveu o cache (plano sem atualização sob demanda): eps 3 e 4 iguais à leitura das 15h; ep2 +1 view. Nenhum voto novo no ep4. Sem sinal novo; ajustes mantidos."
-   },
-   {
-    "data_hora": "2026-11-26T17:14-03:00",
-    "seguidores": 16,
-    "por_episodio": {
-     "1": {
-      "views": 336,
-      "alcance": 290,
-      "tempo_medio": 5.03,
-      "pulo_3s": 0.808,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 1,
-      "curtidas": 5
-     },
-     "2": {
-      "views": 272,
-      "alcance": 245,
-      "tempo_medio": 28.95,
-      "pulo_3s": 0.476,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 5
-     },
-     "3": {
-      "views": 199,
-      "alcance": 169,
-      "tempo_medio": 11.37,
-      "pulo_3s": 0.439,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 4
-     },
-     "4": {
-      "views": 156,
-      "alcance": 140,
-      "tempo_medio": 10.18,
-      "pulo_3s": 0.514,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 2
-     }
-    },
-    "notas": "Windsor ainda em cache (ep4 +5 views desde 15h). Apareceu o texto do comentário do ep3: 'frostheim' = voto B, feito às 09:42, antes do ep4 (que saiu com A). Ep4 com ~5,3 h: 156 views, pulo 51,4%, 0 comentários, sem voto. Sem disparo; ainda não dá 6 h para julgar travamento."
-   },
-   {
-    "data_hora": "2026-11-26T21:14-03:00",
-    "seguidores": 16,
-    "por_episodio": {
-     "1": {
-      "views": 336,
-      "alcance": 290,
-      "tempo_medio": 5.03,
-      "pulo_3s": 0.808,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 1,
-      "curtidas": 5
-     },
-     "2": {
-      "views": 272,
-      "alcance": 245,
-      "tempo_medio": 28.95,
-      "pulo_3s": 0.476,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 5
-     },
-     "3": {
-      "views": 199,
-      "alcance": 169,
-      "tempo_medio": 11.37,
-      "pulo_3s": 0.439,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 4
-     },
-     "4": {
-      "views": 163,
-      "alcance": 145,
-      "tempo_medio": 10.12,
-      "pulo_3s": 0.5,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 2
-     }
-    },
-    "notas": "Windsor ainda em cache: ep5 (publicado ~19h50) não aparece nas métricas; eps 1-4 iguais à leitura das 19h35. Ep4 com ~8,3 h: 163 views (acima da metade da mediana), pulo 50%: não travou. Nenhum voto novo (ep4 e ep5 sem comentários). Seguidores 16. Sem sinal; nenhum ajuste novo."
-   },
-   {
-    "data_hora": "2026-11-26T23:14-03:00",
-    "seguidores": 16,
-    "por_episodio": {
-     "1": {
-      "views": 336,
-      "alcance": 290,
-      "tempo_medio": 5.03,
-      "pulo_3s": 0.808,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 1,
-      "curtidas": 5
-     },
-     "2": {
-      "views": 272,
-      "alcance": 245,
-      "tempo_medio": 28.95,
-      "pulo_3s": 0.476,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 5
-     },
-     "3": {
-      "views": 199,
-      "alcance": 169,
-      "tempo_medio": 11.37,
-      "pulo_3s": 0.439,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 4
-     },
-     "4": {
-      "views": 163,
-      "alcance": 145,
-      "tempo_medio": 10.12,
-      "pulo_3s": 0.5,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 2
-     }
-    },
-    "notas": "Windsor ainda em cache (plano sem refresh): ep5 (publicado ~19h50, ~3,4 h no ar) ainda não aparece; eps 1-4 e seguidores (16) iguais às 21h. Nenhum comentário novo, nenhum voto no ep5. Sem sinal; nenhum ajuste novo."
-   },
-   {
-    "data_hora": "2026-11-27T07:14-03:00",
-    "seguidores": 16,
-    "por_episodio": {
-     "1": {
-      "views": 336,
-      "alcance": 290,
-      "tempo_medio": 5.02,
-      "pulo_3s": 0.808,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 1,
-      "curtidas": 5
-     },
-     "2": {
-      "views": 272,
-      "alcance": 245,
-      "tempo_medio": 28.84,
-      "pulo_3s": 0.476,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 5
-     },
-     "3": {
-      "views": 211,
-      "alcance": 179,
-      "tempo_medio": 10.96,
-      "pulo_3s": 0.445,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 4
-     },
-     "4": {
-      "views": 173,
-      "alcance": 152,
-      "tempo_medio": 10.09,
-      "pulo_3s": 0.507,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 3
-     },
-     "5": {
-      "views": 262,
-      "alcance": 217,
-      "tempo_medio": 9.73,
-      "pulo_3s": 0.463,
-      "comentarios": 0,
-      "compart": 1,
-      "salvos": 0,
-      "curtidas": 6
-     }
-    },
-    "notas": "Comparado com 23h13 (8 h). Ep5 apareceu no Windsor: 262 views em ~11,4 h (23/h; ep4 tinha 163 em 7,7 h, ~21/h), alcance 217, pulo 3 s 46,3% (ep4 50,7%), tempo médio 9,7 s (15% de 64,5 s), 1º compartilhamento da série, 6 curtidas (recorde desde ep1), 0 comentários. Ep3 +12 views, ep4 +10. Seguidores 16 (sem mudança). Nenhum voto no ep5: ep6 sai pelo destino (lore). Não disparou (≈1,1x), não travou."
-   },
-   {
-    "data_hora": "2026-11-27T09:14-03:00",
-    "seguidores": 16,
-    "por_episodio": {
-     "1": {
-      "views": 336,
-      "alcance": 290,
-      "tempo_medio": 5.02,
-      "pulo_3s": 0.808,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 1,
-      "curtidas": 5
-     },
-     "2": {
-      "views": 272,
-      "alcance": 245,
-      "tempo_medio": 28.84,
-      "pulo_3s": 0.476,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 5
-     },
-     "3": {
-      "views": 211,
-      "alcance": 179,
-      "tempo_medio": 10.96,
-      "pulo_3s": 0.445,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 4
-     },
-     "4": {
-      "views": 173,
-      "alcance": 152,
-      "tempo_medio": 10.09,
-      "pulo_3s": 0.507,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 3
-     },
-     "5": {
-      "views": 262,
-      "alcance": 217,
-      "tempo_medio": 9.73,
-      "pulo_3s": 0.463,
-      "comentarios": 0,
-      "compart": 1,
-      "salvos": 0,
-      "curtidas": 6
-     }
-    },
-    "notas": "Windsor em cache (plano sem refresh): números de todos os episódios e seguidores (16) idênticos aos das 7h13. Nenhum comentário novo; ep5 segue sem voto (ep6 pelo destino/lore). Sem sinal; ajustes mantidos."
-   },
-   {
-    "data_hora": "2026-11-27T13:14-03:00",
-    "seguidores": 16,
-    "por_episodio": {
-     "1": {
-      "views": 336,
-      "alcance": 290,
-      "tempo_medio": 5.02,
-      "pulo_3s": 0.808,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 1,
-      "curtidas": 5
-     },
-     "2": {
-      "views": 272,
-      "alcance": 245,
-      "tempo_medio": 28.84,
-      "pulo_3s": 0.476,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 5
-     },
-     "3": {
-      "views": 211,
-      "alcance": 179,
-      "tempo_medio": 10.96,
-      "pulo_3s": 0.445,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 4
-     },
-     "4": {
-      "views": 173,
-      "alcance": 152,
-      "tempo_medio": 10.09,
-      "pulo_3s": 0.507,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 3
-     },
-     "5": {
-      "views": 262,
-      "alcance": 217,
-      "tempo_medio": 9.73,
-      "pulo_3s": 0.463,
-      "comentarios": 0,
-      "compart": 1,
-      "salvos": 0,
-      "curtidas": 6
-     }
-    },
-    "notas": "Windsor em cache: eps 1-5 e seguidores (16) iguais às 9h13. Ep6 refeito (media 18611715352067966, publicado ~12h42) ainda não aparece no Windsor. Nenhum comentário novo; ep6 sem votos ainda. Sem sinal; sem ajustes novos."
-   },
-   {
-    "data_hora": "2026-11-27T15:14-03:00",
-    "seguidores": 16,
-    "por_episodio": {
-     "1": {
-      "views": 338,
-      "alcance": 291,
-      "tempo_medio": 5.32,
-      "pulo_3s": 0.805,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 1,
-      "curtidas": 5
-     },
-     "2": {
-      "views": 272,
-      "alcance": 245,
-      "tempo_medio": 28.84,
-      "pulo_3s": 0.476,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 5
-     },
-     "3": {
-      "views": 214,
-      "alcance": 183,
-      "tempo_medio": 11.18,
-      "pulo_3s": 0.443,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 4
-     },
-     "4": {
-      "views": 177,
-      "alcance": 157,
-      "tempo_medio": 10.01,
-      "pulo_3s": 0.5,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 3
-     },
-     "5": {
-      "views": 298,
-      "alcance": 256,
-      "tempo_medio": 9.74,
-      "pulo_3s": 0.506,
-      "comentarios": 0,
-      "compart": 1,
-      "salvos": 0,
-      "curtidas": 6
-     },
-     "6": {
-      "views": 149,
-      "alcance": 122,
-      "tempo_medio": 9.41,
-      "pulo_3s": 0.469,
-      "comentarios": 1,
-      "compart": 7,
-      "salvos": 0,
-      "curtidas": 5
-     }
-    },
-    "notas": "Windsor atualizou. Ep6 refeito com 2,6 h: 149 views, 7 compartilhamentos (recorde; a série inteira tinha 1), pulo 3 s 46,9%, tempo médio 9,4 s, 1 comentário (ainda não aparece na lista de comentários do Windsor). Views no ritmo do ep4 na mesma idade (151 com ~3,3 h). Ep5 subiu para 298 views, mas pulo 3 s foi de 46,3% para 50,6%."
-   },
-   {
-    "data_hora": "2026-11-27T17:14-03:00",
-    "seguidores": 16,
-    "por_episodio": {
-     "1": {
-      "views": 338,
-      "alcance": 291,
-      "tempo_medio": 5.32,
-      "pulo_3s": 0.805,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 1,
-      "curtidas": 5
-     },
-     "2": {
-      "views": 272,
-      "alcance": 245,
-      "tempo_medio": 28.84,
-      "pulo_3s": 0.476,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 5
-     },
-     "3": {
-      "views": 214,
-      "alcance": 183,
-      "tempo_medio": 11.18,
-      "pulo_3s": 0.443,
-      "comentarios": 1,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 4
-     },
-     "4": {
-      "views": 177,
-      "alcance": 157,
-      "tempo_medio": 10.01,
-      "pulo_3s": 0.5,
-      "comentarios": 0,
-      "compart": 0,
-      "salvos": 0,
-      "curtidas": 3
-     },
-     "5": {
-      "views": 298,
-      "alcance": 256,
-      "tempo_medio": 9.74,
-      "pulo_3s": 0.506,
-      "comentarios": 0,
-      "compart": 1,
-      "salvos": 0,
-      "curtidas": 6
-     },
-     "6": {
-      "views": 149,
-      "alcance": 122,
-      "tempo_medio": 9.41,
-      "pulo_3s": 0.469,
-      "comentarios": 1,
-      "compart": 7,
-      "salvos": 0,
-      "curtidas": 5
-     }
-    },
-    "notas": "Windsor em cache (sem atualização desde 15h13): números iguais. Ep6 com ~4,6 h no ar: 149 views, 7 compartilhamentos, 1 comentário ainda invisível na lista do Windsor (sem voto A/B contável). Sem sinal novo; ajuste das 15h mantido."
-   }
-  ],
-  "resumo_diario": [],
-  "ajustes_para_o_proximo": [],
-  "ajustes_aplicados": [
-   {
-    "criado_em": "2026-11-26T15:10-03:00",
-    "motivo": "Mesmo gancho #3 'Ninguém te conta' (nota 81,4) nos eps 3 e 4: pulo nos 3 s subiu de 43,9% (ep3) para 51,5% (ep4); a fórmula repetida parece cansar quem já viu.",
-    "ajuste": "Trocar a fórmula do gancho: #18 Abre na ação (golpe ou impacto já na 1ª frase) ou #21 Começa no meio da frase, nota ≥ 60. Não usar #3 de novo no ep. 5.",
-    "aplicado_em": "2026-11-26T19:40-03:00",
-    "episodio": 5,
-    "como": "gancho #18 Abre na ação: 'Olha só: Ren disse não e virou inimigo.' (nota 85,8)"
-   },
-   {
-    "criado_em": "2026-11-26T15:10-03:00",
-    "motivo": "Tempo médio ~10 s nos eps 3 e 4 (13-14% do vídeo) e 0 comentário no ep4: quase ninguém chega ao cartão A ou B no fim. Encurtar de 69,9 para 62,7 s não mudou o tempo médio (10,2 → 10,0 s).",
-    "ajuste": "Anunciar o dilema cedo: até o 8º segundo o narrador diz numa frase curta que no fim o público decide (ex.: 'No fim, você decide o que o Ren faz.'). Manter a leitura das opções A e B no fim como manda a regra.",
-    "aplicado_em": "2026-11-26T19:40-03:00",
-    "episodio": 5,
-    "como": "3ª fala do narrador, ~9 s: 'No fim, você decide o que o Ren faz.' (o título ocupa 1,6 s antes da 1ª fala)"
-   },
-   {
-    "criado_em": "2026-11-27T07:14-03:00",
-    "motivo": "Gancho #18 Abre na ação no ep5 baixou o pulo nos 3 s de 50,7% (ep4, #3) para 46,3% e trouxe o 1º compartilhamento e 6 curtidas; ep5 é o melhor episódio desde o ep2 em views por hora.",
-    "ajuste": "Manter a fórmula #18 Abre na ação (ou #21 se der nota maior), com nota ≥ 80. Não voltar ao #3.",
-    "aplicado_em": "2026-11-27",
-    "episodio": 6
-   },
-   {
-    "criado_em": "2026-11-27T07:14-03:00",
-    "motivo": "Tempo médio continua travado em ~10 s (ep3 11,0; ep4 10,1; ep5 9,7) mesmo com 'No fim, você decide' aos 9 s; o ep2 (único com 29 s) prendeu mais. 0 comentário em ep4 e ep5.",
-    "ajuste": "Segurar o público na virada dos 10 s: entre 8 e 12 s, uma revelação ou ameaça nova em fala curta com ação na tela (ex.: 'Mas ninguém contou pro Ren quem estava atrás dele.'), em vez de só avisar que o público decide.",
-    "aplicado_em": "2026-11-27",
-    "episodio": 6
-   },
-   {
-    "criado_em": "2026-11-27T15:14-03:00",
-    "motivo": "Ep6 ('Kuroha deixou a esposa morrer' + revelação 'Ela era minha irmã' + flashback) teve 7 compartilhamentos em 2,6 h; os 5 episódios anteriores somaram 1. O drama pessoal de um personagem é o que o público manda para os amigos.",
-    "ajuste": "Manter o gancho #18 com uma revelação pessoal/trágica de um personagem (segredo, perda, traição) e a cena de flashback quando alguém conta o passado. Não trocar por ação genérica.",
-    "aplicado_em": "2026-11-27",
-    "episodio": 7,
-    "como": "gancho #18 'Olha só: um machado, e o Ren caiu.' (85,8) + revelação pessoal aos ~13 s (Bjorn: 'Meu filho também caía assim. Até descer o túnel sozinho.') + flashback do Leif no túnel"
-   }
-  ]
- }
 }
