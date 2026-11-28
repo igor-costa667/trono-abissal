@@ -1,0 +1,314 @@
+{
+ "titulo": "A Runa do Ren",
+ "parte": 8,
+ "rotulo_parte": "Episódio",
+ "clima": "suspense",
+ "ritmo": "rapido",
+ "protagonista": "ren",
+ "recap": {
+  "letra": "B",
+  "texto": "Destino: treinar as runas"
+ },
+ "escolha": {
+  "pergunta": "Leif está vivo. E agora?",
+  "a": "Desce agora",
+  "a_sub": "1 runa só, Ren em risco",
+  "b": "Treina mais 3 dias",
+  "b_sub": "Ren forte, a tocha apaga"
+ },
+ "elenco": {
+  "ren": {
+   "nome": "Ren",
+   "voz": "ren",
+   "corpo": "magro",
+   "altura": 1.65,
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "preto",
+   "olhos": "castanho",
+   "roupa": "tunica",
+   "roupa_cor": "oliva",
+   "baixo": "calca",
+   "baixo_cor": "marrom"
+  },
+  "bjorn": {
+   "nome": "Bjorn",
+   "voz": "bjorn",
+   "corpo": "forte",
+   "altura": 1.95,
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "ruivo",
+   "barba": "longa",
+   "olhos": "azul",
+   "roupa": "tunica",
+   "roupa_cor": "marrom",
+   "baixo": "calca",
+   "baixo_cor": "cinza"
+  },
+  "leif": {
+   "nome": "Leif",
+   "voz": "narrador",
+   "corpo": "magro",
+   "altura": 1.7,
+   "pele": "clara",
+   "cabelo": "curto",
+   "cabelo_cor": "ruivo",
+   "olhos": "azul",
+   "roupa": "tunica",
+   "roupa_cor": "azul",
+   "baixo": "calca",
+   "baixo_cor": "marrom"
+  }
+ },
+ "cenas": [
+  {
+   "cenario": "aldeia",
+   "luz": "dia",
+   "personagens": [
+    {
+     "id": "leif",
+     "x": 0.45,
+     "olhando": "esquerda",
+     "segura": "tocha"
+    },
+    {
+     "id": "bjorn",
+     "x": 0.82,
+     "olhando": "esquerda"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Olha só: o pai mandou o Leif sozinho pro Abismo.",
+     "acao": [
+      {
+       "id": "leif",
+       "tipo": "investida",
+       "dist": 0.3,
+       "em": 0.15
+      }
+     ]
+    },
+    {
+     "quem": "bjorn",
+     "txt": "Só volta quando for homem.",
+     "pose": "apontando"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Isso foi há três dias. O Leif não voltou.",
+     "acao": {
+      "id": "bjorn",
+      "tipo": "impacto",
+      "palavra": "voltou"
+     }
+    }
+   ]
+  },
+  {
+   "cenario": "campo",
+   "luz": "dia",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.2,
+     "olhando": "direita"
+    },
+    {
+     "id": "bjorn",
+     "x": 0.75,
+     "olhando": "esquerda",
+     "segura": "machado"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Nenhum voto. O destino escolheu B: treinar as runas.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "dourado",
+      "palavra": "runas"
+     }
+    },
+    {
+     "quem": "bjorn",
+     "txt": "Runa exige corpo. Você não tem nenhum.",
+     "pose": "bravo"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Então o Bjorn bateu. De novo, e de novo, e de novo.",
+     "acao": {
+      "id": "bjorn",
+      "tipo": "golpe",
+      "arma": "machado",
+      "alvo": "ren",
+      "palavra": "bateu"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Até o sol de Frostheim cair atrás do muro.",
+     "acao": {
+      "id": "bjorn",
+      "tipo": "golpe",
+      "arma": "machado",
+      "alvo": "ren",
+      "palavra": "sol"
+     }
+    },
+    {
+     "quem": "ren",
+     "txt": "Cara, isso não é treino, é tutorial de morte!",
+     "expressao": "medo",
+     "pose": "bracos_abertos",
+     "acao": {
+      "id": "ren",
+      "tipo": "ofegante",
+      "em": 0.2
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Cada pancada deixava o Ren mais duro.",
+     "acao": {
+      "id": "bjorn",
+      "tipo": "golpe",
+      "arma": "machado",
+      "alvo": "ren",
+      "palavra": "pancada"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "No terceiro golpe, ele não caiu.",
+     "acao": {
+      "id": "bjorn",
+      "tipo": "golpe",
+      "arma": "machado",
+      "alvo": "ren",
+      "palavra": "golpe"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "E uma runa dourada acendeu no braço dele.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "dourado",
+      "palavra": "runa"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Bjorn parou.",
+     "acao": {
+      "id": "bjorn",
+      "tipo": "impacto",
+      "palavra": "parou"
+     }
+    },
+    {
+     "quem": "bjorn",
+     "txt": "Em Frostheim, só o Leif tinha conseguido isso.",
+     "pose": "pensando"
+    }
+   ]
+  },
+  {
+   "cenario": "masmorra",
+   "luz": "noite",
+   "personagens": [
+    {
+     "id": "leif",
+     "x": 0.3,
+     "olhando": "direita",
+     "segura": "tocha"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Lá embaixo, no andar 1, uma tocha ainda queima.",
+     "acao": {
+      "id": "leif",
+      "tipo": "impacto",
+      "palavra": "tocha"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "Leif está vivo. Mas a tocha está no fim.",
+     "acao": {
+      "id": "leif",
+      "tipo": "ofegante",
+      "palavra": "vivo"
+     }
+    }
+   ]
+  },
+  {
+   "cenario": "campo",
+   "luz": "noite",
+   "personagens": [
+    {
+     "id": "ren",
+     "x": 0.2,
+     "olhando": "direita"
+    },
+    {
+     "id": "bjorn",
+     "x": 0.75,
+     "olhando": "esquerda",
+     "segura": "machado"
+    }
+   ],
+   "falas": [
+    {
+     "quem": "narrador",
+     "txt": "Com uma runa só, descer é arriscado.",
+     "acao": {
+      "id": "ren",
+      "tipo": "aura",
+      "cor": "dourado",
+      "palavra": "runa"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "A segunda runa leva mais três dias.",
+     "acao": {
+      "id": "bjorn",
+      "tipo": "impacto",
+      "palavra": "segunda"
+     }
+    },
+    {
+     "quem": "narrador",
+     "txt": "O que o Ren faz?",
+     "le_escolha": "pergunta"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Opção A: desce agora, com uma runa só.",
+     "le_escolha": "a"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Opção B: treina mais três dias.",
+     "le_escolha": "b"
+    },
+    {
+     "quem": "narrador",
+     "txt": "Comenta A ou B, segue o perfil e manda pra quem curte RPG.",
+     "le_escolha": "comenta"
+    }
+   ]
+  }
+ ]
+}

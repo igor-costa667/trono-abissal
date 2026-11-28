@@ -6,7 +6,7 @@
   "estado_do_ren": {
     "etica": 1,
     "usou_arma_abissal": false,
-    "local": "Frostheim, vila viking (ep. 7)",
+    "local": "Frostheim, vila viking (ep. 8)",
     "inimigos": [
       "Kuroha e Kagegakure: Ren recusou a missão de matar o desertor; reputação local caiu e Kuroha o expulsou (ep. 5)"
     ],
@@ -23,7 +23,8 @@
       "Kuroha é caçado por um desertor há dez anos e pede que Ren o elimine em troca de ensinar tudo (ep. 4)",
       "O desertor que caça Kuroha há dez anos diz que Kuroha também desertou e manda Ren perguntar como a esposa dele morreu (ep. 5)",
       "O desertor era irmão da esposa de Kuroha. Dez anos atrás, doze ninjas cercaram a casa de Kuroha; ele só carregou o filho e a esposa ficou para trás. A vila nunca soube (ep. 6)",
-      "Leif, filho de Bjorn, correu sozinho para o túnel do Abismo com uma tocha há três dias e não voltou; ninguém em Frostheim teve coragem de descer atrás dele (ep. 7)"
+      "Leif, filho de Bjorn, correu sozinho para o túnel do Abismo com uma tocha há três dias e não voltou; ninguém em Frostheim teve coragem de descer atrás dele (ep. 7)",
+      "Foi o próprio Bjorn que mandou o Leif descer ('só volta quando for homem'). Leif está vivo no andar 1, mas a tocha está no fim (ep. 8)"
     ],
     "historico_etica": [
       {
@@ -61,7 +62,16 @@
         "escolha": "B",
         "etica": "mantém (1): foi treinar em Frostheim",
         "arma_abissal": false
+      },
+      {
+        "ep": 7,
+        "escolha": "B",
+        "etica": "mantém (1): treinou as runas antes de descer",
+        "arma_abissal": false
       }
+    ],
+    "habilidades": [
+      "Primeira runa de Frostheim (dourada, no braço): só o Leif tinha conseguido isso na vila (ep. 8)"
     ]
   },
   "episodios": [
@@ -87,7 +97,7 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-28T07:14-03:00",
+        "coletado_em": "2026-11-28T11:35-03:00",
         "views": 338,
         "alcance": 291,
         "tempo_medio_s": 5.52,
@@ -100,7 +110,8 @@
         "tempo_medio": 5.52,
         "pulo_3s": 0.805,
         "compart": 0,
-        "salvos": 1
+        "salvos": 1,
+        "obs": "Windsor em cache (plano sem atualização sob demanda)"
       },
       "creditos_elevenlabs": 968,
       "story_id": "18159285514517251"
@@ -130,7 +141,7 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-28T07:14-03:00",
+        "coletado_em": "2026-11-28T11:35-03:00",
         "views": 272,
         "alcance": 245,
         "tempo_medio_s": 28.84,
@@ -143,7 +154,8 @@
         "tempo_medio": 28.84,
         "pulo_3s": 0.476,
         "compart": 0,
-        "salvos": 0
+        "salvos": 0,
+        "obs": "Windsor em cache (plano sem atualização sob demanda)"
       },
       "creditos_elevenlabs": 1049,
       "story_id": "18320978512304307",
@@ -179,7 +191,7 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-28T07:14-03:00",
+        "coletado_em": "2026-11-28T11:35-03:00",
         "horas_no_ar": 22.7,
         "views": 214,
         "alcance": 183,
@@ -193,7 +205,8 @@
         "tempo_medio": 11.19,
         "pulo_3s": 0.443,
         "compart": 0,
-        "salvos": 0
+        "salvos": 0,
+        "obs": "Windsor em cache (plano sem atualização sob demanda)"
       },
       "creditos_elevenlabs": 1067,
       "story_id": "17997263322055541",
@@ -233,7 +246,7 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-28T07:14-03:00",
+        "coletado_em": "2026-11-28T11:35-03:00",
         "views": 180,
         "alcance": 160,
         "tempo_medio_s": 9.83,
@@ -247,7 +260,8 @@
         "tempo_medio": 9.83,
         "pulo_3s": 0.503,
         "compart": 0,
-        "salvos": 0
+        "salvos": 0,
+        "obs": "Windsor em cache (plano sem atualização sob demanda)"
       },
       "creditos_elevenlabs": 972,
       "story_id": "17916908889560503",
@@ -286,7 +300,7 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-28T07:14-03:00",
+        "coletado_em": "2026-11-28T11:35-03:00",
         "views": 310,
         "alcance": 268,
         "tempo_medio_s": 9.56,
@@ -300,7 +314,8 @@
         "tempo_medio": 9.56,
         "pulo_3s": 0.516,
         "compart": 1,
-        "salvos": 0
+        "salvos": 0,
+        "obs": "Windsor em cache (plano sem atualização sob demanda)"
       },
       "creditos_elevenlabs": 1066,
       "story_id": "18097178375485587",
@@ -373,7 +388,7 @@
       },
       "refeito": "27/11 ~12h45: flashback na vila (ninja avança, Kuroha golpeia, ninja responde com fogo, aura protegendo o filho), sem ataques durante diálogo, sem teleporte",
       "metricas": {
-        "coletado_em": "2026-11-28T07:14-03:00",
+        "coletado_em": "2026-11-28T11:35-03:00",
         "views": 160,
         "alcance": 136,
         "tempo_medio_s": 9.4,
@@ -386,7 +401,8 @@
         "tempo_medio": 9.4,
         "pulo_3s": 0.529,
         "compart": 7,
-        "salvos": 0
+        "salvos": 0,
+        "obs": "Windsor em cache (plano sem atualização sob demanda)"
       }
     },
     {
@@ -408,8 +424,13 @@
         "b": "Treina as runas",
         "b_sub": "Mais forte, Leif espera"
       },
-      "votos": null,
-      "vencedora": null,
+      "votos": {
+        "A": 0,
+        "B": 0,
+        "total_pessoas": 0,
+        "obs": "nenhum comentário no ep. 7 até 28/11 11h35 (media_comments_count 0): o destino (lore) escolheu B, treinar as runas. A lore diz que o jogo é crescimento antes de descer e que, com as habilidades atuais, o Ren não passaria nem da porta; runas exigem nível mínimo."
+      },
+      "vencedora": "B",
       "creditos_elevenlabs": 1186,
       "story_id": "17959689759314524",
       "gancho": "Olha só: um machado, e o Ren caiu.",
@@ -430,7 +451,7 @@
         "vida em jogo na escolha (Leif)"
       ],
       "metricas": {
-        "coletado_em": "2026-11-28T07:14-03:00",
+        "coletado_em": "2026-11-28T11:35-03:00",
         "views": 157,
         "alcance": 135,
         "tempo_medio_s": 9.52,
@@ -444,7 +465,8 @@
         "tempo_medio": 9.52,
         "pulo_3s": 0.564,
         "compart": 0,
-        "salvos": 0
+        "salvos": 0,
+        "obs": "Windsor em cache (plano sem atualização sob demanda)"
       }
     }
   ],
@@ -480,6 +502,10 @@
       },
       {
         "data": "2026-11-27",
+        "seguidores": 16
+      },
+      {
+        "data": "2026-11-28",
         "seguidores": 16
       }
     ]
@@ -1340,13 +1366,7 @@
       }
     ],
     "resumo_diario": [],
-    "ajustes_para_o_proximo": [
-      {
-        "criado_em": "2026-11-27T23:14-03:00",
-        "motivo": "Ep7 abriu com ação genérica ('Olha só: um machado, e o Ren caiu.') e a revelação pessoal só aos ~13 s: pulo 3 s 56,6% e 0 compartilhamento em 3,4 h. Ep6, que pôs o drama pessoal já na 1ª frase ('Kuroha deixou a esposa morrer'), teve 52,9% e 7 compartilhamentos.",
-        "ajuste": "Gancho #18 com a perda/segredo do personagem já na 1ª frase (quem + o que perdeu/escondeu), com ação na tela, em vez de só um golpe. Revelação dentro dos 3 primeiros segundos, não aos 13 s."
-      }
-    ],
+    "ajustes_para_o_proximo": [],
     "ajustes_aplicados": [
       {
         "criado_em": "2026-11-26T15:10-03:00",
@@ -1385,6 +1405,14 @@
         "aplicado_em": "2026-11-27",
         "episodio": 7,
         "como": "gancho #18 'Olha só: um machado, e o Ren caiu.' (85,8) + revelação pessoal aos ~13 s (Bjorn: 'Meu filho também caía assim. Até descer o túnel sozinho.') + flashback do Leif no túnel"
+      },
+      {
+        "criado_em": "2026-11-27T23:14-03:00",
+        "motivo": "Ep7 abriu com ação genérica ('Olha só: um machado, e o Ren caiu.') e a revelação pessoal só aos ~13 s: pulo 3 s 56,6% e 0 compartilhamento em 3,4 h. Ep6, que pôs o drama pessoal já na 1ª frase ('Kuroha deixou a esposa morrer'), teve 52,9% e 7 compartilhamentos.",
+        "ajuste": "Gancho #18 com a perda/segredo do personagem já na 1ª frase (quem + o que perdeu/escondeu), com ação na tela, em vez de só um golpe. Revelação dentro dos 3 primeiros segundos, não aos 13 s.",
+        "aplicado_em": "2026-11-28",
+        "episodio": 8,
+        "como": "gancho #18 'Olha só: o pai mandou o Leif sozinho pro Abismo.' (94,8): o segredo do Bjorn na 1ª frase, com o Leif correndo com a tocha na tela já aos 1,8 s"
       }
     ]
   }
