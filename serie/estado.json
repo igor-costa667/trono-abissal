@@ -1405,6 +1405,83 @@
           }
         },
         "notas": "Windsor devolveu o mesmo cache das 07h13 (plano sem atualização sob demanda): números idênticos. Ep7 157 views, pulo 3 s 56,4%, 0 voto. Seguidores 16. Sem sinal novo."
+      },
+      {
+        "data_hora": "2026-11-28T13:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 338,
+            "alcance": 291,
+            "tempo_medio": 5.52,
+            "pulo_3s": 0.805,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 214,
+            "alcance": 183,
+            "tempo_medio": 11.19,
+            "pulo_3s": 0.443,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 180,
+            "alcance": 160,
+            "tempo_medio": 9.83,
+            "pulo_3s": 0.503,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "5": {
+            "views": 310,
+            "alcance": 268,
+            "tempo_medio": 9.56,
+            "pulo_3s": 0.516,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 7
+          },
+          "6": {
+            "views": 160,
+            "alcance": 136,
+            "tempo_medio": 9.4,
+            "pulo_3s": 0.529,
+            "comentarios": 1,
+            "compart": 7,
+            "salvos": 0,
+            "curtidas": 6
+          },
+          "7": {
+            "views": 157,
+            "alcance": 135,
+            "tempo_medio": 9.52,
+            "pulo_3s": 0.564,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          }
+        },
+        "notas": "Windsor ainda no mesmo cache (sem atualização sob demanda): números idênticos às 07h13/09h13. Ep8 (publicado ~12h07) ainda não aparece no Windsor. Ep7 157 views, 0 voto. Seguidores 16. Sem sinal novo."
       }
     ],
     "resumo_diario": [],
