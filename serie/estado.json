@@ -87,10 +87,10 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-27T23:14-03:00",
+        "coletado_em": "2026-11-28T07:14-03:00",
         "views": 338,
         "alcance": 291,
-        "tempo_medio_s": 5.518,
+        "tempo_medio_s": 5.52,
         "skip_rate": 0.805,
         "compartilhamentos": 0,
         "salvamentos": 1,
@@ -126,10 +126,10 @@
       },
       "vencedora": "B",
       "metricas": {
-        "coletado_em": "2026-11-27T23:14-03:00",
+        "coletado_em": "2026-11-28T07:14-03:00",
         "views": 272,
         "alcance": 245,
-        "tempo_medio_s": 28.845,
+        "tempo_medio_s": 28.84,
         "skip_rate": 0.476,
         "compartilhamentos": 0,
         "salvamentos": 0,
@@ -171,11 +171,11 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-27T23:14-03:00",
+        "coletado_em": "2026-11-28T07:14-03:00",
         "horas_no_ar": 22.7,
         "views": 214,
         "alcance": 183,
-        "tempo_medio_s": 11.252,
+        "tempo_medio_s": 11.19,
         "skip_rate": 0.443,
         "compartilhamentos": 0,
         "salvamentos": 0,
@@ -221,10 +221,10 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-27T23:14-03:00",
+        "coletado_em": "2026-11-28T07:14-03:00",
         "views": 180,
         "alcance": 160,
-        "tempo_medio_s": 9.886,
+        "tempo_medio_s": 9.83,
         "skip_rate": 0.503,
         "compartilhamentos": 0,
         "salvamentos": 0,
@@ -270,11 +270,11 @@
       },
       "vencedora": "A",
       "metricas": {
-        "coletado_em": "2026-11-27T23:14-03:00",
-        "views": 308,
-        "alcance": 265,
-        "tempo_medio_s": 9.689,
-        "skip_rate": 0.513,
+        "coletado_em": "2026-11-28T07:14-03:00",
+        "views": 310,
+        "alcance": 268,
+        "tempo_medio_s": 9.56,
+        "skip_rate": 0.516,
         "compartilhamentos": 1,
         "salvamentos": 0,
         "curtidas": 7,
@@ -353,10 +353,10 @@
       },
       "refeito": "27/11 ~12h45: flashback na vila (ninja avança, Kuroha golpeia, ninja responde com fogo, aura protegendo o filho), sem ataques durante diálogo, sem teleporte",
       "metricas": {
-        "coletado_em": "2026-11-27T23:14-03:00",
+        "coletado_em": "2026-11-28T07:14-03:00",
         "views": 160,
         "alcance": 136,
-        "tempo_medio_s": 9.071,
+        "tempo_medio_s": 9.4,
         "skip_rate": 0.529,
         "compartilhamentos": 7,
         "salvamentos": 0,
@@ -406,11 +406,11 @@
         "vida em jogo na escolha (Leif)"
       ],
       "metricas": {
-        "coletado_em": "2026-11-27T23:14-03:00",
-        "views": 153,
-        "alcance": 132,
-        "tempo_medio_s": 9.241,
-        "skip_rate": 0.566,
+        "coletado_em": "2026-11-28T07:14-03:00",
+        "views": 157,
+        "alcance": 135,
+        "tempo_medio_s": 9.52,
+        "skip_rate": 0.564,
         "compartilhamentos": 0,
         "salvamentos": 0,
         "curtidas": 3,
@@ -1155,6 +1155,83 @@
           }
         },
         "notas": "Windsor atualizou o cache. Ep7 com 3,4 h: 153 views (ep6 tinha 149 com 7 h, ritmo melhor), mas pulo 3 s 56,6% (pior desde o ep1) e 0 compartilhamento (ep6: 7 em 2,6 h). Ep6 subiu para 160. Nenhum comentário/voto novo no ep7. Seguidores 16."
+      },
+      {
+        "data_hora": "2026-11-28T07:14-03:00",
+        "seguidores": 16,
+        "por_episodio": {
+          "1": {
+            "views": 338,
+            "alcance": 291,
+            "tempo_medio": 5.52,
+            "pulo_3s": 0.805,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 1,
+            "curtidas": 5
+          },
+          "2": {
+            "views": 272,
+            "alcance": 245,
+            "tempo_medio": 28.84,
+            "pulo_3s": 0.476,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 5
+          },
+          "3": {
+            "views": 214,
+            "alcance": 183,
+            "tempo_medio": 11.19,
+            "pulo_3s": 0.443,
+            "comentarios": 1,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "4": {
+            "views": 180,
+            "alcance": 160,
+            "tempo_medio": 9.83,
+            "pulo_3s": 0.503,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 4
+          },
+          "5": {
+            "views": 310,
+            "alcance": 268,
+            "tempo_medio": 9.56,
+            "pulo_3s": 0.516,
+            "comentarios": 0,
+            "compart": 1,
+            "salvos": 0,
+            "curtidas": 7
+          },
+          "6": {
+            "views": 160,
+            "alcance": 136,
+            "tempo_medio": 9.4,
+            "pulo_3s": 0.529,
+            "comentarios": 1,
+            "compart": 7,
+            "salvos": 0,
+            "curtidas": 6
+          },
+          "7": {
+            "views": 157,
+            "alcance": 135,
+            "tempo_medio": 9.52,
+            "pulo_3s": 0.564,
+            "comentarios": 0,
+            "compart": 0,
+            "salvos": 0,
+            "curtidas": 3
+          }
+        },
+        "notas": "8 h desde 23h13. Quase parado durante a madrugada: ep7 153→157 views (11,4 h no ar; ep6 tinha 160 com ~15 h), pulo 3 s 56,4%, 0 compartilhamento, 0 comentário/voto no ep7 até agora. Ep5 308→310. Seguidores 16. Sem sinal novo; ajuste do gancho (23h13) segue valendo."
       }
     ],
     "resumo_diario": [],
